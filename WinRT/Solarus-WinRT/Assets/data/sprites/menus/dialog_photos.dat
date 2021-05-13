@@ -1,0 +1,247 @@
+animation{
+  name = "rachel",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "beaver",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 96, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "chicken",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 192, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "chimp",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 224, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "claudia",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 32, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "cow",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 192, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "fire",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "flamingo",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 160, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "fox",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 128, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "grave",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "greybeard",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "hermione",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 192, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "lion",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 224, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "malcolm",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "martini",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 160, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "mosquito",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 256, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "pig",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_angry",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 128, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_cheer",
+  src_image = "menus/dialog_photos.png",
+  frame_delay = 130,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}
+animation{
+  name = "rachel_confused",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_dank",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_fire",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_fist",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_horror",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 96, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_horror_scream",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 128, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "rachel_surprised",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 288, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "seagull",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 32, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "sheep",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 224, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "sheep_wolf",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 256, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "sign",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 96, y = 64, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "soyboy",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 64, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "spider",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "squirrel",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 32, y = 160, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "turtle",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 64, y = 256, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "wolf",
+  src_image = "menus/dialog_photos.png",
+  directions = {
+    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}

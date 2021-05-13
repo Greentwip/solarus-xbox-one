@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\ft2build.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbase.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftfstype.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftgxval.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftinit.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftlcdfil.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftmm.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftotval.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftpatent.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftpfr.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftsynth.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\fttype1.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftwinfnt.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\bdf\bdf.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cache\ftcache.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cff\cff.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\psnames\psmodule.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\raster\raster.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\smooth\smooth.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\type1\type1.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\type42\type42.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\winfonts\winfnt.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1264471f-847f-427d-8db6-b733f188ffb9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>freetype-WinRT81</ProjectName>
+    <RootNamespace>freetype_WinRT81</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.2</ApplicationTypeRevision>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>Objs\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <TargetName>freetype</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>Objs\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <TargetName>freetype</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\external\freetype-2.9.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\external\freetype-2.9.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\external\freetype-2.9.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\external\freetype-2.9.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

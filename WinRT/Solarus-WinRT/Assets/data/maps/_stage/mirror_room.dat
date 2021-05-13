@@ -1,0 +1,346 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 192,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi_theater",
+  music = "cosmicgem829/cave",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 192,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 112,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 112,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 16,
+  width = 112,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 112,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 32,
+  width = 112,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 48,
+  width = 112,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 16,
+  width = 112,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 112,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 176,
+  width = 112,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 112,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 128,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 16,
+  height = 128,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+custom_entity{
+  name = "antihero",
+  layer = 0,
+  x = 128,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "hero/tunic1",
+  model = "antihero",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 128,
+  y = 189,
+  direction = 1,
+}
+

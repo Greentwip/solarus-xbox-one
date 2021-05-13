@@ -1,0 +1,1008 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/outer_corner_down_left",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/inner_corner_down_right",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/inner_corner_up_right",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/inner_corner_up_left",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/inner_corner_down_left",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/outer_corner_down_right",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/outer_corner_up_right",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/outer_corner_up_left",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/wall_left",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/wall_right",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 8,
+  y = 77,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/cave/wall_up",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/wall_right",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/wall_right",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/wall_right",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/cave/wall_down",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/wall_left",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/wall_left",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/cave/wall_left",
+  tiled = true,
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/rock",
+  model = "cave_element",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 29,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 61,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 77,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 125,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 93,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 77,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 29,
+  properties = {
+    {
+      key = "outline",
+      value = "adaptative",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/cave/hole",
+}
+
+teletransporter{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 112,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 80,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 208,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+
+teletransporter{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "_test/cave",
+}
+

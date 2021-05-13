@@ -1,0 +1,743 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria_underworld_castle",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 136,
+  y = 141,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  name = "pedestal1",
+  layer = 0,
+  x = 56,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  name = "gear1",
+  layer = 0,
+  x = 56,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2",
+  layer = 0,
+  x = 56,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "furnace",
+  layer = 0,
+  x = 40,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/conveyor_belt",
+  model = "gear_furnace",
+}
+
+custom_entity{
+  name = "gear2_2",
+  layer = 0,
+  x = 184,
+  y = 45,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  name = "gear2_3",
+  layer = 0,
+  x = 40,
+  y = 29,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_4",
+  layer = 0,
+  x = 24,
+  y = 45,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_5",
+  layer = 0,
+  x = 40,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "furnace_2",
+  layer = 0,
+  x = 184,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/conveyor_belt",
+  model = "gear_furnace",
+}
+
+custom_entity{
+  name = "gear2_6",
+  layer = 0,
+  x = 168,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_7",
+  layer = 0,
+  x = 184,
+  y = 77,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_8",
+  layer = 0,
+  x = 200,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_9",
+  layer = 0,
+  x = 24,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_10",
+  layer = 0,
+  x = 40,
+  y = 77,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_pedestal_orange",
+  model = "gear_pedestal",
+}
+
+custom_entity{
+  name = "gear2_11",
+  layer = 0,
+  x = 56,
+  y = 77,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_12",
+  layer = 0,
+  x = 56,
+  y = 93,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_13",
+  layer = 0,
+  x = 72,
+  y = 93,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_14",
+  layer = 0,
+  x = 88,
+  y = 93,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_15",
+  layer = 0,
+  x = 104,
+  y = 93,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_16",
+  layer = 0,
+  x = 104,
+  y = 77,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_17",
+  layer = 0,
+  x = 88,
+  y = 109,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_18",
+  layer = 0,
+  x = 88,
+  y = 125,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_19",
+  layer = 0,
+  x = 72,
+  y = 125,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_20",
+  layer = 0,
+  x = 56,
+  y = 125,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_21",
+  layer = 0,
+  x = 40,
+  y = 125,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_22",
+  layer = 0,
+  x = 40,
+  y = 109,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_23",
+  layer = 0,
+  x = 72,
+  y = 109,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_24",
+  layer = 0,
+  x = 72,
+  y = 77,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_25",
+  layer = 0,
+  x = 104,
+  y = 109,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "gear2_26",
+  layer = 0,
+  x = 104,
+  y = 61,
+  properties = {
+    {
+      key = "movable",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/gear_orange",
+  model = "gear",
+}
+
+custom_entity{
+  name = "mirror2",
+  layer = 0,
+  x = 216,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  name = "mirror1",
+  layer = 0,
+  x = 8,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+block{
+  layer = 0,
+  x = 136,
+  y = 61,
+  sprite = "entities/block/any",
+  pushable = true,
+  pullable = true,
+}
+

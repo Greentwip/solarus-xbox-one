@@ -1,0 +1,208 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 176,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria_house_red",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 224,
+  height = 16,
+  pattern = "platform.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 224,
+  height = 16,
+  pattern = "wall_16",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 224,
+  height = 16,
+  pattern = "platform.base.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "platform.right",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "platform.left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 160,
+  width = 80,
+  height = 16,
+  pattern = "platform.top",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "platform.top",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+

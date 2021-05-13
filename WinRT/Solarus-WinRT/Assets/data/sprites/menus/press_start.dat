@@ -1,0 +1,9 @@
+animation{
+  name = "blinking",
+  src_image = "menus/menus.png",
+  frame_delay = 800,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 176, y = 0, frame_width = 64, frame_height = 10, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+  },
+}

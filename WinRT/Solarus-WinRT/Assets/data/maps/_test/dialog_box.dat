@@ -1,0 +1,47 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  pattern = "grass.soil",
+}
+
+npc{
+  layer = 0,
+  x = 128,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "animals/beaver",
+  behavior = "dialog#intro.greybeard.1",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 128,
+  y = 101,
+  direction = 1,
+}
+
+npc{
+  layer = 0,
+  x = 128,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "animals/beaver",
+  behavior = "dialog#intro.greybeard.1",
+}
+

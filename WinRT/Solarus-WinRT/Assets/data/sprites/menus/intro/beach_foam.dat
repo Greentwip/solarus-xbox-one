@@ -1,0 +1,9 @@
+animation{
+  name = "normal",
+  src_image = "menus/intro.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 256, frame_width = 112, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+  },
+}

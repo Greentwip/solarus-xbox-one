@@ -1,0 +1,16 @@
+animation{
+  name = "normal",
+  src_image = "menus/intro.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 224, frame_width = 24, frame_height = 24, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}
+animation{
+  name = "crashed",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 176, y = 224, frame_width = 24, frame_height = 24, origin_x = 0, origin_y = 0 },
+  },
+}

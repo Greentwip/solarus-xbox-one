@@ -1,0 +1,32 @@
+animation{
+  name = "stopped",
+  src_image = "entities/wood_log.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "floating",
+  src_image = "entities/wood_log.png",
+  directions = {
+    { x = 80, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 80, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "rolling",
+  src_image = "entities/wood_log.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
+  },
+}

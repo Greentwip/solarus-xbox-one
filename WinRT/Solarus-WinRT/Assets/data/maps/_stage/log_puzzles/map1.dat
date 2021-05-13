@@ -1,0 +1,365 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 480,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 480,
+  height = 144,
+  pattern = "grass.soil",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 480,
+  height = 32,
+  pattern = "tree.palm",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 480,
+  height = 32,
+  pattern = "tree.palm",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "grass.stump",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+  tileset = "zoria",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 8,
+  y = 77,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 93,
+  width = 48,
+  height = 16,
+  direction = 1,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 61,
+  width = 16,
+  height = 48,
+  direction = 0,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 93,
+  width = 48,
+  height = 16,
+  direction = 1,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 45,
+  width = 16,
+  height = 48,
+  direction = 0,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 45,
+  width = 16,
+  height = 48,
+  direction = 0,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+teletransporter{
+  layer = 0,
+  x = 464,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "_stage/log_puzzles/map1",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 93,
+  width = 48,
+  height = 16,
+  direction = 1,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 61,
+  width = 16,
+  height = 48,
+  direction = 0,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 77,
+  width = 48,
+  height = 16,
+  direction = 1,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+

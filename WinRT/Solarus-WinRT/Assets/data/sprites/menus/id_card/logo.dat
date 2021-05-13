@@ -1,0 +1,21 @@
+animation{
+  name = "usa",
+  src_image = "menus/id_card.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 48, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "evolv",
+  src_image = "menus/id_card.png",
+  directions = {
+    { x = 0, y = 64, frame_width = 56, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "transcend",
+  src_image = "menus/id_card.png",
+  directions = {
+    { x = 0, y = 80, frame_width = 56, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}

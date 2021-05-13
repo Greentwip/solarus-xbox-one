@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43de8797-725c-45b6-8cab-3aa4a4ce8ca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4e2087e4-fe9e-4235-838f-435cced63741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FT_MODULES">
+      <UniqueIdentifier>{6b155c5e-8c65-4631-a6d8-120cac117e20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\..\external\freetype-2.9.1\include\ft2build.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbase.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftfstype.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftgxval.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftinit.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftlcdfil.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftmm.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftotval.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftpatent.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftpfr.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftsynth.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\fttype1.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\base\ftwinfnt.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\bdf\bdf.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cache\ftcache.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cff\cff.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\psnames\psmodule.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\raster\raster.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\smooth\smooth.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\type1\type1.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\type42\type42.c" />
+    <ClCompile Include="..\..\external\freetype-2.9.1\src\winfonts\winfnt.c" />
+  </ItemGroup>
+</Project>

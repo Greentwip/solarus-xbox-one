@@ -1,0 +1,14 @@
+animation{
+  name = "big",
+  src_image = "entities/shadow.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 4, origin_x = 4, origin_y = 1 },
+  },
+}
+animation{
+  name = "small",
+  src_image = "entities/shadow.png",
+  directions = {
+    { x = 8, y = 0, frame_width = 8, frame_height = 4, origin_x = 4, origin_y = 2 },
+  },
+}

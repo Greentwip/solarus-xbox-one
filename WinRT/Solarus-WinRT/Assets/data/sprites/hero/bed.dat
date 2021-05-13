@@ -1,0 +1,52 @@
+animation{
+  name = "sleeping",
+  src_image = "hero/rachel-bed.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "awake",
+  src_image = "hero/rachel-bed.png",
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "blinking",
+  src_image = "hero/rachel-bed.png",
+  frame_delay = 200,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
+  name = "rocking",
+  src_image = "hero/rachel-bed.png",
+  frame_delay = 400,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
+  name = "sitting_up",
+  src_image = "hero/rachel-bed.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+  },
+}

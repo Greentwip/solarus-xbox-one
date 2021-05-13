@@ -1,0 +1,16 @@
+quest{
+  solarus_version = "1.6",
+  write_dir = "voadi",
+  title = "Vegan on a Desert Island",
+  short_description = "Inspired by the pervasive question “what would vegans do if stranded on a desert island?” Vegan on a Desert Island seeks to provide an answer.",
+  long_description = [[
+When Rachel agrees to elope with Marvin, their ship crash-lands on a desert island. Rachel's vegan ethos is put to the test. Fortunately the island is brimming with animals that can help her. She must use her communication skills and problem-solving abilities—rather than coercion—to escape the desert island.]],
+  author = "voadi.com",
+  quest_version = "0.3",
+  release_date = "",
+  website = "https://voadi.com/",
+  normal_quest_size = "256x144",
+  min_quest_size = "256x144",
+  max_quest_size = "256x144",
+}
+

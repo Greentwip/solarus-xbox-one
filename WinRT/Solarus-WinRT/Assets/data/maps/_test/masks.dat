@@ -1,0 +1,205 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria_house_red",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 224,
+  height = 16,
+  pattern = "platform.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 224,
+  height = 16,
+  pattern = "wall_16",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 224,
+  height = 16,
+  pattern = "platform.base.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 128,
+  width = 224,
+  height = 16,
+  pattern = "platform.top",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "platform.left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "platform.right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 8,
+  width = 8,
+  height = 40,
+  pattern = "platform_column",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 128,
+  y = 125,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 61,
+  properties = {
+    {
+      key = "mask",
+      value = "lion",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/masks/lion",
+  model = "mask",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 61,
+  properties = {
+    {
+      key = "mask",
+      value = "sheep",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/masks/sheep",
+  model = "mask",
+}
+

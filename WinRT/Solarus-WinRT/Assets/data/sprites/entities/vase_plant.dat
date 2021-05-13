@@ -1,0 +1,15 @@
+animation{
+  name = "stopped",
+  src_image = "entities/voadi.png",
+  directions = {
+    { x = 80, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 19 },
+  },
+}
+animation{
+  name = "growing",
+  src_image = "entities/voadi.png",
+  frame_delay = 120,
+  directions = {
+    { x = 0, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 19, num_frames = 6 },
+  },
+}

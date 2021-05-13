@@ -1,0 +1,18 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 128,
+  y = 77,
+  direction = 3,
+}
+

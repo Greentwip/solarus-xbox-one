@@ -1,0 +1,273 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria_underworld_castle",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 224,
+  height = 16,
+  pattern = "platform.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 224,
+  height = 16,
+  pattern = "platform.base.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 224,
+  height = 16,
+  pattern = "wall_16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "platform.right",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "platform.left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 128,
+  width = 224,
+  height = 16,
+  pattern = "platform.top",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  name = "mirror1",
+  layer = 0,
+  x = 136,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  name = "mirror2",
+  layer = 0,
+  x = 136,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  name = "mirror3",
+  layer = 0,
+  x = 40,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  name = "mirror0",
+  layer = 0,
+  x = 40,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/light_receiver",
+  model = "light_receiver",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 168,
+  y = 61,
+  direction = 3,
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 45,
+  width = 64,
+  height = 16,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  name = "light_source_2",
+  layer = 0,
+  x = 200,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/light_source",
+  model = "light_source",
+}
+
+custom_entity{
+  name = "light_source",
+  layer = 0,
+  x = 72,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/light_source",
+  model = "light_source",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 141,
+  width = 256,
+  height = 16,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 61,
+  width = 16,
+  height = 80,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 61,
+  width = 16,
+  height = 80,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 45,
+  width = 112,
+  height = 16,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 45,
+  width = 48,
+  height = 16,
+  direction = 0,
+  model = "light_blocker",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/mirror",
+  model = "mirror",
+}
+

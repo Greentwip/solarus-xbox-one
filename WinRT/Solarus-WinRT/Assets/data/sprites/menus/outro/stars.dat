@@ -1,0 +1,9 @@
+animation{
+  name = "normal",
+  src_image = "menus/outro.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 256, y = 0, frame_width = 72, frame_height = 32, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+  },
+}

@@ -1,0 +1,24 @@
+animation{
+  name = "green",
+  src_image = "npc/mimosa_pudica.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "brown",
+  src_image = "npc/mimosa_pudica.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+  },
+}

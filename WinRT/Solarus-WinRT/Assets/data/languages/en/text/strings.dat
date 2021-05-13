@@ -1,0 +1,9 @@
+text{ key = "menus.inventory.exit", value = "Exit" }
+text{ key = "menus.inventory.id_card_title", value = "ID CARD" }
+text{ key = "menus.inventory.save", value = "Save" }
+text{ key = "menus.inventory.tools", value = "Tools" }
+text{ key = "menus.picker.nope", value = "Nope" }
+text{ key = "menus.picker.question", value = "Give item?" }
+text{ key = "menus.save_feedback", value = "Game saved!" }
+text{ key = "title_screen.continue", value = "Continue" }
+text{ key = "title_screen.new_game", value = "New Game" }

@@ -1,0 +1,3523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>2ebb192c-37ce-4da7-b3b1-a32e4f41b185</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{18c444de-1779-4b7b-a6b0-3ddff8892887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\audio">
+      <UniqueIdentifier>{d6574ad8-ba43-40b6-a7a5-6a1d5f168c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\core">
+      <UniqueIdentifier>{bc02d2c6-a482-4c0d-ba82-95fb61077092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\entities">
+      <UniqueIdentifier>{26187b71-ee18-493c-a72f-59b0a51c86d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\graphics">
+      <UniqueIdentifier>{37ff95b7-8a74-4a83-837b-dbde37c0c7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\graphics\sdlrenderer">
+      <UniqueIdentifier>{274b46e9-bf51-4785-af23-ca6308f286ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\hero">
+      <UniqueIdentifier>{3d453a8f-f0c9-4597-a270-27a15865c068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\lua">
+      <UniqueIdentifier>{36c5921d-be1c-4632-8eb7-5ffc16beda2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\main">
+      <UniqueIdentifier>{a525c03f-488b-4496-b8fe-c1abecf8e7ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\movements">
+      <UniqueIdentifier>{5e5ce89b-5e7b-4dfc-a0b9-5b71fd52439f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party">
+      <UniqueIdentifier>{f23a8a34-82f5-4ef8-a1b8-2b9f50e19391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\glad">
+      <UniqueIdentifier>{560a0b7d-e9ad-4efd-b3a9-4aaf78492c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\hqx">
+      <UniqueIdentifier>{4fcce329-5205-4893-ac0f-8896a494402d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\snes_spc">
+      <UniqueIdentifier>{9d0f22b5-82c6-4570-b7aa-90a86acb482f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5f1704a2-a0dd-4ae4-9810-5fa17124b1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\audio">
+      <UniqueIdentifier>{dc78936c-8c90-4489-a52d-2dcf2fdfde72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{87e74023-fef5-49c1-b8dd-e1815f01ac17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\entities">
+      <UniqueIdentifier>{e03d8572-675d-447a-806c-bf54adf0bcfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graphics">
+      <UniqueIdentifier>{4057481f-bfa6-48d4-a674-fbd4ae273e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hero">
+      <UniqueIdentifier>{5637b54f-41ae-46d2-9e32-31690ae0dedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lua">
+      <UniqueIdentifier>{a454c418-39d3-4f4b-9e82-f62f3bd30ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\movements">
+      <UniqueIdentifier>{051b0bf3-7b99-4b3b-a9a8-dde7e05ae466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party">
+      <UniqueIdentifier>{dac705c5-134b-4c07-baf0-6cf10afa29d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\KHR">
+      <UniqueIdentifier>{ae3f3162-43eb-4642-a790-713d5a4455f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\hqx">
+      <UniqueIdentifier>{6bde85eb-a37f-4346-af17-1e93a2ea04ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\snes_spc">
+      <UniqueIdentifier>{37edce0c-147e-4b20-8ad2-6925b788a83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\glad">
+      <UniqueIdentifier>{6e79c47a-5890-4617-8ab1-584118df984d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graphics\sdlrenderer">
+      <UniqueIdentifier>{2ba69bb9-c852-46fb-9e9d-ea480dba08ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\containers">
+      <UniqueIdentifier>{6e285e3b-db2b-4ad2-927f-c791478a4442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\graphics\glrenderer">
+      <UniqueIdentifier>{04680ae0-983a-493c-8dd4-42e74b150067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graphics\glrenderer">
+      <UniqueIdentifier>{be4bf05b-77ba-4ba8-9b4b-078cc79588b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data">
+      <UniqueIdentifier>{7d64f74f-ddfe-4440-8e4f-8762610aaa6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites">
+      <UniqueIdentifier>{ae807c28-e278-43af-b2bb-5e8d7c36df0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\tilesets">
+      <UniqueIdentifier>{477677ad-b684-4b36-acd1-5556bd79d4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\animals">
+      <UniqueIdentifier>{afbf6257-012c-4502-9455-9c965a62ad42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities">
+      <UniqueIdentifier>{ea4f4dd9-c14b-4ca0-8fe5-461fd4d3198f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\darkness">
+      <UniqueIdentifier>{a035c276-92e0-4abc-8e37-3183c4cec0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\darkness\cave">
+      <UniqueIdentifier>{02ed49a9-0082-488b-b7f8-7333878e5c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\darkness\hero">
+      <UniqueIdentifier>{dc4a021a-26e3-4814-87ce-09e233688543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\block">
+      <UniqueIdentifier>{ee86c539-5cb6-4fd9-aaa6-e7230e65d087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\cave">
+      <UniqueIdentifier>{06f36332-71c1-41ed-b0ae-ea75ff99224d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\door">
+      <UniqueIdentifier>{92ebe1a6-f8c7-4742-87b1-aa9b4005affe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\masks">
+      <UniqueIdentifier>{34bf39de-cb8e-4a92-8e9a-fcc3dd06a09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\tall_grass">
+      <UniqueIdentifier>{3d6f4c18-6cec-47dc-998d-2c7e97130eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\entities\tall_grass_swamp">
+      <UniqueIdentifier>{2804c380-e4ab-408b-945d-9b07f2a145c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\hero">
+      <UniqueIdentifier>{28fd5e4c-2de1-403e-a593-b6556115613a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\hud">
+      <UniqueIdentifier>{9cb52f42-231e-47de-9bdc-e84cea97968e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\menus">
+      <UniqueIdentifier>{bc40ea4c-00b8-4188-8f0a-91b3bf127c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\menus\id_card">
+      <UniqueIdentifier>{152ff0dc-7ef6-4824-bf17-518068368ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\menus\intro">
+      <UniqueIdentifier>{a73fd6ce-c9c5-43ca-83d6-f932523e7cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\menus\outro">
+      <UniqueIdentifier>{c22e5781-c9a3-4236-b4ee-5d181dfdfce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sprites\menus\npc">
+      <UniqueIdentifier>{c4729a07-dae2-432c-b8ee-9e65a682e69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sounds">
+      <UniqueIdentifier>{90541861-dd97-406d-b06d-30014a43fb11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\sounds\diarandor">
+      <UniqueIdentifier>{8ed2f9f6-61ae-4ab0-a67c-4d3abcb37229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\scripts">
+      <UniqueIdentifier>{b3743eb9-8773-498e-b22e-ad8d209274fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\scripts\meta">
+      <UniqueIdentifier>{b20620ad-2ca3-44bf-8519-e7519fe3ff33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\scripts\menus">
+      <UniqueIdentifier>{7cfbc76e-a128-44e5-aec9-079acd241371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\scripts\menus\intro_scenes">
+      <UniqueIdentifier>{1defb891-8b6e-467c-bcae-8ac09b64c637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\scripts\menus\outro_scenes">
+      <UniqueIdentifier>{9c389c60-4652-4c16-86b4-2b96fc804569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics">
+      <UniqueIdentifier>{a96c0648-9c50-4633-afe5-6c33580a0ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics\adam">
+      <UniqueIdentifier>{b6c0b5ee-d441-48a3-94b3-b6e3f9512a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics\akex">
+      <UniqueIdentifier>{63619667-858c-4526-af61-3f9b58a97fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics\avgvst">
+      <UniqueIdentifier>{861a077e-bc82-4ea1-ac2f-dd487969f293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics\cosmicgem829">
+      <UniqueIdentifier>{c5499b13-db79-41e4-87c4-58c3e2c3afb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\musics\serviceshock">
+      <UniqueIdentifier>{fefa16bb-b4d4-4468-ac84-d3f7ce889b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps">
+      <UniqueIdentifier>{ee096f21-2856-4b4b-926b-3a4b9ac648a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\woods">
+      <UniqueIdentifier>{7cca427f-c835-4738-9341-6c88e72f8ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\highlands">
+      <UniqueIdentifier>{b6581f21-3a91-4c35-859f-614621bc2170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\evolv">
+      <UniqueIdentifier>{b60c0307-baf9-4711-8e30-1026c5d0b604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\castle">
+      <UniqueIdentifier>{83167ec1-aae4-417c-848d-3fe769a590a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\beach">
+      <UniqueIdentifier>{683b29f5-bba0-4c92-b10c-7a485c1320c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\beach\pig_houses">
+      <UniqueIdentifier>{8092c8fd-fd51-4bb0-8fae-d1c4220a4a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_unused">
+      <UniqueIdentifier>{8baf5fb6-e6b6-4445-87cc-4a6322f9ae4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_unused\water_dungeon">
+      <UniqueIdentifier>{35f933b2-1dd0-42b2-ab83-909b9218e4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_unused\forest">
+      <UniqueIdentifier>{78c07e39-beb6-49ab-b303-13b8a839d665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_unused\caves">
+      <UniqueIdentifier>{59e3ff7d-f79c-4107-9bb8-8a24d73c87ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_test">
+      <UniqueIdentifier>{d9a1c84f-54e5-4397-8371-32ff21b116f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_test\catacombs">
+      <UniqueIdentifier>{558b6f20-bb17-474d-b7ad-99c350ba0749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_stage">
+      <UniqueIdentifier>{94f90e65-4ecf-4ecb-9daf-f9517753aecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_stage\log_puzzles">
+      <UniqueIdentifier>{3d5f106b-95ff-49f8-8d77-8a5b8188a712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\maps\_stage\catacombs_maze">
+      <UniqueIdentifier>{1c12af9c-a37d-45b5-a2c0-fb49e5cc292e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\logos">
+      <UniqueIdentifier>{8ad37489-8fdd-4696-8127-c5a194026fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\languages">
+      <UniqueIdentifier>{16430fab-efdb-4eeb-8250-20ce5523d187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\languages\en">
+      <UniqueIdentifier>{20809f82-fd7f-40e7-a366-10daa373a0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\languages\en\text">
+      <UniqueIdentifier>{6932b830-f862-48f2-ba2e-8a72663b35df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\items">
+      <UniqueIdentifier>{d130949e-12e6-404b-bfea-28893c930d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\fonts">
+      <UniqueIdentifier>{0f19975f-4514-4333-b6b4-933fcc4e318c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\data\entities">
+      <UniqueIdentifier>{3915ccfc-9572-4612-a265-7f717dbd4f23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\src\audio\ItDecoder.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\Music.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\OggDecoder.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\Sound.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\SoundBuffer.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\SpcDecoder.cpp">
+      <Filter>Source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\AbilityInfo.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Arguments.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\CommandsEffects.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\CurrentQuest.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Debug.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Dialog.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\DialogBoxSystem.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\DialogResources.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Equipment.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\EquipmentItem.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\EquipmentItemUsage.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\FontResource.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Game.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\GameCommands.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Geometry.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\InputEvent.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Logger.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\MainLoop.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Map.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\MapData.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\PerfCounter.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\PixelBits.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Point.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\QuestDatabase.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\QuestFiles.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\QuestProperties.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Random.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Rectangle.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\ResourceProvider.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Savegame.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\SavegameConverterV1.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Settings.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Size.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\SolarusFatal.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\String.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\StringResources.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\System.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Timer.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Treasure.cpp">
+      <Filter>Source\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\AnimatedTilePattern.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Arrow.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Block.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Bomb.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Boomerang.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\BorderSet.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Camera.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\CarriedObject.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Chest.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\CollisionMode.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Crystal.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\CrystalBlock.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\CustomEntity.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Destination.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Destructible.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Door.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\DynamicTile.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Enemy.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\EnemyReaction.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Entities.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Entity.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\EntityData.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\EntityState.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\EntityTypeInfo.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Explosion.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Fire.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\GroundInfo.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Hero.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Hookshot.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Jumper.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\NonAnimatedRegions.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Npc.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\ParallaxScrollingTilePattern.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Pickable.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\SelfScrollingTilePattern.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Sensor.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Separator.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\ShopTreasure.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\SimpleTilePattern.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Stairs.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\StartingLocationMode.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Stream.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\StreamAction.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Switch.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Teletransporter.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Tile.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\TilePattern.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Tileset.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\TilesetData.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\TraversableInfo.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entities\Wall.cpp">
+      <Filter>Source\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLRenderer.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLShader.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLSurfaceImpl.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Renderer.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Scale2xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Shader.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\ShaderData.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SoftwarePixelFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SoftwareVideoMode.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Sprite.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SpriteAnimation.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SpriteAnimationDirection.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SpriteAnimationSet.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SpriteData.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Surface.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\SurfaceImpl.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\TextSurface.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Transition.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\TransitionFade.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\TransitionImmediate.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\TransitionScrolling.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\VertexArray.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Video.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\BlendModeInfo.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Color.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Drawable.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Hq2xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Hq3xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\Hq4xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\BackToSolidGroundState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\BoomerangState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\BowState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\CarryingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\CustomState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\FallingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\ForcedWalkingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\FreeState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\FrozenState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\GrabbingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\HeroSprites.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\HeroState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\HookshotState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\HurtState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\JumpingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\LiftingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\PlayerMovementState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\PlungingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\PullingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\PushingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\RunningState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\SpinAttackState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\StairsState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\SwimmingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\SwordLoadingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\SwordSwingingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\SwordTappingState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\TreasureState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\UsingItemState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hero\VictoryState.cpp">
+      <Filter>Source\hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\AudioApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\DrawableApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\EntityApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\ExportableToLua.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\FileApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\GameApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\InputApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\ItemApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\LanguageApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\LuaContext.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\LuaData.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\LuaException.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\LuaTools.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\MainApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\MapApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\MenuApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\MovementApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\ScopedLuaRef.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\ShaderApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\SoundApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\SpriteApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\StateApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\SurfaceApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\TextSurfaceApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\TimerApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\VideoApi.cpp">
+      <Filter>Source\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main\Main.cpp">
+      <Filter>Source\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\CircleMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\FallingOnFloorMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\JumpMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\Movement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\PathFinding.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\PathFindingMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\PathMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\PixelMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\PlayerMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\RandomMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\RandomPathMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\RelativeMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\StraightMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\movements\TargetMovement.cpp">
+      <Filter>Source\movements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\glad\glad.c">
+      <Filter>Source\third_party\glad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq2x.c">
+      <Filter>Source\third_party\hqx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq3x.c">
+      <Filter>Source\third_party\hqx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq4x.c">
+      <Filter>Source\third_party\hqx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\init.c">
+      <Filter>Source\third_party\hqx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\dsp.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC_misc.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC_state.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\spc.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\SPC_DSP.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\SPC_Filter.cpp">
+      <Filter>Source\third_party\snes_spc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlRenderer.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlShader.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlTexture.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_volcano.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_beach.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_blue.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_red.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_wood.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_bluegreen.entities.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_bluegreen.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_castle.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_catacombs.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_lab.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_theater.tiles.png">
+      <Filter>Assets\data\tilesets</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\chicken.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\cow.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\flamingo.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\fox.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\lion.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\mosquito.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\pig.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\primates.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sea_turtle.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\seagulls.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sheep.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sheep_wolf.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\squirrel.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\wolf.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\beaver.png">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\entities\cave\cave_darkness.png">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\entities\zoria_darkness.png">
+      <Filter>Assets\data\sprites\darkness</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\hero\rachel_walk-darkness.png">
+      <Filter>Assets\data\sprites\darkness\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\hero\rachel-darkness.png">
+      <Filter>Assets\data\sprites\darkness\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\voadi.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\wood_log.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\wood_log_splash.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\zoria.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\beach_ball.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\bush.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\collectibles.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\dug_ground.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\dungeon_bats.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\entities_destroy.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\explosion.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\flag.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\gleasonator.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\items.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\machinery.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\orange_peel.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\rafflesia.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\shadow.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\spotlight.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\torch.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\trash_treasure_oil.png">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\cave\cave.png">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\masks\masks.png">
+      <Filter>Assets\data\sprites\entities\masks</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel.png">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel_walk.png">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel-bed.png">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\sword.sword1.png">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\hud\dialog_box.png">
+      <Filter>Assets\data\sprites\hud</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\intro.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\menus.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\outro.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\solarus_logo.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\spotlight.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\spotlight_black.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\title.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\title_text.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\confetti_big.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\confetti_small.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\decorations.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\dialog_photos.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\end.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\exclamation_bubble.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\id_card.png">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\mimosa_pudica.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\soyboy.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\twink.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\angry_toast.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\billie.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\gnu.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\malcolm.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\martini.png">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\icon_16.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\icon_32.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\icon_64.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\icon_128.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\logo.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+    <Image Include="Assets\data\logos\logo_2x.png">
+      <Filter>Assets\data\logos</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Solarus-WinRT_TemporaryKey.pfx" />
+    <None Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="..\..\include\solarus\lua\LuaTools.inl">
+      <Filter>include\lua</Filter>
+    </None>
+    <None Include="..\..\include\solarus\graphics\Color.inl">
+      <Filter>include\graphics</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\EnumInfo.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\PerfCounter.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\Point.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\Rectangle.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\Scale.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\Size.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\core\Transform.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\include\solarus\containers\Quadtree.inl">
+      <Filter>include\containers</Filter>
+    </None>
+    <None Include="Assets\data\main.lua">
+      <Filter>Assets\data</Filter>
+    </None>
+    <None Include="Assets\data\project_db.dat">
+      <Filter>Assets\data</Filter>
+    </None>
+    <None Include="Assets\data\quest.dat">
+      <Filter>Assets\data</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_volcano.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_beach.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_blue.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_red.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_wood.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_underworld_bluegreen.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_underworld_castle.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\voadi.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_catacombs.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_lab.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_theater.dat">
+      <Filter>Assets\data\tilesets</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\chimp.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\cow.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\flamingo.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\fox.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\lion.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\mosquito.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\pig.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\sea_turtle.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_bartender.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_scientist.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash1.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash2.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash3.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash4.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\sheep.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\sheep_wolf.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\squirrel.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\wolf.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\beaver.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\animals\chicken.dat">
+      <Filter>Assets\data\sprites\animals</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_down_left.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_down_right.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_up_left.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_up_right.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_down_left.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_down_right.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_up_left.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_up_right.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\rock.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\rock_on_water.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\stairs.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_down.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_left.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_right.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_up.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\entry.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\hole.dat">
+      <Filter>Assets\data\sprites\darkness\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\chest.dat">
+      <Filter>Assets\data\sprites\darkness</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\chest_collectible.dat">
+      <Filter>Assets\data\sprites\darkness</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\torch.dat">
+      <Filter>Assets\data\sprites\darkness</Filter>
+    </None>
+    <None Include="Assets\data\sprites\darkness\hero\tunic1.dat">
+      <Filter>Assets\data\sprites\darkness\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash6.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase_plant.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase_red.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\wood_log.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\barrel1.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\barrel2.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\beach_ball.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\big_chest.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_dandelion.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_blue.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_orange.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_pink.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_white.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_kingscrown.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_violet.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cattail.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\chest.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\chest_collectible.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\conveyor_belt.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\crystal.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\crystal_block.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\dug_ground.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\dungeon_bats.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\explosion.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\flag.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\flower.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_orange.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_pedestal.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_pedestal_orange.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\gravestone.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\items.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\keyhole_block.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\light_receiver.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\light_source.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\maze_tile.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\mirror.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\orange_peel.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\outside_door.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\pilea.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\pipe.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\plant.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\plant2.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\rafflesia-large.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\rafflesia-small.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\rock.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\shadow.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\sign.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\spotlight.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\star.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\statue.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\switch.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\torch.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash1.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash2.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash3.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash4.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash5.dat">
+      <Filter>Assets\data\sprites\entities</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\horizontal.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\left.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\right.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\up.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\vertical.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\any.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\down.dat">
+      <Filter>Assets\data\sprites\entities\block</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\stairs.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_down.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_left.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_right.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_up.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\entry.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\hole.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_down_left.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_down_right.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_up_left.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_up_right.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_down_left.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_down_right.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_up_left.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_up_right.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\rock.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\rock_on_water.dat">
+      <Filter>Assets\data\sprites\entities\cave</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gold_north.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gold_south.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\lock_north.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\lock_south.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gate_north.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gate_south.dat">
+      <Filter>Assets\data\sprites\entities\door</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\masks\lion.dat">
+      <Filter>Assets\data\sprites\entities\masks</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\masks\sheep.dat">
+      <Filter>Assets\data\sprites\entities\masks</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_4.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_5.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_6.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_7.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_8.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_9.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\single.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_7.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_8.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_9.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\single.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_1.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_2.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_3.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_4.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_5.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_6.dat">
+      <Filter>Assets\data\sprites\entities\tall_grass_swamp</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\sword_stars1.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\sword1.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\trail.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\tunic1.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\tunic1-climbing.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\bed.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\ground1.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hero\ground2.dat">
+      <Filter>Assets\data\sprites\hero</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hud\dialog_box_message_end.dat">
+      <Filter>Assets\data\sprites\hud</Filter>
+    </None>
+    <None Include="Assets\data\sprites\hud\hud.dat">
+      <Filter>Assets\data\sprites\hud</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\id_card\logo.dat">
+      <Filter>Assets\data\sprites\menus\id_card</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\id_card\card.dat">
+      <Filter>Assets\data\sprites\menus\id_card</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\letter.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\little_boat.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ocean_shine.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ok.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ok_bubble.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_arm.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_eyes.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_large.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\thought_bubble.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\beach_foam.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\boat.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\box.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\cloud_large.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\cloud_small.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\dot.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\envelope.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\island_bg.dat">
+      <Filter>Assets\data\sprites\menus\intro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\item_star.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\menu_bg.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\pointer.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\press_start.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\solarus_logo.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\spotlight.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\spotlight_black.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\stuff_bg.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\thinking.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\tool_select_bg.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_left.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_middle.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_right.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\cursor.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_bg.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_photo_frame.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_photos.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\equip_frame.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\exclamation_bubble.dat">
+      <Filter>Assets\data\sprites\menus</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean1.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean2.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\rachel.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\shore.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\stars.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun1.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun2.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun3.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\boat1.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_big.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_left.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_right.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_small.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\island.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\little_boat.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean_shine.dat">
+      <Filter>Assets\data\sprites\menus\outro</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\soyboy.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\twink.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\angry_toast.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\billie.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\gnu.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\greybeard.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\greybeard_log.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\malcolm.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\martini.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sprites\npc\mimosa_pudica.dat">
+      <Filter>Assets\data\sprites\menus\npc</Filter>
+    </None>
+    <None Include="Assets\data\sounds\message_letter.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\switch.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\sword1.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\sword2.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\sword3.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\sword4.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\treasure.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_1.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_2.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_3.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\door_open.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\message_end.ogg">
+      <Filter>Assets\data\sounds</Filter>
+    </None>
+    <None Include="Assets\data\sounds\diarandor\solarus_logo.ogg">
+      <Filter>Assets\data\sounds\diarandor</Filter>
+    </None>
+    <None Include="Assets\data\scripts\features.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\game_manager.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\initial_game.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\language_manager.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\multi_events.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\tile_puzzle.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\utils.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\coroutine_helper.lua">
+      <Filter>Assets\data\scripts</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\hero.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\item.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\map.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\npc.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\switch.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\all.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\block.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\camera.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\chest.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\meta\game.lua">
+      <Filter>Assets\data\scripts\meta</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\darkness.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\dialog_box.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\end_card.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\end_credits.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\hud.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\id_card.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\inventory.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\night.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\picker.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\save_feedback.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\solarus_logo.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\stamina_gauge.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\title_screen.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\confetti.lua">
+      <Filter>Assets\data\scripts\menus</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\letter.lua">
+      <Filter>Assets\data\scripts\menus\intro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\ok.lua">
+      <Filter>Assets\data\scripts\menus\intro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\shipwreck.lua">
+      <Filter>Assets\data\scripts\menus\intro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\capn.lua">
+      <Filter>Assets\data\scripts\menus\intro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\hmm.lua">
+      <Filter>Assets\data\scripts\menus\intro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\fist.lua">
+      <Filter>Assets\data\scripts\menus\outro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\sailing.lua">
+      <Filter>Assets\data\scripts\menus\outro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\sunrise.lua">
+      <Filter>Assets\data\scripts\menus\outro_scenes</Filter>
+    </None>
+    <None Include="Assets\data\musics\serviceshock\swamp.ogg">
+      <Filter>Assets\data\musics\serviceshock</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\shop.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\teepee.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\title.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\witch-hut.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\bar.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\cave.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\greybeard.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\intro.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\overworld.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\rebels.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\sad.ogg">
+      <Filter>Assets\data\musics\cosmicgem829</Filter>
+    </None>
+    <None Include="Assets\data\musics\avgvst\09 - Z 339 - Here the Deities approve.ogg">
+      <Filter>Assets\data\musics\avgvst</Filter>
+    </None>
+    <None Include="Assets\data\musics\alex\desert-military-base.ogg">
+      <Filter>Assets\data\musics\akex</Filter>
+    </None>
+    <None Include="Assets\data\musics\alex\rush.ogg">
+      <Filter>Assets\data\musics\akex</Filter>
+    </None>
+    <None Include="Assets\data\musics\alex\cave.ogg">
+      <Filter>Assets\data\musics\akex</Filter>
+    </None>
+    <None Include="Assets\data\musics\alex\desert.ogg">
+      <Filter>Assets\data\musics\akex</Filter>
+    </None>
+    <None Include="Assets\data\musics\adam\melody-1.ogg">
+      <Filter>Assets\data\musics\adam</Filter>
+    </None>
+    <None Include="Assets\data\maps\0000.lua">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\debug.dat">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\debug.lua">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\overworld.dat">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\overworld.lua">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\0000.dat">
+      <Filter>Assets\data\maps</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\claudias_house.dat">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\claudias_house.lua">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\hideout.dat">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\hideout.lua">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\house.dat">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\house.lua">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\witch_hut.dat">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\woods\witch_hut.lua">
+      <Filter>Assets\data\maps\woods</Filter>
+    </None>
+    <None Include="Assets\data\maps\highlands\theater.dat">
+      <Filter>Assets\data\maps\highlands</Filter>
+    </None>
+    <None Include="Assets\data\maps\highlands\theater.lua">
+      <Filter>Assets\data\maps\highlands</Filter>
+    </None>
+    <None Include="Assets\data\maps\evolv\foyer.dat">
+      <Filter>Assets\data\maps\evolv</Filter>
+    </None>
+    <None Include="Assets\data\maps\evolv\foyer.lua">
+      <Filter>Assets\data\maps\evolv</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\entrance.dat">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\entrance.lua">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\final.dat">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\final.lua">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\hospital.dat">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\hospital.lua">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\rebel_house.dat">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\castle\rebel_house.lua">
+      <Filter>Assets\data\maps\castle</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\1.dat">
+      <Filter>Assets\data\maps\beach\pig_houses</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\1.lua">
+      <Filter>Assets\data\maps\beach\pig_houses</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\2.dat">
+      <Filter>Assets\data\maps\beach\pig_houses</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\2.lua">
+      <Filter>Assets\data\maps\beach\pig_houses</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\teepee.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\bar.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\bar.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\cave1.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\cave1.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\dungeon1.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\dungeon1.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\extra_house.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\extra_house.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\plant_shop.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\plant_shop.lua">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\beach\teepee.dat">
+      <Filter>Assets\data\maps\beach</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\orange_peel.dat">
+      <Filter>Assets\data\maps\_unused</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\orange_peel.lua">
+      <Filter>Assets\data\maps\_unused</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\woods.dat">
+      <Filter>Assets\data\maps\_unused</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\woods.lua">
+      <Filter>Assets\data\maps\_unused</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\1.dat">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\1.lua">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\2.dat">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\2.lua">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\3.dat">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\3.lua">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\courtyard.dat">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\courtyard.lua">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\hallway.dat">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\hallway.lua">
+      <Filter>Assets\data\maps\_unused\water_dungeon</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\forest.dat">
+      <Filter>Assets\data\maps\_unused\forest</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\forest.lua">
+      <Filter>Assets\data\maps\_unused\forest</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\tree.dat">
+      <Filter>Assets\data\maps\_unused\forest</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\tree.lua">
+      <Filter>Assets\data\maps\_unused\forest</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\cave.lua">
+      <Filter>Assets\data\maps\_unused\caves</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\dungeon_path.dat">
+      <Filter>Assets\data\maps\_unused\caves</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\dungeon_path.lua">
+      <Filter>Assets\data\maps\_unused\caves</Filter>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\cave.dat">
+      <Filter>Assets\data\maps\_unused\caves</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log_in_water.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\adaptative_outline.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\adaptative_outline.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\bigmap.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\bigmap.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\cave.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\cave.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\coco.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\coco.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\coco_npc_follower.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\coco_npc_follower.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\dialog_box.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\dialog_box.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\flag.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\flag.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\gears.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\gears.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\item_star.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\item_star.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\masks.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\masks.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\mirrors.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\mirrors.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\pipes.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\pipes.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\theater.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\theater.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\theater2.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\theater2.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\volcano.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\volcano.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log.lua">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log_in_water.dat">
+      <Filter>Assets\data\maps\_test</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\catacombs\catacombs_demo.dat">
+      <Filter>Assets\data\maps\_test\catacombs</Filter>
+    </None>
+    <None Include="Assets\data\maps\_test\catacombs\catacombs_demo.lua">
+      <Filter>Assets\data\maps\_test\catacombs</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\before_catacombs.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\before_catacombs.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_dungeon.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_dungeon.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_entrance.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_entrance.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs2.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs2.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\cave_after_evolv.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\cave_after_evolv.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\excavation.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\excavation.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\final_map.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\final_map.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\gandhi.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\gandhi.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\gift_shop.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\gift_shop.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\greybeard_intro.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\greybeard_intro.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\mirror_room.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\mirror_room.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\new_stick.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\new_stick.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\pool.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\pool.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\red_light.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\red_light.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\underground_river.dat">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\underground_river.lua">
+      <Filter>Assets\data\maps\_stage</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map1.dat">
+      <Filter>Assets\data\maps\_stage\log_puzzles</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map1.lua">
+      <Filter>Assets\data\maps\_stage\log_puzzles</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map2.dat">
+      <Filter>Assets\data\maps\_stage\log_puzzles</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map2.lua">
+      <Filter>Assets\data\maps\_stage\log_puzzles</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\1.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\1.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\2.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\2.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\3.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\3.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\4.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\4.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\5.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\5.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\6.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\6.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\7.dat">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\7.lua">
+      <Filter>Assets\data\maps\_stage\catacombs_maze</Filter>
+    </None>
+    <None Include="Assets\data\languages\en\text\dialogs.dat">
+      <Filter>Assets\data\languages\en\text</Filter>
+    </None>
+    <None Include="Assets\data\languages\en\text\strings.dat">
+      <Filter>Assets\data\languages\en\text</Filter>
+    </None>
+    <None Include="Assets\data\items\coconut.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\collectible.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\cultured_meat.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\flippers.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\id_card.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\key.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\lighter.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\membership_bracelet.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\random.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\running_shoes.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\seed.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\shovel.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\stick.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\tears.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\vacuum.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\whiskey.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\15_coconuts.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\items\b12.lua">
+      <Filter>Assets\data\items</Filter>
+    </None>
+    <None Include="Assets\data\entities\cave_element.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\centerpiece.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\door_walker.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\dug_ground.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\dungeon_bat.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\elevator.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\flag.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\gear.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\gear_furnace.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\gear_pedestal.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\illuminate.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\light_blocker.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\light_receiver.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\light_source.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\mask.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\maze_tile.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\mirror.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\music_trigger.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\npc_follower.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\ocean_barrier.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\pipe.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\special_wall.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\spotlight.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\torch.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\trash.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\wood_log.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\antihero.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+    <None Include="Assets\data\entities\beach_ball.lua">
+      <Filter>Assets\data\entities</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\solarus\third_party\hqx\common.h">
+      <Filter>include\third_party\hqx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\hqx\hqx.h">
+      <Filter>include\third_party\hqx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\KHR\khrplatform.h">
+      <Filter>include\third_party\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_common.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_config.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_endian.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_source.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\dsp.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SNES_SPC.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\spc.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_CPU.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_DSP.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_Filter.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\third_party\glad\glad.h">
+      <Filter>include\third_party\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\CircleMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\FallingHeight.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\FallingOnFloorMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\JumpMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\Movement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\PathFinding.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\PathFindingMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\PathMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\PixelMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\PlayerMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\RandomMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\RandomPathMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\RelativeMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\StraightMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\movements\TargetMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\ExportableToLua.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\ExportableToLuaPtr.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\LuaContext.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\LuaData.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\LuaException.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\LuaTools.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\lua\ScopedLuaRef.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\BackToSolidGroundState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\BoomerangState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\BowState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\CarryingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\CustomState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\FallingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\ForcedWalkingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\FreeState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\FrozenState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\GrabbingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\HeroSprites.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\HeroState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\HookshotState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\HurtState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\JumpingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\LiftingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\PlayerMovementState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\PlungingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\PullingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\PushingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\RunningState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\SpinAttackState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\StairsState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\SwimmingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\SwordLoadingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\SwordSwingingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\SwordTappingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\TreasureState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\UsingItemState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\hero\VictoryState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLRenderer.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLShader.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLSurfaceImpl.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Scale2xFilter.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SDLPtrs.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Shader.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\ShaderData.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\ShaderPtr.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SoftwarePixelFilter.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SoftwareVideoMode.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SolarusGl.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Sprite.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimation.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimationDirection.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimationSet.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteData.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SpritePtr.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Surface.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SurfaceImpl.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\SurfacePtr.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\TextSurface.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Transition.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionFade.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionImmediate.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionScrolling.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\VertexArray.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\VertexArrayPtr.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Video.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\BlendMode.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\BlendModeInfo.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Color.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\DefaultShaders.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Drawable.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\DrawablePtr.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\DrawProxies.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Hq2xFilter.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Hq3xFilter.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Hq4xFilter.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\quest_icon.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\Renderer.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\AnimatedTilePattern.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Arrow.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Block.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Bomb.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Boomerang.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\BorderKind.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\BorderSet.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Camera.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\CameraPtr.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\CarriedObject.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Chest.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\CollisionMode.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Crystal.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\CrystalBlock.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\CustomEntity.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Destination.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Destructible.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Door.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\DynamicTile.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Enemy.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EnemyAttack.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EnemyReaction.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Entities.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Entity.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EntityData.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EntityPtr.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EntityState.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EntityType.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\EntityTypeInfo.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Explosion.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Fire.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Ground.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\GroundInfo.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Hero.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\HeroPtr.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Hookshot.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Jumper.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\NonAnimatedRegions.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Npc.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\ParallaxScrollingTilePattern.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Pickable.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\SelfScrollingTilePattern.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Sensor.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Separator.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\SeparatorPtr.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\ShopTreasure.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\SimpleTilePattern.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Stairs.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\StartingLocationMode.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Stream.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\StreamAction.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Switch.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Teletransporter.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Tile.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\TileInfo.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\TilePattern.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\TilePtr.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Tileset.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\TilesetData.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\TraversableInfo.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\entities\Wall.h">
+      <Filter>include\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Ability.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\AbilityInfo.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\AndroidConfig.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\AppleInterface.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Arguments.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\CommandsEffects.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Common.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\config.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\CurrentQuest.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Debug.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Dialog.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\DialogBoxSystem.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\DialogResources.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\EnumInfo.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Equipment.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\EquipmentItem.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\EquipmentItemUsage.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\FontResource.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Game.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\GameCommand.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\GameCommands.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Geometry.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\InputEvent.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Logger.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\MainLoop.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Map.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\MapData.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\PerfCounter.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\PixelBits.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Point.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Profiler.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\QuestDatabase.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\QuestFiles.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\QuestProperties.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Random.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Rectangle.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\ResourceProvider.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\ResourceType.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Savegame.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\SavegameConverterV1.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Scale.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Settings.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Size.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\SolarusFatal.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\String.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\StringResources.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\System.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Timer.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\TimerPtr.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Transform.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Treasure.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\containers\FreeList.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\containers\Grid.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\containers\Quadtree.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\ItDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\Music.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\OggDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\Sound.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\SoundBuffer.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\SoundPtr.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\audio\SpcDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\lua.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlRenderer.h">
+      <Filter>include\graphics\glrenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlShader.h">
+      <Filter>include\graphics\glrenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlTexture.h">
+      <Filter>include\graphics\glrenderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\data\fonts\Comicoro.ttf">
+      <Filter>Assets\data\fonts</Filter>
+    </Font>
+    <Font Include="Assets\data\fonts\Poco.ttf">
+      <Filter>Assets\data\fonts</Filter>
+    </Font>
+  </ItemGroup>
+</Project>

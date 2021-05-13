@@ -1,0 +1,244 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 96,
+  height = 144,
+  pattern = "grass.soil",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 128,
+  width = 112,
+  height = 16,
+  pattern = "281",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "280",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "277",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "274",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 0,
+  width = 112,
+  height = 16,
+  pattern = "275",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "276",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "279",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "282",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 112,
+  height = 112,
+  pattern = "water.shine",
+  tileset = "zoria",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 144,
+  pattern = "grass.soil",
+  tileset = "zoria",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 48,
+  y = 141,
+  direction = 1,
+}
+
+jumper{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 8,
+  height = 144,
+  direction = 0,
+  jump_length = 32,
+}
+
+jumper{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 8,
+  height = 144,
+  direction = 4,
+  jump_length = 32,
+}
+
+custom_entity{
+  name = "log_left",
+  layer = 0,
+  x = 120,
+  y = 29,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_up_2",
+  layer = 0,
+  x = 152,
+  y = 29,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_up_3",
+  layer = 0,
+  x = 184,
+  y = 29,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_up_4",
+  layer = 0,
+  x = 216,
+  y = 29,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_middle_1",
+  layer = 0,
+  x = 120,
+  y = 93,
+  width = 48,
+  height = 16,
+  direction = 3,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_middle_2",
+  layer = 0,
+  x = 184,
+  y = 101,
+  width = 48,
+  height = 16,
+  direction = 3,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_down_1",
+  layer = 0,
+  x = 136,
+  y = 109,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+
+custom_entity{
+  name = "log_down_2",
+  layer = 0,
+  x = 168,
+  y = 109,
+  width = 16,
+  height = 48,
+  direction = 2,
+  sprite = "entities/wood_log",
+  model = "wood_log",
+}
+

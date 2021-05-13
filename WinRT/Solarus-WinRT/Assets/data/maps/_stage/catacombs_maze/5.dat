@@ -1,0 +1,503 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 192,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "platform.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "platform.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "platform.right",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "platform.left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "platform.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "platform.right_skull",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "platform.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "platform.left_skull",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "platform.left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "platform.corner.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 176,
+  width = 80,
+  height = 16,
+  pattern = "platform.top",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_right",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "platform.top_left",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 176,
+  width = 80,
+  height = 16,
+  pattern = "platform.top",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "wall_16",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "platform.base.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "wall_16",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "platform.base.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "platform.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "platform.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.right_skull",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "platform.left_skull",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.right",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.left",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 96,
+  height = 16,
+  pattern = "void",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 96,
+  height = 16,
+  pattern = "void",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.left",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.bottom_left",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.right",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "platform.base.bottom_right",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 224,
+  height = 112,
+  pattern = "floor",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 0,
+  width = 32,
+  height = 64,
+  pattern = "floor",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "floor",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "floor",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "floor",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "skull",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "skull",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 192,
+  transition = "scrolling",
+  destination_map = "_stage/catacombs_maze/1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 256,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "_stage/catacombs_maze/6",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 256,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "_stage/catacombs_maze/1",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 256,
+  y = 0,
+  width = 16,
+  height = 192,
+  transition = "scrolling",
+  destination_map = "_stage/catacombs_maze/1",
+  destination = "_side",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/torch",
+  model = "torch",
+}
+

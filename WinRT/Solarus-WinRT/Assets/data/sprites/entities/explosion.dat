@@ -1,0 +1,15 @@
+animation{
+  name = "normal",
+  src_image = "entities/explosion.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "exploding",
+  src_image = "entities/explosion.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 6 },
+  },
+}

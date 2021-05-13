@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0d8c0e11-e9eb-4b81-8445-a0514a2b18ce}</ProjectGuid>
+    <RootNamespace>Solarus_WinRT</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.15063.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>Solarus-WinRT_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\include\solarus\third_party;$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <EnableModules>false</EnableModules>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(Platform)\$(Configuration)\lua-uwp</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
+    <None Include="..\..\include\solarus\containers\Quadtree.inl" />
+    <None Include="..\..\include\solarus\core\EnumInfo.inl" />
+    <None Include="..\..\include\solarus\core\PerfCounter.inl" />
+    <None Include="..\..\include\solarus\core\Point.inl" />
+    <None Include="..\..\include\solarus\core\Rectangle.inl" />
+    <None Include="..\..\include\solarus\core\Scale.inl" />
+    <None Include="..\..\include\solarus\core\Size.inl" />
+    <None Include="..\..\include\solarus\core\Transform.inl" />
+    <None Include="..\..\include\solarus\graphics\Color.inl" />
+    <None Include="..\..\include\solarus\lua\LuaTools.inl" />
+    <None Include="Assets\data\entities\antihero.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\beach_ball.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\cave_element.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\centerpiece.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\door_walker.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\dug_ground.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\dungeon_bat.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\elevator.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\flag.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\gear.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\gear_furnace.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\gear_pedestal.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\illuminate.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\light_blocker.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\light_receiver.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\light_source.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\mask.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\maze_tile.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\mirror.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\music_trigger.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\npc_follower.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\ocean_barrier.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\pipe.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\special_wall.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\spotlight.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\torch.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\trash.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\entities\wood_log.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\15_coconuts.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\b12.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\coconut.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\collectible.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\cultured_meat.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\flippers.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\id_card.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\key.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\lighter.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\membership_bracelet.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\random.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\running_shoes.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\seed.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\shovel.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\stick.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\tears.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\vacuum.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\items\whiskey.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\languages\en\text\dialogs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\languages\en\text\strings.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\main.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\0000.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\0000.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\bar.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\bar.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\cave1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\cave1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\dungeon1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\dungeon1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\extra_house.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\extra_house.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\pig_houses\2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\plant_shop.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\plant_shop.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\teepee.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\beach\teepee.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\entrance.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\entrance.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\final.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\final.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\hospital.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\hospital.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\rebel_house.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\castle\rebel_house.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\debug.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\debug.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\evolv\foyer.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\evolv\foyer.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\highlands\theater.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\highlands\theater.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\overworld.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\overworld.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\claudias_house.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\claudias_house.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\hideout.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\hideout.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\house.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\house.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\witch_hut.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\woods\witch_hut.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\before_catacombs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\before_catacombs.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_dungeon.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_dungeon.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_entrance.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_entrance.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\3.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\4.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\4.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\5.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\5.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\6.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\6.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\7.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\catacombs_maze\7.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\cave_after_evolv.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\cave_after_evolv.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\excavation.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\excavation.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\final_map.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\final_map.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\gandhi.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\gandhi.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\gift_shop.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\gift_shop.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\greybeard_intro.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\greybeard_intro.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\log_puzzles\map2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\mirror_room.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\mirror_room.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\new_stick.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\new_stick.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\pool.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\pool.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\red_light.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\red_light.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\underground_river.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_stage\underground_river.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\adaptative_outline.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\adaptative_outline.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\bigmap.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\bigmap.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\catacombs\catacombs_demo.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\catacombs\catacombs_demo.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\cave.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\cave.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\coco.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\coco.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\coco_npc_follower.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\coco_npc_follower.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\dialog_box.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\dialog_box.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\flag.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\flag.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\gears.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\gears.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\item_star.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\item_star.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\masks.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\masks.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\mirrors.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\mirrors.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\pipes.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\pipes.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\theater.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\theater.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\theater2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\theater2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\volcano.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\volcano.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log_in_water.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_test\wood_log_in_water.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\cave.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\cave.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\dungeon_path.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\caves\dungeon_path.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\forest.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\forest.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\tree.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\forest\tree.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\orange_peel.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\orange_peel.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\1.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\2.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\3.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\courtyard.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\courtyard.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\hallway.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\water_dungeon\hallway.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\woods.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\maps\_unused\woods.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\adam\melody-1.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\alex\cave.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\alex\desert-military-base.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\alex\desert.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\alex\rush.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\avgvst\09 - Z 339 - Here the Deities approve.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\bar.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\cave.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\greybeard.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\intro.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\overworld.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\rebels.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\sad.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\shop.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\teepee.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\title.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\cosmicgem829\witch-hut.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\musics\serviceshock\swamp.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\project_db.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\quest.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\coroutine_helper.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\features.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\game_manager.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\initial_game.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\language_manager.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\confetti.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\darkness.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\dialog_box.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\end_card.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\end_credits.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\hud.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\id_card.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\capn.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\hmm.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\letter.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\ok.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\intro_scenes\shipwreck.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\inventory.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\night.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\fist.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\sailing.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\outro_scenes\sunrise.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\picker.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\save_feedback.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\solarus_logo.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\stamina_gauge.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\menus\title_screen.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\all.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\block.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\camera.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\chest.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\game.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\hero.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\item.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\map.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\npc.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\meta\switch.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\multi_events.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\tile_puzzle.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\scripts\utils.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\diarandor\solarus_logo.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\door_open.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\message_end.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\message_letter.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\switch.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\sword1.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\sword2.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\sword3.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\sword4.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\treasure.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_1.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_2.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sounds\vacuum_3.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\beaver.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\chicken.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\chimp.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\cow.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\flamingo.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\fox.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\lion.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\mosquito.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\pig.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_bartender.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_scientist.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\seagull_trash4.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\sea_turtle.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\sheep.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\sheep_wolf.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\squirrel.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\animals\wolf.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\entry.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\hole.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_down_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_down_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_up_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\inner_corner_up_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_down_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_down_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_up_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\outer_corner_up_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\rock.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\rock_on_water.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\stairs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_down.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\cave\wall_up.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\chest.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\chest_collectible.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\entities\torch.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\darkness\hero\tunic1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\barrel1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\barrel2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\beach_ball.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\big_chest.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\any.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\down.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\horizontal.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\up.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\block\vertical.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_dandelion.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_blue.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_orange.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_pink.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_flowers_white.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_kingscrown.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\bush_violet.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cattail.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\entry.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\hole.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_down_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_down_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_up_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\inner_corner_up_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_down_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_down_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_up_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\outer_corner_up_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\rock.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\rock_on_water.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\stairs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_down.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\cave\wall_up.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\chest.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\chest_collectible.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\conveyor_belt.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\crystal.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\crystal_block.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gate_north.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gate_south.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gold_north.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\gold_south.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\lock_north.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\door\lock_south.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\dug_ground.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\dungeon_bats.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\explosion.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\flag.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\flower.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_orange.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_pedestal.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\gear_pedestal_orange.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\gravestone.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\items.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\keyhole_block.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\light_receiver.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\light_source.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\masks\lion.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\masks\sheep.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\maze_tile.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\mirror.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\orange_peel.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\outside_door.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\pilea.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\pipe.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\plant.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\plant2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\rafflesia-large.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\rafflesia-small.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\rock.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\shadow.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\sign.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\spotlight.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\star.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\statue.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\switch.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_4.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_5.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_6.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_7.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_8.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\field_9.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\horizontal_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\single.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass\vertical_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_4.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_5.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_6.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_7.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_8.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\field_9.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\horizontal_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\single.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\tall_grass_swamp\vertical_3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\torch.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash4.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash5.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\trash6.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase_plant.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\vase_red.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\entities\wood_log.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\bed.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\ground1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\ground2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\sword1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\sword_stars1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\trail.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\tunic1-climbing.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hero\tunic1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hud\dialog_box_message_end.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\hud\hud.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_middle.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\button_red_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\cursor.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_bg.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_photos.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\dialog_photo_frame.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\equip_frame.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\exclamation_bubble.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\id_card\card.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\id_card\logo.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\beach_foam.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\boat.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\box.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\cloud_large.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\cloud_small.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\dot.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\envelope.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\island_bg.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\letter.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\little_boat.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ocean_shine.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ok.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\ok_bubble.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_arm.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_eyes.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\rachel_large.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\intro\thought_bubble.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\item_star.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\menu_bg.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\boat1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_big.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_left.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_right.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\cloud_small.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\island.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\little_boat.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\ocean_shine.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\rachel.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\shore.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\stars.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun1.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun2.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\outro\sun3.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\pointer.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\press_start.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\solarus_logo.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\spotlight.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\spotlight_black.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\stuff_bg.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\thinking.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\menus\tool_select_bg.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\angry_toast.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\billie.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\gnu.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\greybeard.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\greybeard_log.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\malcolm.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\martini.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\mimosa_pudica.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\soyboy.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\sprites\npc\twink.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\voadi.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_catacombs.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_lab.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_theater.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\voadi_volcano.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_beach.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_blue.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_red.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_house_wood.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_underworld_bluegreen.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\data\tilesets\zoria_underworld_castle.dat">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Solarus-WinRT_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\data\logos\icon_128.png" />
+    <Image Include="Assets\data\logos\icon_16.png" />
+    <Image Include="Assets\data\logos\icon_32.png" />
+    <Image Include="Assets\data\logos\icon_64.png" />
+    <Image Include="Assets\data\logos\logo.png" />
+    <Image Include="Assets\data\logos\logo_2x.png" />
+    <Image Include="Assets\data\sprites\animals\beaver.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\chicken.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\cow.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\flamingo.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\fox.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\lion.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\mosquito.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\pig.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\primates.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\seagulls.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sea_turtle.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sheep.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\sheep_wolf.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\squirrel.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\animals\wolf.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\entities\cave\cave_darkness.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\entities\zoria_darkness.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\hero\rachel-darkness.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\darkness\hero\rachel_walk-darkness.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\beach_ball.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\bush.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\cave\cave.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\collectibles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\dug_ground.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\dungeon_bats.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\entities_destroy.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\explosion.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\flag.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\gleasonator.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\items.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\machinery.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\masks\masks.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\orange_peel.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\rafflesia.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\shadow.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\spotlight.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\torch.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\trash_treasure_oil.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\voadi.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\wood_log.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\wood_log_splash.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\entities\zoria.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel-bed.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\rachel_walk.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\hero\sword.sword1.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\hud\dialog_box.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\confetti_big.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\confetti_small.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\decorations.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\dialog_photos.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\end.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\exclamation_bubble.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\id_card.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\intro.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\menus.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\outro.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\solarus_logo.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\spotlight.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\spotlight_black.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\title.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\menus\title_text.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\angry_toast.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\billie.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\gnu.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\malcolm.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\martini.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\mimosa_pudica.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\soyboy.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\sprites\npc\twink.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_catacombs.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_lab.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_theater.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\voadi_volcano.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_beach.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_blue.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_red.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_house_wood.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_bluegreen.entities.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_bluegreen.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\data\tilesets\zoria_underworld_castle.tiles.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ClCompile Include="..\..\src\audio\ItDecoder.cpp" />
+    <ClCompile Include="..\..\src\audio\Music.cpp" />
+    <ClCompile Include="..\..\src\audio\OggDecoder.cpp" />
+    <ClCompile Include="..\..\src\audio\Sound.cpp" />
+    <ClCompile Include="..\..\src\audio\SoundBuffer.cpp" />
+    <ClCompile Include="..\..\src\audio\SpcDecoder.cpp" />
+    <ClCompile Include="..\..\src\core\AbilityInfo.cpp" />
+    <ClCompile Include="..\..\src\core\Arguments.cpp" />
+    <ClCompile Include="..\..\src\core\CommandsEffects.cpp" />
+    <ClCompile Include="..\..\src\core\CurrentQuest.cpp" />
+    <ClCompile Include="..\..\src\core\Debug.cpp" />
+    <ClCompile Include="..\..\src\core\Dialog.cpp" />
+    <ClCompile Include="..\..\src\core\DialogBoxSystem.cpp" />
+    <ClCompile Include="..\..\src\core\DialogResources.cpp" />
+    <ClCompile Include="..\..\src\core\Equipment.cpp" />
+    <ClCompile Include="..\..\src\core\EquipmentItem.cpp" />
+    <ClCompile Include="..\..\src\core\EquipmentItemUsage.cpp" />
+    <ClCompile Include="..\..\src\core\FontResource.cpp" />
+    <ClCompile Include="..\..\src\core\Game.cpp" />
+    <ClCompile Include="..\..\src\core\GameCommands.cpp" />
+    <ClCompile Include="..\..\src\core\Geometry.cpp" />
+    <ClCompile Include="..\..\src\core\InputEvent.cpp" />
+    <ClCompile Include="..\..\src\core\Logger.cpp" />
+    <ClCompile Include="..\..\src\core\MainLoop.cpp" />
+    <ClCompile Include="..\..\src\core\Map.cpp" />
+    <ClCompile Include="..\..\src\core\MapData.cpp" />
+    <ClCompile Include="..\..\src\core\PerfCounter.cpp" />
+    <ClCompile Include="..\..\src\core\PixelBits.cpp" />
+    <ClCompile Include="..\..\src\core\Point.cpp" />
+    <ClCompile Include="..\..\src\core\QuestDatabase.cpp" />
+    <ClCompile Include="..\..\src\core\QuestFiles.cpp" />
+    <ClCompile Include="..\..\src\core\QuestProperties.cpp" />
+    <ClCompile Include="..\..\src\core\Random.cpp" />
+    <ClCompile Include="..\..\src\core\Rectangle.cpp" />
+    <ClCompile Include="..\..\src\core\ResourceProvider.cpp" />
+    <ClCompile Include="..\..\src\core\Savegame.cpp" />
+    <ClCompile Include="..\..\src\core\SavegameConverterV1.cpp" />
+    <ClCompile Include="..\..\src\core\Settings.cpp" />
+    <ClCompile Include="..\..\src\core\Size.cpp" />
+    <ClCompile Include="..\..\src\core\SolarusFatal.cpp" />
+    <ClCompile Include="..\..\src\core\String.cpp" />
+    <ClCompile Include="..\..\src\core\StringResources.cpp" />
+    <ClCompile Include="..\..\src\core\System.cpp" />
+    <ClCompile Include="..\..\src\core\Timer.cpp" />
+    <ClCompile Include="..\..\src\core\Treasure.cpp" />
+    <ClCompile Include="..\..\src\entities\AnimatedTilePattern.cpp" />
+    <ClCompile Include="..\..\src\entities\Arrow.cpp" />
+    <ClCompile Include="..\..\src\entities\Block.cpp" />
+    <ClCompile Include="..\..\src\entities\Bomb.cpp" />
+    <ClCompile Include="..\..\src\entities\Boomerang.cpp" />
+    <ClCompile Include="..\..\src\entities\BorderSet.cpp" />
+    <ClCompile Include="..\..\src\entities\Camera.cpp" />
+    <ClCompile Include="..\..\src\entities\CarriedObject.cpp" />
+    <ClCompile Include="..\..\src\entities\Chest.cpp" />
+    <ClCompile Include="..\..\src\entities\CollisionMode.cpp" />
+    <ClCompile Include="..\..\src\entities\Crystal.cpp" />
+    <ClCompile Include="..\..\src\entities\CrystalBlock.cpp" />
+    <ClCompile Include="..\..\src\entities\CustomEntity.cpp" />
+    <ClCompile Include="..\..\src\entities\Destination.cpp" />
+    <ClCompile Include="..\..\src\entities\Destructible.cpp" />
+    <ClCompile Include="..\..\src\entities\Door.cpp" />
+    <ClCompile Include="..\..\src\entities\DynamicTile.cpp" />
+    <ClCompile Include="..\..\src\entities\Enemy.cpp" />
+    <ClCompile Include="..\..\src\entities\EnemyReaction.cpp" />
+    <ClCompile Include="..\..\src\entities\Entities.cpp" />
+    <ClCompile Include="..\..\src\entities\Entity.cpp" />
+    <ClCompile Include="..\..\src\entities\EntityData.cpp" />
+    <ClCompile Include="..\..\src\entities\EntityState.cpp" />
+    <ClCompile Include="..\..\src\entities\EntityTypeInfo.cpp" />
+    <ClCompile Include="..\..\src\entities\Explosion.cpp" />
+    <ClCompile Include="..\..\src\entities\Fire.cpp" />
+    <ClCompile Include="..\..\src\entities\GroundInfo.cpp" />
+    <ClCompile Include="..\..\src\entities\Hero.cpp" />
+    <ClCompile Include="..\..\src\entities\Hookshot.cpp" />
+    <ClCompile Include="..\..\src\entities\Jumper.cpp" />
+    <ClCompile Include="..\..\src\entities\NonAnimatedRegions.cpp" />
+    <ClCompile Include="..\..\src\entities\Npc.cpp" />
+    <ClCompile Include="..\..\src\entities\ParallaxScrollingTilePattern.cpp" />
+    <ClCompile Include="..\..\src\entities\Pickable.cpp" />
+    <ClCompile Include="..\..\src\entities\SelfScrollingTilePattern.cpp" />
+    <ClCompile Include="..\..\src\entities\Sensor.cpp" />
+    <ClCompile Include="..\..\src\entities\Separator.cpp" />
+    <ClCompile Include="..\..\src\entities\ShopTreasure.cpp" />
+    <ClCompile Include="..\..\src\entities\SimpleTilePattern.cpp" />
+    <ClCompile Include="..\..\src\entities\Stairs.cpp" />
+    <ClCompile Include="..\..\src\entities\StartingLocationMode.cpp" />
+    <ClCompile Include="..\..\src\entities\Stream.cpp" />
+    <ClCompile Include="..\..\src\entities\StreamAction.cpp" />
+    <ClCompile Include="..\..\src\entities\Switch.cpp" />
+    <ClCompile Include="..\..\src\entities\Teletransporter.cpp" />
+    <ClCompile Include="..\..\src\entities\Tile.cpp" />
+    <ClCompile Include="..\..\src\entities\TilePattern.cpp" />
+    <ClCompile Include="..\..\src\entities\Tileset.cpp" />
+    <ClCompile Include="..\..\src\entities\TilesetData.cpp" />
+    <ClCompile Include="..\..\src\entities\TraversableInfo.cpp" />
+    <ClCompile Include="..\..\src\entities\Wall.cpp" />
+    <ClCompile Include="..\..\src\graphics\BlendModeInfo.cpp" />
+    <ClCompile Include="..\..\src\graphics\Color.cpp" />
+    <ClCompile Include="..\..\src\graphics\Drawable.cpp" />
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlRenderer.cpp" />
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlShader.cpp" />
+    <ClCompile Include="..\..\src\graphics\glrenderer\GlTexture.cpp" />
+    <ClCompile Include="..\..\src\graphics\Hq2xFilter.cpp" />
+    <ClCompile Include="..\..\src\graphics\Hq3xFilter.cpp" />
+    <ClCompile Include="..\..\src\graphics\Hq4xFilter.cpp" />
+    <ClCompile Include="..\..\src\graphics\Renderer.cpp" />
+    <ClCompile Include="..\..\src\graphics\Scale2xFilter.cpp" />
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLRenderer.cpp" />
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLShader.cpp" />
+    <ClCompile Include="..\..\src\graphics\sdlrenderer\SDLSurfaceImpl.cpp" />
+    <ClCompile Include="..\..\src\graphics\Shader.cpp" />
+    <ClCompile Include="..\..\src\graphics\ShaderData.cpp" />
+    <ClCompile Include="..\..\src\graphics\SoftwarePixelFilter.cpp" />
+    <ClCompile Include="..\..\src\graphics\SoftwareVideoMode.cpp" />
+    <ClCompile Include="..\..\src\graphics\Sprite.cpp" />
+    <ClCompile Include="..\..\src\graphics\SpriteAnimation.cpp" />
+    <ClCompile Include="..\..\src\graphics\SpriteAnimationDirection.cpp" />
+    <ClCompile Include="..\..\src\graphics\SpriteAnimationSet.cpp" />
+    <ClCompile Include="..\..\src\graphics\SpriteData.cpp" />
+    <ClCompile Include="..\..\src\graphics\Surface.cpp" />
+    <ClCompile Include="..\..\src\graphics\SurfaceImpl.cpp" />
+    <ClCompile Include="..\..\src\graphics\TextSurface.cpp" />
+    <ClCompile Include="..\..\src\graphics\Transition.cpp" />
+    <ClCompile Include="..\..\src\graphics\TransitionFade.cpp" />
+    <ClCompile Include="..\..\src\graphics\TransitionImmediate.cpp" />
+    <ClCompile Include="..\..\src\graphics\TransitionScrolling.cpp" />
+    <ClCompile Include="..\..\src\graphics\VertexArray.cpp" />
+    <ClCompile Include="..\..\src\graphics\Video.cpp" />
+    <ClCompile Include="..\..\src\hero\BackToSolidGroundState.cpp" />
+    <ClCompile Include="..\..\src\hero\BoomerangState.cpp" />
+    <ClCompile Include="..\..\src\hero\BowState.cpp" />
+    <ClCompile Include="..\..\src\hero\CarryingState.cpp" />
+    <ClCompile Include="..\..\src\hero\CustomState.cpp" />
+    <ClCompile Include="..\..\src\hero\FallingState.cpp" />
+    <ClCompile Include="..\..\src\hero\ForcedWalkingState.cpp" />
+    <ClCompile Include="..\..\src\hero\FreeState.cpp" />
+    <ClCompile Include="..\..\src\hero\FrozenState.cpp" />
+    <ClCompile Include="..\..\src\hero\GrabbingState.cpp" />
+    <ClCompile Include="..\..\src\hero\HeroSprites.cpp" />
+    <ClCompile Include="..\..\src\hero\HeroState.cpp" />
+    <ClCompile Include="..\..\src\hero\HookshotState.cpp" />
+    <ClCompile Include="..\..\src\hero\HurtState.cpp" />
+    <ClCompile Include="..\..\src\hero\JumpingState.cpp" />
+    <ClCompile Include="..\..\src\hero\LiftingState.cpp" />
+    <ClCompile Include="..\..\src\hero\PlayerMovementState.cpp" />
+    <ClCompile Include="..\..\src\hero\PlungingState.cpp" />
+    <ClCompile Include="..\..\src\hero\PullingState.cpp" />
+    <ClCompile Include="..\..\src\hero\PushingState.cpp" />
+    <ClCompile Include="..\..\src\hero\RunningState.cpp" />
+    <ClCompile Include="..\..\src\hero\SpinAttackState.cpp" />
+    <ClCompile Include="..\..\src\hero\StairsState.cpp" />
+    <ClCompile Include="..\..\src\hero\SwimmingState.cpp" />
+    <ClCompile Include="..\..\src\hero\SwordLoadingState.cpp" />
+    <ClCompile Include="..\..\src\hero\SwordSwingingState.cpp" />
+    <ClCompile Include="..\..\src\hero\SwordTappingState.cpp" />
+    <ClCompile Include="..\..\src\hero\TreasureState.cpp" />
+    <ClCompile Include="..\..\src\hero\UsingItemState.cpp" />
+    <ClCompile Include="..\..\src\hero\VictoryState.cpp" />
+    <ClCompile Include="..\..\src\lua\AudioApi.cpp" />
+    <ClCompile Include="..\..\src\lua\DrawableApi.cpp" />
+    <ClCompile Include="..\..\src\lua\EntityApi.cpp" />
+    <ClCompile Include="..\..\src\lua\ExportableToLua.cpp" />
+    <ClCompile Include="..\..\src\lua\FileApi.cpp" />
+    <ClCompile Include="..\..\src\lua\GameApi.cpp" />
+    <ClCompile Include="..\..\src\lua\InputApi.cpp" />
+    <ClCompile Include="..\..\src\lua\ItemApi.cpp" />
+    <ClCompile Include="..\..\src\lua\LanguageApi.cpp" />
+    <ClCompile Include="..\..\src\lua\LuaContext.cpp" />
+    <ClCompile Include="..\..\src\lua\LuaData.cpp" />
+    <ClCompile Include="..\..\src\lua\LuaException.cpp" />
+    <ClCompile Include="..\..\src\lua\LuaTools.cpp" />
+    <ClCompile Include="..\..\src\lua\MainApi.cpp" />
+    <ClCompile Include="..\..\src\lua\MapApi.cpp" />
+    <ClCompile Include="..\..\src\lua\MenuApi.cpp" />
+    <ClCompile Include="..\..\src\lua\MovementApi.cpp" />
+    <ClCompile Include="..\..\src\lua\ScopedLuaRef.cpp" />
+    <ClCompile Include="..\..\src\lua\ShaderApi.cpp" />
+    <ClCompile Include="..\..\src\lua\SoundApi.cpp" />
+    <ClCompile Include="..\..\src\lua\SpriteApi.cpp" />
+    <ClCompile Include="..\..\src\lua\StateApi.cpp" />
+    <ClCompile Include="..\..\src\lua\SurfaceApi.cpp" />
+    <ClCompile Include="..\..\src\lua\TextSurfaceApi.cpp" />
+    <ClCompile Include="..\..\src\lua\TimerApi.cpp" />
+    <ClCompile Include="..\..\src\lua\VideoApi.cpp" />
+    <ClCompile Include="..\..\src\main\Main.cpp" />
+    <ClCompile Include="..\..\src\movements\CircleMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\FallingOnFloorMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\JumpMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\Movement.cpp" />
+    <ClCompile Include="..\..\src\movements\PathFinding.cpp" />
+    <ClCompile Include="..\..\src\movements\PathFindingMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\PathMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\PixelMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\PlayerMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\RandomMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\RandomPathMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\RelativeMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\StraightMovement.cpp" />
+    <ClCompile Include="..\..\src\movements\TargetMovement.cpp" />
+    <ClCompile Include="..\..\src\third_party\glad\glad.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq2x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq3x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\hq4x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\hqx\init.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\third_party\snes_spc\dsp.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC_misc.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\SNES_SPC_state.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\spc.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\SPC_DSP.cpp" />
+    <ClCompile Include="..\..\src\third_party\snes_spc\SPC_Filter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\Angle\ms-angle-ms\winrt\10\src\libEGL.vcxproj">
+      <Project>{229c8ccc-d35c-ecdb-2b0c-27ee2cac295b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\Angle\ms-angle-ms\winrt\10\src\libGLESv2.vcxproj">
+      <Project>{5cf061c0-ea5a-323e-2ffb-145a0c3d60a5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\libmodplug\libmodplug-uwp\libmodplug-uwp.vcxproj">
+      <Project>{bf5a37bd-a60b-431a-96fa-3b54eb093d96}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\lua\lua-uwp\lua-uwp\lua-uwp.vcxproj">
+      <Project>{93b8da2c-888e-40c4-8e9e-5f31b53949e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\openal\winrt.vs2015\OpenAL\OpenAL.vcxproj">
+      <Project>{a4ec741a-2f08-4dab-a9b1-472540cbce2e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\physfs\physfs\physfs.vcxproj">
+      <Project>{eb338fa7-d55c-415f-aaf0-509b85c7a5ec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL\VisualC-WinRT\UWP_VS2015\SDL-UWP.vcxproj">
+      <Project>{89e9b32e-a86a-47c3-a948-d2b1622925ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\jpeg-WinRT81.vcxproj">
+      <Project>{2e908ad5-95e9-4b2d-bd6e-ba3ea4c1a2ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libpng-WinRT81.vcxproj">
+      <Project>{5fbdc49a-7939-40f9-b78e-975f190adbd3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libwebp-WinRT81.vcxproj">
+      <Project>{1eb035a3-815a-4382-90d3-4510ab605ad9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\SDL_image-WinRT81.vcxproj">
+      <Project>{29b4d11f-59f3-4ebc-a769-3babd140db9a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\zlib-WinRT81.vcxproj">
+      <Project>{acea4101-6f4a-44ed-9ec1-289821dac711}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libogg_dynamic-WinRT81.vcxproj">
+      <Project>{6bc6349c-e355-4f1c-9290-ff755114a84b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbisfile_dynamic-WinRT81.vcxproj">
+      <Project>{936b2819-2364-45d9-901d-52878914fafa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbis_dynamic-WinRT81.vcxproj">
+      <Project>{e3ab27f1-eb89-4c65-85df-cb6a4f805753}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\SDL_mixer-WinRT81.vcxproj">
+      <Project>{3a833c7a-c776-4202-9dbd-bc879b23c605}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_ttf\VisualC-WinRT\UWP_VS2015\freetype-WinRT81.vcxproj">
+      <Project>{1264471f-847f-427d-8db6-b733f188ffb9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_ttf\VisualC-WinRT\UWP_VS2015\SDL_ttf-WinRT81.vcxproj">
+      <Project>{90ca40dc-84b4-4d06-91d1-dc82a7a1e4d0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\lua.hpp" />
+    <ClInclude Include="..\..\include\solarus\audio\ItDecoder.h" />
+    <ClInclude Include="..\..\include\solarus\audio\Music.h" />
+    <ClInclude Include="..\..\include\solarus\audio\OggDecoder.h" />
+    <ClInclude Include="..\..\include\solarus\audio\Sound.h" />
+    <ClInclude Include="..\..\include\solarus\audio\SoundBuffer.h" />
+    <ClInclude Include="..\..\include\solarus\audio\SoundPtr.h" />
+    <ClInclude Include="..\..\include\solarus\audio\SpcDecoder.h" />
+    <ClInclude Include="..\..\include\solarus\containers\FreeList.h" />
+    <ClInclude Include="..\..\include\solarus\containers\Grid.h" />
+    <ClInclude Include="..\..\include\solarus\containers\Quadtree.h" />
+    <ClInclude Include="..\..\include\solarus\core\Ability.h" />
+    <ClInclude Include="..\..\include\solarus\core\AbilityInfo.h" />
+    <ClInclude Include="..\..\include\solarus\core\AndroidConfig.h" />
+    <ClInclude Include="..\..\include\solarus\core\AppleInterface.h" />
+    <ClInclude Include="..\..\include\solarus\core\Arguments.h" />
+    <ClInclude Include="..\..\include\solarus\core\CommandsEffects.h" />
+    <ClInclude Include="..\..\include\solarus\core\Common.h" />
+    <ClInclude Include="..\..\include\solarus\core\config.h" />
+    <ClInclude Include="..\..\include\solarus\core\CurrentQuest.h" />
+    <ClInclude Include="..\..\include\solarus\core\Debug.h" />
+    <ClInclude Include="..\..\include\solarus\core\Dialog.h" />
+    <ClInclude Include="..\..\include\solarus\core\DialogBoxSystem.h" />
+    <ClInclude Include="..\..\include\solarus\core\DialogResources.h" />
+    <ClInclude Include="..\..\include\solarus\core\EnumInfo.h" />
+    <ClInclude Include="..\..\include\solarus\core\Equipment.h" />
+    <ClInclude Include="..\..\include\solarus\core\EquipmentItem.h" />
+    <ClInclude Include="..\..\include\solarus\core\EquipmentItemUsage.h" />
+    <ClInclude Include="..\..\include\solarus\core\FontResource.h" />
+    <ClInclude Include="..\..\include\solarus\core\Game.h" />
+    <ClInclude Include="..\..\include\solarus\core\GameCommand.h" />
+    <ClInclude Include="..\..\include\solarus\core\GameCommands.h" />
+    <ClInclude Include="..\..\include\solarus\core\Geometry.h" />
+    <ClInclude Include="..\..\include\solarus\core\InputEvent.h" />
+    <ClInclude Include="..\..\include\solarus\core\Logger.h" />
+    <ClInclude Include="..\..\include\solarus\core\MainLoop.h" />
+    <ClInclude Include="..\..\include\solarus\core\Map.h" />
+    <ClInclude Include="..\..\include\solarus\core\MapData.h" />
+    <ClInclude Include="..\..\include\solarus\core\PerfCounter.h" />
+    <ClInclude Include="..\..\include\solarus\core\PixelBits.h" />
+    <ClInclude Include="..\..\include\solarus\core\Point.h" />
+    <ClInclude Include="..\..\include\solarus\core\Profiler.h" />
+    <ClInclude Include="..\..\include\solarus\core\QuestDatabase.h" />
+    <ClInclude Include="..\..\include\solarus\core\QuestFiles.h" />
+    <ClInclude Include="..\..\include\solarus\core\QuestProperties.h" />
+    <ClInclude Include="..\..\include\solarus\core\Random.h" />
+    <ClInclude Include="..\..\include\solarus\core\Rectangle.h" />
+    <ClInclude Include="..\..\include\solarus\core\ResourceProvider.h" />
+    <ClInclude Include="..\..\include\solarus\core\ResourceType.h" />
+    <ClInclude Include="..\..\include\solarus\core\Savegame.h" />
+    <ClInclude Include="..\..\include\solarus\core\SavegameConverterV1.h" />
+    <ClInclude Include="..\..\include\solarus\core\Scale.h" />
+    <ClInclude Include="..\..\include\solarus\core\Settings.h" />
+    <ClInclude Include="..\..\include\solarus\core\Size.h" />
+    <ClInclude Include="..\..\include\solarus\core\SolarusFatal.h" />
+    <ClInclude Include="..\..\include\solarus\core\String.h" />
+    <ClInclude Include="..\..\include\solarus\core\StringResources.h" />
+    <ClInclude Include="..\..\include\solarus\core\System.h" />
+    <ClInclude Include="..\..\include\solarus\core\Timer.h" />
+    <ClInclude Include="..\..\include\solarus\core\TimerPtr.h" />
+    <ClInclude Include="..\..\include\solarus\core\Transform.h" />
+    <ClInclude Include="..\..\include\solarus\core\Treasure.h" />
+    <ClInclude Include="..\..\include\solarus\entities\AnimatedTilePattern.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Arrow.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Block.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Bomb.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Boomerang.h" />
+    <ClInclude Include="..\..\include\solarus\entities\BorderKind.h" />
+    <ClInclude Include="..\..\include\solarus\entities\BorderSet.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Camera.h" />
+    <ClInclude Include="..\..\include\solarus\entities\CameraPtr.h" />
+    <ClInclude Include="..\..\include\solarus\entities\CarriedObject.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Chest.h" />
+    <ClInclude Include="..\..\include\solarus\entities\CollisionMode.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Crystal.h" />
+    <ClInclude Include="..\..\include\solarus\entities\CrystalBlock.h" />
+    <ClInclude Include="..\..\include\solarus\entities\CustomEntity.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Destination.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Destructible.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Door.h" />
+    <ClInclude Include="..\..\include\solarus\entities\DynamicTile.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Enemy.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EnemyAttack.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EnemyReaction.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Entities.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Entity.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EntityData.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EntityPtr.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EntityState.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EntityType.h" />
+    <ClInclude Include="..\..\include\solarus\entities\EntityTypeInfo.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Explosion.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Fire.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Ground.h" />
+    <ClInclude Include="..\..\include\solarus\entities\GroundInfo.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Hero.h" />
+    <ClInclude Include="..\..\include\solarus\entities\HeroPtr.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Hookshot.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Jumper.h" />
+    <ClInclude Include="..\..\include\solarus\entities\NonAnimatedRegions.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Npc.h" />
+    <ClInclude Include="..\..\include\solarus\entities\ParallaxScrollingTilePattern.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Pickable.h" />
+    <ClInclude Include="..\..\include\solarus\entities\SelfScrollingTilePattern.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Sensor.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Separator.h" />
+    <ClInclude Include="..\..\include\solarus\entities\SeparatorPtr.h" />
+    <ClInclude Include="..\..\include\solarus\entities\ShopTreasure.h" />
+    <ClInclude Include="..\..\include\solarus\entities\SimpleTilePattern.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Stairs.h" />
+    <ClInclude Include="..\..\include\solarus\entities\StartingLocationMode.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Stream.h" />
+    <ClInclude Include="..\..\include\solarus\entities\StreamAction.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Switch.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Teletransporter.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Tile.h" />
+    <ClInclude Include="..\..\include\solarus\entities\TileInfo.h" />
+    <ClInclude Include="..\..\include\solarus\entities\TilePattern.h" />
+    <ClInclude Include="..\..\include\solarus\entities\TilePtr.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Tileset.h" />
+    <ClInclude Include="..\..\include\solarus\entities\TilesetData.h" />
+    <ClInclude Include="..\..\include\solarus\entities\TraversableInfo.h" />
+    <ClInclude Include="..\..\include\solarus\entities\Wall.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\BlendMode.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\BlendModeInfo.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Color.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\DefaultShaders.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Drawable.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\DrawablePtr.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\DrawProxies.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlRenderer.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlShader.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlTexture.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Hq2xFilter.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Hq3xFilter.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Hq4xFilter.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\quest_icon.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Renderer.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Scale2xFilter.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SDLPtrs.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLRenderer.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLShader.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\sdlrenderer\SDLSurfaceImpl.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Shader.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\ShaderData.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\ShaderPtr.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SoftwarePixelFilter.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SoftwareVideoMode.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SolarusGl.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Sprite.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimation.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimationDirection.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteAnimationSet.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SpriteData.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SpritePtr.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Surface.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SurfaceImpl.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\SurfacePtr.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\TextSurface.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Transition.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionFade.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionImmediate.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\TransitionScrolling.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\VertexArray.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\VertexArrayPtr.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\Video.h" />
+    <ClInclude Include="..\..\include\solarus\hero\BackToSolidGroundState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\BoomerangState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\BowState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\CarryingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\CustomState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\FallingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\ForcedWalkingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\FreeState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\FrozenState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\GrabbingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\HeroSprites.h" />
+    <ClInclude Include="..\..\include\solarus\hero\HeroState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\HookshotState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\HurtState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\JumpingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\LiftingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\PlayerMovementState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\PlungingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\PullingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\PushingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\RunningState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\SpinAttackState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\StairsState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\SwimmingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\SwordLoadingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\SwordSwingingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\SwordTappingState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\TreasureState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\UsingItemState.h" />
+    <ClInclude Include="..\..\include\solarus\hero\VictoryState.h" />
+    <ClInclude Include="..\..\include\solarus\lua\ExportableToLua.h" />
+    <ClInclude Include="..\..\include\solarus\lua\ExportableToLuaPtr.h" />
+    <ClInclude Include="..\..\include\solarus\lua\LuaContext.h" />
+    <ClInclude Include="..\..\include\solarus\lua\LuaData.h" />
+    <ClInclude Include="..\..\include\solarus\lua\LuaException.h" />
+    <ClInclude Include="..\..\include\solarus\lua\LuaTools.h" />
+    <ClInclude Include="..\..\include\solarus\lua\ScopedLuaRef.h" />
+    <ClInclude Include="..\..\include\solarus\movements\CircleMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\FallingHeight.h" />
+    <ClInclude Include="..\..\include\solarus\movements\FallingOnFloorMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\JumpMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\Movement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\PathFinding.h" />
+    <ClInclude Include="..\..\include\solarus\movements\PathFindingMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\PathMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\PixelMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\PlayerMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\RandomMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\RandomPathMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\RelativeMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\StraightMovement.h" />
+    <ClInclude Include="..\..\include\solarus\movements\TargetMovement.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\glad\glad.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\hqx\common.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\hqx\hqx.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\KHR\khrplatform.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_common.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_config.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_endian.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\blargg_source.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\dsp.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SNES_SPC.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\spc.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_CPU.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_DSP.h" />
+    <ClInclude Include="..\..\include\solarus\third_party\snes_spc\SPC_Filter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\data\fonts\Comicoro.ttf" />
+    <Font Include="Assets\data\fonts\Poco.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

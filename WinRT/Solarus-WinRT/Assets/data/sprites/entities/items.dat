@@ -1,0 +1,116 @@
+animation{
+  name = "tears",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "15_coconuts",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "b12",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "coconut",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "collectible",
+  src_image = "entities/collectibles.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "cultured_meat",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "flippers",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "id_card",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "membership_bracelet",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 64, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "random",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "seed",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "shovel",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "stick",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "vacuum",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}
+animation{
+  name = "whiskey",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 4 },
+  },
+}

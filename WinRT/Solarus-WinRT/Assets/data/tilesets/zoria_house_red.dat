@@ -1,0 +1,401 @@
+background_color{ 192, 32, 16 }
+tile_pattern{
+  id = "floor",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "platform.base.bottom",
+  ground = "wall",
+  default_layer = 0,
+  x = 16,
+  y = 80,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "platform.base.bottom_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 80,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.base.bottom_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 80,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.base.left",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 64,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "platform.base.right",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 64,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "platform.bottom",
+  ground = "wall",
+  default_layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "platform.bottom_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 48,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.bottom_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 48,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.corner.bottom_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.corner.bottom_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.corner.top_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.corner.top_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.left",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "platform.right",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "platform.top",
+  ground = "wall",
+  default_layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "platform.top_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform.top_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 32,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "platform_column",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 56,
+  width = 8,
+  height = 40,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "stool",
+  ground = "traversable",
+  default_layer = 0,
+  x = 48,
+  y = 96,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "table.bottom",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 88,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "table.bottom_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 56,
+  y = 88,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.bottom_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 88,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.center",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 80,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "table.corner.bottom_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 104,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.corner.bottom_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 104,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.corner.top_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 96,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.corner.top_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 96,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.left",
+  ground = "traversable",
+  default_layer = 0,
+  x = 56,
+  y = 80,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "table.right",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 80,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "table.top",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "table.top_left",
+  ground = "wall",
+  default_layer = 0,
+  x = 56,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "table.top_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "void",
+  ground = "traversable",
+  default_layer = 0,
+  x = 16,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wall",
+  ground = "wall",
+  default_layer = 0,
+  x = 8,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "wall_16",
+  ground = "wall",
+  default_layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "window",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+

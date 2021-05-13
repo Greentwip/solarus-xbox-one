@@ -1,0 +1,323 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+  music = "cosmicgem829/greybeard",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  pattern = "grass.soil",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_left.1",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "cliff.middle.1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "grass.cliff.end_left.2",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 48,
+  height = 32,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "grass.cave_entrance",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "cliff.end_left",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 16,
+  height = 80,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "142",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 64,
+  width = 16,
+  height = 32,
+  pattern = "143",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "147",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 128,
+  width = 96,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "79",
+}
+
+sensor{
+  name = "cutscene1",
+  layer = 0,
+  x = 216,
+  y = 109,
+  width = 16,
+  height = 16,
+}
+
+npc{
+  layer = 0,
+  x = 200,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/sign",
+  behavior = "dialog#catacombs.outside.sign",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_7",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 13,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_4",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 13,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 13,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 13,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/tall_grass/field_5",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 40,
+  y = 77,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 208,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "_stage/catacombs_entrance",
+  destination = "destination",
+}
+
+destination{
+  name = "outside_cave",
+  layer = 0,
+  x = 216,
+  y = 101,
+  direction = 3,
+}
+

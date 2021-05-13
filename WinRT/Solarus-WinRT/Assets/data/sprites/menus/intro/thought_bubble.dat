@@ -1,0 +1,22 @@
+animation{
+  name = "normal",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 448, y = 32, frame_width = 24, frame_height = 24, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "finished",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 448, y = 104, frame_width = 24, frame_height = 24, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "loading",
+  src_image = "menus/intro.png",
+  frame_delay = 700,
+  directions = {
+    { x = 448, y = 56, frame_width = 24, frame_height = 24, origin_x = 0, origin_y = 0, num_frames = 3, num_columns = 1 },
+  },
+}

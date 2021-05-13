@@ -1,0 +1,450 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+  music = "cosmicgem829/cave",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 144,
+  height = 144,
+  pattern = "sand.soil",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 48,
+  height = 144,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 64,
+  height = 144,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "375",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "grass.weed_big",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "103",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "large_rock.brown",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 80,
+  height = 16,
+  pattern = "cliff.middle.1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "99",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 16,
+  height = 112,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "cliff.middle.1",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "cliff.end_right",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_right.2",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "grass.cliff.end_right.1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "99",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 48,
+  width = 16,
+  height = 80,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 48,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "79",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "table.bottom_right",
+  tileset = "zoria_house_red",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "table.top_left",
+  tileset = "zoria_house_red",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "table.bottom_left",
+  tileset = "zoria_house_red",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "table.top_right",
+  tileset = "zoria_house_red",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 128,
+  width = 16,
+  height = 16,
+  destination_map = "overworld",
+  destination = "outside_claudias_house",
+  sound = "door_open",
+}
+
+destination{
+  name = "entrance",
+  layer = 0,
+  x = 136,
+  y = 133,
+  direction = 1,
+  default = true,
+}
+
+npc{
+  name = "claudia",
+  layer = 0,
+  x = 136,
+  y = 77,
+  direction = 2,
+  subtype = 1,
+  sprite = "animals/seagull_scientist",
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 61,
+  sprite = "entities/barrel1",
+  weight = -1,
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 77,
+  sprite = "entities/barrel1",
+  weight = -1,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 61,
+  sprite = "entities/barrel2",
+  weight = -1,
+}
+
+npc{
+  name = "vase",
+  layer = 0,
+  x = 168,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/vase",
+}
+
+custom_entity{
+  name = "vase_plant",
+  layer = 1,
+  x = 168,
+  y = 117,
+  width = 16,
+  height = 24,
+  direction = 0,
+  sprite = "entities/vase_plant",
+}
+

@@ -1,0 +1,14 @@
+animation{
+  name = "1",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 448, y = 128, frame_width = 32, frame_height = 64, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "2",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 480, y = 128, frame_width = 32, frame_height = 64, origin_x = 0, origin_y = 0 },
+  },
+}

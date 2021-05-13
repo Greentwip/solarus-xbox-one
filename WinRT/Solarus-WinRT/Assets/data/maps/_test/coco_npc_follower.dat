@@ -1,0 +1,39 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 136,
+  y = 141,
+  direction = 1,
+}
+
+pickable{
+  layer = 0,
+  x = 40,
+  y = 93,
+  treasure_name = "coconut",
+}
+
+pickable{
+  layer = 0,
+  x = 136,
+  y = 45,
+  treasure_name = "coconut",
+}
+
+pickable{
+  layer = 0,
+  x = 216,
+  y = 93,
+  treasure_name = "coconut",
+}
+

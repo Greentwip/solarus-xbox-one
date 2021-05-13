@@ -1,0 +1,7 @@
+animation{
+  name = "normal",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 0, y = 304, frame_width = 256, frame_height = 144, origin_x = 0, origin_y = 0 },
+  },
+}

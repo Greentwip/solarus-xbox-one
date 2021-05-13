@@ -1,0 +1,3215 @@
+dialog{
+  id = "_crystal",
+  photo = "rachel",
+  text = [[
+##Rachel
+This stupid orb looks
+incredibly whackable.
+]],
+}
+
+dialog{
+  id = "_keyhole_block",
+  photo = "rachel",
+  text = [[
+##Rachel
+This block has a keyhole
+on it. Where is the key?
+]],
+}
+
+dialog{
+  id = "_torch",
+  photo = "rachel",
+  text = [[
+##Rachel
+It's an unlit torch.
+]],
+}
+
+dialog{
+  id = "_treasure.15_coconuts.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got 15 coconuts!
+I'm practically drowning
+in them.
+]],
+}
+
+dialog{
+  id = "_treasure.b12.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+The warm embrace of
+vitamin B12 brings color
+back to my cheeks!
+]],
+}
+
+dialog{
+  id = "_treasure.coconut.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got a coconut!
+May as well store it in
+case I'm hungry later.
+No worries, though,
+there are thousands of
+them on this island.
+]],
+}
+
+dialog{
+  id = "_treasure.collectible.1",
+  photo = "rachel_dank",
+  text = [[
+##Rachel
+Finally I found something
+actually useful.
+]],
+}
+
+dialog{
+  id = "_treasure.collectible.2",
+  photo = "rachel",
+  text = [[
+##Rachel
+Ew, gross... it's a
+wishbone! This is
+literally the worst.
+Only a psycopath would
+play games with bones
+picked out of a corpse.
+]],
+}
+
+dialog{
+  id = "_treasure.cultured_meat.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got cultured meat!
+]],
+}
+
+dialog{
+  id = "_treasure.flippers.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got the flippers!
+Now I can beat the tide.
+]],
+}
+
+dialog{
+  id = "_treasure.id_card.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got the USA ID card!
+]],
+}
+
+dialog{
+  id = "_treasure.id_card.2",
+  photo = "rachel_cheer",
+  text = [[
+##Rachel
+I got the EVOLV ID card!
+Now my life finally has
+a purpose!
+This will grant me access
+to new areas. I can view
+it in my inventory.
+]],
+}
+
+dialog{
+  id = "_treasure.id_card.3",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got the Transcend
+ID card!
+]],
+}
+
+dialog{
+  id = "_treasure.id_card.4",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got the blank ID card!
+]],
+}
+
+dialog{
+  id = "_treasure.key.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+A key! I bet there's a
+corresponding door
+somewhere nearby.
+]],
+}
+
+dialog{
+  id = "_treasure.lighter.1",
+  photo = "rachel_cheer",
+  text = [[
+##Rachel
+I found a lighter! I can
+harness the power of fire
+to illuminate torches.
+]],
+}
+
+dialog{
+  id = "_treasure.membership_bracelet.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got the membership
+bracelet!
+
+This twisted fork pledges
+my allegiance to EVOLV.
+]],
+}
+
+dialog{
+  id = "_treasure.seed.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I found a seed!
+Looks fertile.
+]],
+}
+
+dialog{
+  id = "_treasure.stick.1",
+  photo = "rachel_cheer",
+  text = [[
+##Rachel
+I found a stick! It
+was ripped off a tree
+that screamed in pain.
+I'll swing it to cut
+bushes and activate
+switches.
+]],
+}
+
+dialog{
+  id = "_treasure.tears.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I've been bequeathed
+with the saline, slooshy
+fluids of sadness!
+]],
+}
+
+dialog{
+  id = "_treasure.vacuum.1",
+  photo = "rachel_cheer",
+  text = [[
+##Rachel
+I got the recycling
+machine! I'll use it to
+suck up trash.
+]],
+}
+
+dialog{
+  id = "_treasure.whiskey.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+Mush-a ring dumda dumdoo!
+If voodka is vegan, then
+whiskey's surely, too.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.1",
+  next = "beach.cutscene5.martini.1",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Martini, I know you've
+been working on a solution
+for beach cleanup.
+The onus is on you.
+What's our plan?
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.2",
+  next = "beach.cutscene5.malcolm.2",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+How do you propose we
+obtain it?
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.3",
+  next = "beach.cutscene5.martini.3",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+What?
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.4",
+  next = "beach.cutscene5.malcolm.3",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Malcolm, as you were
+saying before?
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.5",
+  next = "beach.cutscene5.malcolm.4",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+That's a wonderful idea.
+Rachel, this is your new
+mission for EVOLV.
+Please find Claudia and
+obtain the vacuum.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.6",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Yes, this is true.
+Well Rachel, I do believe
+you have proven yourself.
+But things will be more
+dangerous from this point.
+Please be careful.
+Claudia is a wicked woman.
+Her goal is to destroy us.
+Don't believe her lies.
+Without further ado, I
+hereby grant you Level 2
+membership in EVOLV!
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.greybeard.7",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Now begone and find the
+vacuum! Claudia is north
+of here on Hermit Path.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.malcolm.1",
+  next = "beach.cutscene5.greybeard.2",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+David, clearly we need
+the vacuum.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.malcolm.2",
+  next = "beach.cutscene5.martini.2",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Why not send the human?
+Claudia has no
+preconceptions of her.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.malcolm.3",
+  next = "beach.cutscene5.greybeard.5",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Since Claudia doesn't know
+the human yet, perhaps she
+can obtain the vacuum.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.malcolm.4",
+  next = "beach.cutscene5.greybeard.6",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Don't forget that only
+Level 2 EVOLV members
+can enter Hermit Path.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.martini.1",
+  next = "beach.cutscene5.malcolm.1",
+  photo = "martini",
+  text = [[
+##Martini
+Hmm... okay.
+Let me think about it
+for a moment.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.martini.2",
+  next = "beach.cutscene5.greybeard.3",
+  photo = "martini",
+  text = [[
+##Martini
+Wait, I've got it!
+I know what to do!
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.martini.3",
+  photo = "martini",
+  text = [[
+##Martini
+Wait, hold on.
+
+
+Um, hmm... I think we
+need to start by putting
+the trash in one big pile.
+]],
+}
+
+dialog{
+  id = "beach.cutscene5.rachel.1",
+  photo = "rachel_fist",
+  text = [[
+##Rachel
+Hell yea, I'm moving up
+in the ranks! As a Level 2
+I can access new areas.
+]],
+}
+
+dialog{
+  id = "beach.gravestone",
+  photo = "grave",
+  text = [[
+##grave
+R.I.P Marvin
+
+
+Here lies Marvin,
+Rachel's former lover.
+He came to this island
+to express his love
+but died tragically of
+dietary fiber deficiency.
+]],
+}
+
+dialog{
+  id = "beach.hello.1",
+  next = "beach.hello.2",
+  photo = "seagull",
+  text = [[
+##Sammy
+Rachel! How are you
+feeling? I'm so sorry
+about Marvin.
+Listen, my friends on
+East Beach are seriously
+bummed.
+Word is, the beach is
+covered in trash again.
+
+If you can help them out,
+I'm sure they can return
+the favor!
+They're east of here,
+on the other side of
+the beach.
+]],
+}
+
+dialog{
+  id = "beach.hello.2",
+  photo = "rachel_fist",
+  text = [[
+##>Rachel
+Human-caused trash?
+This is an injustice!
+
+Don't worry Sammy, I'll
+see what I can do.
+]],
+}
+
+dialog{
+  id = "beach.ocean.grave",
+  photo = "rachel",
+  text = [[
+##Rachel
+The salty tide serves
+as a poignant reminder
+of his selfish life.
+A dead carnist, at least,
+spares the lives of
+thousands more.
+]],
+}
+
+dialog{
+  id = "beach.ocean.oil_spill",
+  photo = "rachel",
+  text = [[
+##Rachel
+Ahh...
+The sweet smell of
+petroleum.
+Capitalism never felt
+so inebriating.
+]],
+}
+
+dialog{
+  id = "beach.ocean.sadness",
+  photo = "rachel",
+  text = [[
+##Rachel
+The ocean is blue and
+endless.
+
+Salt fills my nose
+and seagulls caw in
+the distance.
+Everyone I've ever
+loved is on the opposite
+side of the planet.
+I reflect deeply as the
+blazing sun scorches my
+pale, desperate visage.
+]],
+}
+
+dialog{
+  id = "beach.pooh.1",
+  photo = "chimp",
+  text = [[
+##Pooh
+Oh, hello. I didn't think
+you could see me from
+behind all this trash.
+I... I'm Pooh.
+I mean, I'm one of
+Greybeard's guys.
+Anyway, this path is off
+limits due to carnivore
+activity. It's unsafe.
+If you got a problem with
+that you can take it up
+with Greybeard.
+]],
+}
+
+dialog{
+  id = "beach.pusillanimort.1",
+  photo = "chimp",
+  text = [[
+##Pusillanimort
+A terrible witch lives this
+way. None shall pass, by
+order of David Greybeard.
+...unless of course you
+are an EVOLV L2 member.
+]],
+}
+
+dialog{
+  id = "beach.pusillanimort.2",
+  photo = "chimp",
+  text = [[
+##Pusillanimort
+This card says "USA."
+You are not even a member
+of our faction.
+]],
+}
+
+dialog{
+  id = "beach.pusillanimort.3",
+  photo = "chimp",
+  text = [[
+##Pusillanimort
+You are only a L1 EVOLV
+member. L2 is required
+to pass.
+]],
+}
+
+dialog{
+  id = "beach.pusillanimort.4",
+  photo = "chimp",
+  text = [[
+##Pusillanimort
+Oh! David Greybeard has
+ordained you. You may
+pass. Just be careful...
+]],
+}
+
+dialog{
+  id = "beach.seagulls.bartender.1",
+  text = [[
+##Calton
+It's a pleasure to meet
+you, miss Rachel. I'm
+called Calton.
+The trash, you say?
+Yes, it's quite
+problematic.
+A genius named Claudia
+once constructed these
+cabins out of it.
+She's quite had it with
+society, sadly. No hope
+she'll ever help again.
+If you insist, she lives
+in the woods, just north
+of here. Give her this.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.bartender.2",
+  text = [[
+##Calton
+Claudia lives in a cave
+in the woods, just north
+of here.
+Tell her Calton Weaver
+sent you.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.bartender.3",
+  text = [[
+##Calton
+Thank you, miss Rachel.
+You inspire hope for
+this world!
+]],
+}
+
+dialog{
+  id = "beach.seagulls.bartender.4",
+  text = [[
+##Calton
+I suspected she wouldn't
+give in easily. Perhaps
+there's still hope.
+Show her that you care.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.1",
+  photo = "claudia",
+  text = [[
+##Claudia
+Oh, hello there. The
+humans must have finally
+sent an ambassador.
+Or perhaps you've just
+crash-landed. Regardless,
+welcome.
+Phew, it's been a long
+day... I could really
+use a drink.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.2",
+  photo = "claudia",
+  text = [[
+##Claudia
+Oh, this is for me?
+Calton sent you here.
+I see, the trash.
+glug glug glug
+*hic*
+
+Let me tell you my life
+story.
+
+My PhD is in mechanical
+engineering from the
+University of Galapagos.
+Since I was a chick I've
+wanted to fix the trash
+that plagued the shore.
+Day and night I created
+a machine could turn trash
+into usable materials.
+Finally it was finished.
+The beach was pristine and
+people called me a hero.
+I said "no, I'm just one
+part of this. You all
+are the heroes." *hic*
+From then on, whenever I
+was praised, they would
+say,
+"She was just one part
+of it. It was a
+collective effort." *hic*
+Things went downhill. *hic*
+They became increasingly
+insecure and defensive.
+A recycling committee was
+formed solely to block
+all of my contributions.
+The trash piled up again.
+I was stuck, but I wanted
+to do the right thing.
+One night I took my
+machine to the beach and
+I cleaned it alone.
+Next morning, the committe
+was furious. They called
+me a liar and criminal.
+In a drawn-out process,
+I tried to defend myself,
+but they doubled down.
+So, I destroyed the
+machine.
+
+If they are the real
+heroes, surely they can
+make another one.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.3",
+  photo = "claudia",
+  text = [[
+##Claudia
+Rachel, the world's
+problems are not simple.
+
+Apart from this,
+there is little I claim
+to know.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.4",
+  photo = "claudia",
+  text = [[
+##Claudia
+Rachel... *hic*
+That plant is beautiful.
+It soothes me.
+You're not so bad...
+maybe people aren't so
+bad after all.
+I know this is what you
+want. Here, take it.
+
+I had it all along.
+Just, keep it a secret
+to everybody.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.5",
+  photo = "claudia",
+  text = [[
+##Claudia
+If they are the real
+heroes, surely they can
+make another one.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.wrong_item.b12",
+  photo = "claudia",
+  text = [[
+##Claudia
+You look like you need
+that more than me, child.
+You should keep it.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.wrong_item.seed",
+  photo = "claudia",
+  text = [[
+##Claudia
+Sorry, I haven't had
+much of an appetite
+since...
+
+...
+
+
+Nevermind, you're too
+young to understand.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.claudia.wrong_item.tears",
+  photo = "claudia",
+  text = [[
+##Claudia
+I do love male tears!
+But that's not the type
+of drink I need right now.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.compatriots",
+  photo = "seagull",
+  text = [[
+##Cornelius
+WowoW! An IRL homo
+sapien! Yooo, you see
+this six-pack holder
+constricting my arteries?
+Go home and tell your
+compatriots to shove it!
+]],
+}
+
+dialog{
+  id = "beach.seagulls.figured_out",
+  photo = "seagull",
+  text = [[
+I can finally breathe
+again. Thanks!
+]],
+}
+
+dialog{
+  id = "beach.seagulls.gatekeeping",
+  photo = "seagull",
+  text = [[
+It's nice that you want
+to help and all hun,
+But seagull problems
+are for segaulls to fix.
+We don't need you to be
+our human savior.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.great_again",
+  photo = "seagull",
+  text = [[
+Long ago this land was
+radiant with our glory.
+Us gulls were strong
+and the shrimps quivered
+at our awesome might.
+
+Our subdual to juvenile,
+incompetent apostates
+lead us to destitution!
+Poseidon, forgive us!
+The youth knows not
+what they do.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.historical_context",
+  photo = "seagull",
+  text = [[
+Young people don't have
+the historical context
+to make good choices
+and old people are too
+set in their ways to
+experiment with new ideas.
+How can we expect
+society to improve over
+a long period of time?
+]],
+}
+
+dialog{
+  id = "beach.seagulls.hoax",
+  photo = "seagull",
+  text = [[
+There are 60+ award-
+winning climatologists
+and physicists who
+express doubt that
+climate change is human
+caused.
+Really, just ONE doubtful
+scientist should be
+enough to give us pause.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.nihilism",
+  photo = "seagull",
+  text = [[
+I just don't know what
+to do, you know? I work
+hard for my family
+but things just don't
+seem to get any better.
+
+Is suffering an inevitable
+facet of life, or can it
+be overcome?
+]],
+}
+
+dialog{
+  id = "beach.seagulls.plantasia",
+  photo = "seagull",
+  text = [[
+##Mort
+Welcome to Plantasia!
+I'm your host, Mort
+Mooginson.
+None of them are for
+sale, cuz I'm a little
+attached to all of them.
+But feel free to take
+what you can find in
+the storeroom.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.poseidons_daughter",
+  photo = "seagull",
+  text = [[
+Oh my! I can see again!
+It is a miracle from the
+almighty Poseidon!
+I shall record this
+testament of my encounter
+with Poseidon's daughter!
+]],
+}
+
+dialog{
+  id = "beach.seagulls.prejudice",
+  photo = "seagull",
+  text = [[
+I'm not prejudiced, but
+I hate humans.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.questioning",
+  photo = "seagull",
+  text = [[
+It's good to challenge
+your beliefs and look
+hard at the evidence
+but at the end of the day
+we have to make pragmatic
+choices using the
+information at our
+disposal.
+
+Anyway, I have more
+immediate concerns than
+the earth getting hotter
+over a period of time.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.sucks",
+  photo = "seagull",
+  text = [[
+The pollution sucks,
+but you get used to it.
+It's like anything else.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.the_game",
+  photo = "seagull",
+  text = [[
+I've given up on caring.
+I just want to know when
+the next game will be on.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.transgressions",
+  photo = "seagull",
+  text = [[
+##Cornelius
+Using a fancy vacuum
+cleaner on a few birds
+doesn't absolve
+your species of their
+transgressions against
+nonhumans.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.trash",
+  photo = "seagull",
+  text = [[
+We live in trash.
+Sometimes it helps us,
+but mostly it hurts us.
+We built these houses out
+of trash a long time ago.
+No one knows how anymore.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.trash_bags",
+  photo = "seagull",
+  text = [[
+##Keegan
+Putting biodegradable trash
+into plastic bags is like
+burying it with a casket.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.uncomfortable",
+  photo = "seagull",
+  text = [[
+I'd gotten so used to
+feeling dirty, I feel
+uncomfortable now.
+]],
+}
+
+dialog{
+  id = "beach.seagulls.women",
+  photo = "seagull",
+  text = [[
+##Larry
+I've been dumped,
+cheated on, and betrayed
+by women many times.
+Sometimes it was my own
+fault, and I learned from
+those experiences.
+Other times, I blamed
+women in general, and I
+felt victimized.
+Over time, I learned that
+people are all horrible,
+and I was only seeing
+an expression of that
+through the context of
+heterosexual relationships.
+And maybe I ain't no
+angel, either.
+]],
+}
+
+dialog{
+  id = "beach.signs.greybeard_path",
+  photo = "sign",
+  text = [[
+##sign
+⬆ EVOLV Headquarters
+]],
+}
+
+dialog{
+  id = "beach.signs.hermit_path",
+  photo = "sign",
+  text = [[
+##sign
+⬆ Hermit Path
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.greybeard.1",
+  photo = "greybeard",
+  question = "1",
+  text = [[
+##Greybeard
+Hello.
+
+
+Want to cross this river?
+Yes
+No
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.greybeard.3",
+  photo = "greybeard",
+  question = "1",
+  text = [[
+##Greybeard
+Speaking of which, I have
+a very important question
+to ask you.
+Do you eat animals?
+No
+No
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.greybeard.4",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Good!
+We'll show you the ropes
+around here.
+First off, push this log.
+You'll be crossing many
+rivers in Andast.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.greybeard.5",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+You know how to pull
+and push things, right?
+
+Just clear your mind,
+focus, and walk directly
+into the log. Don't stop.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.greybeard.6",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Excellent work, Rachel!
+Now you can jump across
+the river. Give it a try.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.hermione.1",
+  next = "beach.stick_intro.rachel.2",
+  photo = "hermione",
+  text = [[
+##Hermione
+You don't know what
+EVOLV is?
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.hermione.2",
+  next = "beach.stick_intro.peewee.2",
+  photo = "hermione",
+  text = [[
+##Hermione
+We know. It's rare to see
+humans on Andast.
+This is an animal nation.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.hermione.3",
+  photo = "hermione",
+  text = [[
+##Hermione
+*yawn*
+I can't wait to take a
+nap back at EVOLV HQ.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.peewee.1",
+  next = "beach.stick_intro.rachel.1",
+  photo = "beaver",
+  text = [[
+##>Peewee
+We're EVOLV members. We
+noticed this log was out
+so we're replacing it.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.peewee.2",
+  photo = "beaver",
+  text = [[
+##>Peewee
+"Nation" is a strong word.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.peewee.3",
+  photo = "beaver",
+  text = [[
+##Peewee
+Every day I wake up and
+ask myself how I can be
+more like master Greybeard.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.0",
+  next = "beach.stick_intro.peewee.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+Yeah, but the tide is
+too strong.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.1",
+  next = "beach.stick_intro.hermione.1",
+  photo = "rachel_confused",
+  text = [[
+##Rachel
+EVOLV? Log?
+I don't know what that
+means.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.2",
+  next = "beach.stick_intro.hermione.2",
+  photo = "rachel_confused",
+  text = [[
+##Rachel
+I'm not from around here.
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.3",
+  photo = "rachel_fist",
+  text = [[
+##Rachel
+Hell naw, I'm vegan AF!
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.4",
+  next = "beach.stick_intro.peewee.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+Not really.
+What's it to ya?
+]],
+}
+
+dialog{
+  id = "beach.stick_intro.rachel.last",
+  photo = "rachel",
+  text = [[
+##Rachel
+I got this!
+]],
+}
+
+dialog{
+  id = "beach.teepee.torch",
+  photo = "rachel_fire",
+  text = [[
+##Rachel
+This campfire has been
+my only flicker of
+hope for weeks.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.greybeard.1",
+  next = "beach.trash_scene.hermione.2",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+This trash is worse than
+I expected.
+
+Hermione, will you return
+to HQ and fetch Malcolm
+and Clau-*ahem* Martini?
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.greybeard.2",
+  next = "beach.trash_scene.peewee.2",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Peewee, let's start by
+moving this trash into
+one big pile.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.greybeard.3",
+  next = "beach.trash_scene.peewee.3",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Then Martini tells us
+her plan.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.greybeard.4",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Good point, let's change
+that. Rachel, I hereby
+induct you into EVOLV!
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.greybeard.5",
+  photo = "greybeard",
+  text = [[
+##Greybeard
+Please bring Malcolm and
+Martini back from EVOLV.
+
+EVOLV HQ is north-west
+from here, back the way
+you came.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.hermione.1",
+  photo = "hermione",
+  text = [[
+##Hermione
+You should speak with
+master Greybeard.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.hermione.2",
+  next = "beach.trash_scene.rachel.1",
+  photo = "hermione",
+  text = [[
+##Hermione
+I'm on it! Rachel, will
+you accompany me? Big
+EVOLV first mission!
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.hermione.3",
+  photo = "hermione",
+  text = [[
+##Hermione
+C'mon Rachel, let's go!
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.peewee.1",
+  photo = "beaver",
+  text = [[
+##Peewee
+Greybeard would like a
+word with you.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.peewee.2",
+  next = "beach.trash_scene.greybeard.3",
+  photo = "beaver",
+  text = [[
+##Peewee
+Then what?
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.peewee.3",
+  photo = "beaver",
+  text = [[
+##Peewee
+Martini... *facepalm*
+This situation will only
+get worse.
+]],
+}
+
+dialog{
+  id = "beach.trash_scene.rachel.1",
+  next = "beach.trash_scene.greybeard.4",
+  photo = "rachel_confused",
+  text = [[
+##Rachel
+But I'm not even an
+EVOLV member yet.
+]],
+}
+
+dialog{
+  id = "beach.tutorial.rachel.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+It closed on me.
+Guess I'd better find
+another way out.
+]],
+}
+
+dialog{
+  id = "beach.tutorial.signs.1",
+  photo = "sign",
+  text = [[
+##sign
+EVOLV TRAINING.
+Prepare yourself for
+herbivore liberation!
+Only strong minds will
+succeed. Don't forget to
+eat your vegetables.
+]],
+}
+
+dialog{
+  id = "beach.tutorial.signs.2",
+  photo = "sign",
+  text = [[
+##sign
+Some obstacles are easily
+destroyed. Others must
+be lifted.
+]],
+}
+
+dialog{
+  id = "beach.tutorial.signs.3",
+  photo = "sign",
+  text = [[
+##sign
+Some obstacles can be
+pushed or pulled.
+]],
+}
+
+dialog{
+  id = "beach.tutorial.signs.4",
+  photo = "sign",
+  text = [[
+##sign
+To pull an object, you
+must first grab it. While
+grabbing, pull!
+]],
+}
+
+dialog{
+  id = "beach.tutorial.signs.5",
+  photo = "sign",
+  text = [[
+##sign
+One may check their tools
+on the inventory screen.
+
+To equip a tool, move the
+cursor atop it and press
+the ACTION button.
+]],
+}
+
+dialog{
+  id = "beach.vase",
+  text = [[
+##Rachel
+This vase contains some
+moist, fertile dirt.
+
+As a vegan, this is
+basically my diet, so
+I'm not concerned.
+Although I get the
+sense I'm supposed
+to put something here.
+To represent new
+beginnings and what-not.
+]],
+}
+
+dialog{
+  id = "beach.vase.wrong_item.b12",
+  text = [[
+##Rachel
+Doesn't B12 come from
+soil in the first place?
+]],
+}
+
+dialog{
+  id = "beach.vase.wrong_item.tears",
+  text = [[
+##Rachel
+The soil already looks
+moist.
+]],
+}
+
+dialog{
+  id = "beach.vase.wrong_item.whiskey",
+  text = [[
+##Rachel
+That sounds like a waste
+of whiskey.
+
+Maybe there is someone
+who could use a drink...
+]],
+}
+
+dialog{
+  id = "castle.beaver.angel",
+  text = [[
+Greybeard is an angel,
+the father we never had.
+]],
+}
+
+dialog{
+  id = "castle.beaver.gandhi",
+  text = [[
+Greybeard is basically
+the next Gandhi or Martin
+Luther King Jr.
+]],
+}
+
+dialog{
+  id = "castle.beaver.key",
+  text = [[
+Greybeard is the key
+to animal liberation.
+]],
+}
+
+dialog{
+  id = "castle.beaver.master",
+  text = [[
+Every day I wake up and
+ask myself how I can be
+more like master Greybeard.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.bloodthirsty",
+  text = [[
+Greybeard will hear no
+reason. He's bloodthirsty
+for carnivore genocide.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.culture",
+  text = [[
+Eating prey is part of
+my culture.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.generations",
+  text = [[
+We've eaten other animals
+for thousands of years.
+Why change that now?
+]],
+}
+
+dialog{
+  id = "castle.prisoner.hashtag",
+  text = [[
+I haven't even killed
+since #NoKillNovember!
+]],
+}
+
+dialog{
+  id = "castle.prisoner.injustice",
+  text = [[
+This is an injustice!
+]],
+}
+
+dialog{
+  id = "castle.prisoner.natural",
+  text = [[
+It's the circle of life.
+I wont apologize for doing
+something natural.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.persecuted",
+  text = [[
+We're being persecuted
+for something we can't
+change.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.personal_choice",
+  text = [[
+Killing is my personal
+choice.
+]],
+}
+
+dialog{
+  id = "castle.prisoner.solution",
+  text = [[
+Greybeard knows about
+cultured meat, but it
+doesn't matter.
+He says carnivores will
+never change.
+
+Maybe he's right.
+]],
+}
+
+dialog{
+  id = "castle.rebel.all",
+  text = [[
+We must end all suffering,
+not just the suffering
+of a few.
+]],
+}
+
+dialog{
+  id = "castle.rebel.beaver",
+  text = [[
+This robot reminds us to
+do household chores while
+we're fighting Greybeard.
+]],
+}
+
+dialog{
+  id = "castle.rebel.chimp",
+  text = [[
+Yes, I too oppose
+Greybeard.
+
+It's personal.
+]],
+}
+
+dialog{
+  id = "castle.rebel.means",
+  text = [[
+I share Greybeard's
+vision, but his means
+are oppressive.
+]],
+}
+
+dialog{
+  id = "castle.rebel.slippery_slope",
+  text = [[
+Greybeard is a slippery
+slope. If we tolerate this,
+soon we'll be his victims.
+]],
+}
+
+dialog{
+  id = "castle.rebel.twink",
+  text = [[
+Good morning, comrades!
+Fabian is on dishes.
+Enrique is on trash.
+Cinderella is on dinner.
+Martini is on vacuuming.
+Have a nice week!
+]],
+}
+
+dialog{
+  id = "castle.rebel.used",
+  text = [[
+We used to be Greybeard's
+followers until we realized
+he's horrible.
+Won't you join us in
+trying to destroy him?
+]],
+}
+
+dialog{
+  id = "catacombs.entrance.billie.1",
+  next = "catacombs.entrance.rachel.1",
+  photo = "fox",
+  text = [[
+##Billie
+Rachel, it's really dark
+in here!
+]],
+}
+
+dialog{
+  id = "catacombs.entrance.rachel.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+I know, I can't see a
+thing. Let's try to feel
+our way through it.
+]],
+}
+
+dialog{
+  id = "catacombs.outside.billie.1",
+  next = "catacombs.outside.rachel.1",
+  photo = "fox",
+  text = [[
+##Billie
+Rachel, this cave looks
+dangerous. I don't know if
+we should go in there.
+]],
+}
+
+dialog{
+  id = "catacombs.outside.billie.2",
+  next = "catacombs.outside.rachel.2",
+  photo = "fox",
+  text = [[
+##Billie
+*sigh* I trust you,
+Rachel. But I have
+a bad feeling about it.
+]],
+}
+
+dialog{
+  id = "catacombs.outside.billie.3",
+  photo = "fox",
+  text = [[
+##Billie
+Fine.
+]],
+}
+
+dialog{
+  id = "catacombs.outside.rachel.1",
+  next = "catacombs.outside.billie.2",
+  photo = "rachel",
+  text = [[
+##Rachel
+This is our path to EVOLV.
+
+
+C'mon Billie, we have to
+save your friends from
+Greybeard's prison!
+]],
+}
+
+dialog{
+  id = "catacombs.outside.rachel.2",
+  next = "catacombs.outside.billie.3",
+  photo = "rachel_fist",
+  text = [[
+##Rachel
+Don't worry Billie,
+we're in this together!
+
+I'll watch your back and
+you watch mine.
+]],
+}
+
+dialog{
+  id = "catacombs.outside.sign",
+  photo = "sign",
+  text = [[
+##sign
+NO TRESPASSING
+]],
+}
+
+dialog{
+  id = "catacombs.rachel.billie_gone",
+  photo = "rachel",
+  text = [[
+##Rachel
+??!
+
+
+Where is Billie?
+
+
+BILLIE! BILLLIIIEEE!!!
+BILLIIEEE? Hello?
+
+Oh crap, he's gone!
+Crap crap crap crap
+
+*heavy breathing*
+
+
+Oh god, what do I do?
+
+
+...
+
+
+Phew. Hah. Huff.
+
+
+Okay, I'm good. I'm okay.
+I'm good. It's okay.
+
+Okay.
+
+
+I'd better press forward.
+He can't be too far away.
+
+Phew.
+
+
+Let's do this. I got this.
+]],
+}
+
+dialog{
+  id = "catacombs.rachel.centerpiece",
+  photo = "rachel_horror_scream",
+  text = [[
+##Rachel
+OMG, the terror!!
+]],
+}
+
+dialog{
+  id = "catacombs.rachel.centerpiece_darkness",
+  photo = "rachel_horror",
+  text = [[
+##Rachel
+There's something here.
+It feels really weird and
+creepy to touch...
+]],
+}
+
+dialog{
+  id = "catacombs.rachel.spider",
+  next = "catacombs.spider",
+  photo = "rachel_angry",
+  text = [[
+##Rachel
+...!
+
+
+Ouch!
+A spider just bit me!
+]],
+}
+
+dialog{
+  id = "catacombs.spider",
+  photo = "spider",
+  text = [[
+##spider
+Muwahahaha!!!!
+]],
+}
+
+dialog{
+  id = "caves.libre",
+  text = [[
+Without software freedom
+we will never achieve a
+free society.
+]],
+}
+
+dialog{
+  id = "caves.orange_peel",
+  text = [[
+It's a pile of orange
+peels. There's a note.
+
+"Meet me in Goatshead
+Harbor."
+
+Life is strange.
+]],
+}
+
+dialog{
+  id = "evolv.emberly.1",
+  photo = "chicken",
+  text = [[
+##Emberly
+Greybeard is basically
+the next Gandhi or Martin
+Luther King Jr.
+]],
+}
+
+dialog{
+  id = "evolv.finn.1",
+  photo = "pig",
+  text = [[
+##Finn
+I'm driven to work hard.
+
+
+EVOLV has given me a life
+purpose - something I'd
+sacrifice myself for.
+]],
+}
+
+dialog{
+  id = "evolv.greybeard.intro",
+  question = "1",
+  text = [[
+Siblings of the earth,
+I am here to say:
+
+That all of us
+deserve to be happy,
+safe and free.
+The "natural order"
+is not dogma.
+
+We must not forget the
+dead. The innocent victims
+of a cruel, unjust system.
+We must remember
+Shaunda, our sister
+decimated by wolves.
+And most of all, we must
+take action! Memories
+change nothing.
+Are you with us?
+Yes
+No
+]],
+}
+
+dialog{
+  id = "evolv.greybeard.intro.no",
+  text = [[
+Then BEGONE!
+]],
+}
+
+dialog{
+  id = "evolv.greybeard.intro.yes",
+  text = [[
+You there! Human.
+]],
+}
+
+dialog{
+  id = "evolv.hermione.1",
+  photo = "hermione",
+  text = [[
+##Hermione
+Home sweet home...
+*yawn*
+]],
+}
+
+dialog{
+  id = "evolv.hermione.2",
+  next = "evolv.rachel.2",
+  photo = "hermione",
+  text = [[
+##Hermione
+Rachel, I'm tired. Let's
+just say there's an unequal
+division of labor for women.
+Do you think you could
+fetch Malcolm and Martini
+for master Greybeard?
+]],
+}
+
+dialog{
+  id = "evolv.hermione.3",
+  photo = "hermione",
+  text = [[
+##Hermione
+Okay, thank you! They're
+upstairs in the lab.
+Zzzzz...
+]],
+}
+
+dialog{
+  id = "evolv.hermione.4",
+  photo = "hermione",
+  text = [[
+##Hermione
+Zzzzz...
+]],
+}
+
+dialog{
+  id = "evolv.jain.1",
+  photo = "chicken",
+  text = [[
+##Jain
+‘HERBIVORE LIBERATION!’
+I want to cry this out at
+every lake, river, and pond.
+Together we can defeat
+herbivore oppression and
+SMASH the Carniarchy!
+]],
+}
+
+dialog{
+  id = "evolv.jeff.1",
+  photo = "sheep",
+  text = [[
+##Jeff
+EVOLV taught me how to
+find my voice. I stand up
+for myself now.
+It's liberating to ask
+for what you want. Most
+things are thrown at you,
+but not here. We determine
+our own futures.
+]],
+}
+
+dialog{
+  id = "evolv.kinbo.1",
+  photo = "cow",
+  text = [[
+##Kinbo
+Here at EVOLV, we act
+like a family. Everyone
+is trusted.
+We laugh and cry together;
+suffer and dream together.
+
+Our liberation is within
+reach, but only if we have
+the courage to take it.
+]],
+}
+
+dialog{
+  id = "evolv.legomo.1",
+  photo = "cow",
+  text = [[
+##Legomo
+Authorized personnel only.
+Greybeard's orders.
+
+Feel free to explore the
+rest of the castle. You'll
+find dormitories upstairs.
+]],
+}
+
+dialog{
+  id = "evolv.malcolm.1",
+  next = "evolv.martini.2",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Martini, are you using
+the imperial system again?
+It's 25 milliliters.
+]],
+}
+
+dialog{
+  id = "evolv.malcolm.2",
+  next = "evolv.martini.4",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Oh Martini... just use
+the soda bottles.
+]],
+}
+
+dialog{
+  id = "evolv.malcolm.3",
+  photo = "malcolm",
+  question = "1",
+  text = [[
+##Malcolm
+We'll go at once.
+
+
+Are you ready?
+Yes
+No
+]],
+}
+
+dialog{
+  id = "evolv.malcolm.4",
+  photo = "malcolm",
+  text = [[
+##Malcolm
+Fine. Let us know when
+you're ready.
+]],
+}
+
+dialog{
+  id = "evolv.martini.1",
+  next = "evolv.malcolm.1",
+  photo = "martini",
+  text = [[
+##Martini
+Oh shoot, was it
+5 teaspoons or
+5 tablespoons?
+]],
+}
+
+dialog{
+  id = "evolv.martini.2",
+  photo = "martini",
+  text = [[
+##Martini
+Crap! I used tablespoons.
+]],
+}
+
+dialog{
+  id = "evolv.martini.3",
+  next = "evolv.malcolm.2",
+  photo = "martini",
+  text = [[
+##Martini
+In my defense, they don't
+make metric spoons.
+
+And it's not like graduated
+cylinders just spill over
+ship cargo.
+]],
+}
+
+dialog{
+  id = "evolv.martini.4",
+  photo = "martini",
+  text = [[
+##Martini
+Pfft, whatever!!
+]],
+}
+
+dialog{
+  id = "evolv.martini.5",
+  photo = "martini",
+  text = [[
+##Martini
+Hey, what is this human
+doing here?
+]],
+}
+
+dialog{
+  id = "evolv.martini.6",
+  photo = "martini",
+  text = [[
+##Martini
+Talk to Malcolm when
+you're ready to go.
+]],
+}
+
+dialog{
+  id = "evolv.neperforto.1",
+  photo = "flamingo",
+  text = [[
+##Neperforto
+Our mission is to end
+carnivory and promote
+herbivore rights.
+We offer a variety of
+services to herbivores,
+including beach cleanups
+shelter services, escorting,
+habitat renewal, and
+general assistance.
+The member areas are
+upstairs. Please make
+yourself at home.
+]],
+}
+
+dialog{
+  id = "evolv.neperforto.2",
+  next = "evolv.neperforto.1",
+  photo = "flamingo",
+  text = [[
+##Neperforto
+I'm right here, you dolt!
+
+
+Ahem, sorry. Welcome to
+EVOLV HQ!
+]],
+}
+
+dialog{
+  id = "evolv.normie.1",
+  photo = "beaver",
+  text = [[
+##Normie
+Greybeard works so hard
+for us yet some people
+want to tear him down.
+The only way we'll win
+this fight is by sticking
+together.
+]],
+}
+
+dialog{
+  id = "evolv.paco.1",
+  photo = "chimp",
+  text = [[
+##Paco
+EVOLV members only.
+Greybeard's orders.
+]],
+}
+
+dialog{
+  id = "evolv.paco.2",
+  photo = "chimp",
+  text = [[
+##Paco
+Ah, you are an EVOLV
+member. Go on ahead.
+]],
+}
+
+dialog{
+  id = "evolv.paco.3",
+  photo = "chimp",
+  text = [[
+##Paco
+It's quite boring standing
+here all day. But I trust
+in master Greybeard.
+]],
+}
+
+dialog{
+  id = "evolv.paco.4",
+  photo = "chimp",
+  text = [[
+##Paco
+What is this... "USA"?
+Sorry, I can't accept this.
+
+If you'd like to join
+EVOLV you can speak with
+David Greybeard.
+]],
+}
+
+dialog{
+  id = "evolv.paco.5",
+  photo = "chimp",
+  text = [[
+##Paco
+Sorry, I can't accept
+this. EVOLV members only.
+]],
+}
+
+dialog{
+  id = "evolv.rachel.1",
+  next = "evolv.neperforto.2",
+  photo = "rachel",
+  text = [[
+##Rachel
+*ding ding*
+]],
+}
+
+dialog{
+  id = "evolv.rachel.2",
+  next = "evolv.hermione.3",
+  photo = "rachel_fist",
+  text = [[
+##Rachel
+Leave it to me!
+]],
+}
+
+dialog{
+  id = "evolv.rachel.3",
+  photo = "rachel",
+  text = [[
+##Rachel
+I'm a new EVOLV member.
+David Greybeard wants you.
+]],
+}
+
+dialog{
+  id = "evolv.solina.1",
+  photo = "chicken",
+  text = [[
+##Solina
+I'm empowered by the
+people who support me.
+
+Because of EVOLV, I'm not
+alone anymore.
+]],
+}
+
+dialog{
+  id = "evolv.sue.1",
+  photo = "chicken",
+  text = [[
+##Sue
+EVOLV is about taking
+action.
+
+It's about seeing what's
+wrong in the world and
+choosing to act upon it.
+And you should, because
+we can fix this world.
+
+We just need to stick
+together and do as
+Greybeard says.
+]],
+}
+
+dialog{
+  id = "flags.1",
+  photo = "rachel",
+  text = [[
+##Rachel
+Gah, I should have noticed
+how all of Greybeard's
+henchmen are chimps.
+He's clearly a speciesist!
+]],
+}
+
+dialog{
+  id = "flags.2",
+  photo = "rachel",
+  text = [[
+##Rachel
+Hermione was exhausted...
+I should have known I was
+being manipulated.
+]],
+}
+
+dialog{
+  id = "flags.3",
+  photo = "rachel",
+  text = [[
+##Rachel
+EVOLV kicked out Claudia,
+and she's the smartest one!
+
+I'm so stupid for not
+seeing this before.
+]],
+}
+
+dialog{
+  id = "flags.4",
+  photo = "rachel",
+  text = [[
+##Rachel
+Transcend said only bad
+things about EVOLV.
+Why didn't I listen?
+]],
+}
+
+dialog{
+  id = "forest.mimosa.friend",
+  text = [[
+Greetings, traveller.
+We're Mimosa pudicas -
+plants that can feel pain.
+]],
+}
+
+dialog{
+  id = "forest.mimosa.hello",
+  text = [[
+Touch me... NOT!
+]],
+}
+
+dialog{
+  id = "forest.mimosa.water.needs_water",
+  text = [[
+*heavy breathing*
+Water...
+]],
+}
+
+dialog{
+  id = "forest.mimosa.water.no",
+  text = [[
+Water...
+]],
+}
+
+dialog{
+  id = "forest.mimosa.water.thanks",
+  text = [[
+OH YES! Thank you! I feel
+so much better now.
+
+You look malnourished
+though, no offense.
+
+Where do you get your
+B12 from? Maybe you'll
+have to slaughter a cow.
+Haha jk! B12 actually
+comes from the soil.
+
+You want some? I owe you
+one! Don't take it all
+at once...
+]],
+}
+
+dialog{
+  id = "forest.mimosa.water.watered",
+  text = [[
+Thanks girl!
+Now...
+Got any tequila?
+]],
+}
+
+dialog{
+  id = "forest.mimosa.wrong_item.b12",
+  text = [[
+What, you don't want it?
+
+
+Well it's no good to me
+so you might as well
+keep it.
+]],
+}
+
+dialog{
+  id = "forest.mimosa.wrong_item.seed",
+  text = [[
+Sorry, I'm not looking
+to adopt right now. Maybe
+when I'm feeling better.
+]],
+}
+
+dialog{
+  id = "forest.mimosa.wrong_item.whiskey",
+  text = [[
+Don't you know alcohol
+is dehydrating! Are you
+trying to kill me?
+]],
+}
+
+dialog{
+  id = "forest.soyboy",
+  text = [[
+So what if I'm comprised
+of 100% organic soy? So
+what if my name is Soyboy?
+I don't care what you
+think! I'm conservative
+and proud!
+Don't tread on me!
+Anti-racist is a code
+word for anti-white!
+Blood and soil! Hail
+Kekistan! 1488!
+]],
+}
+
+dialog{
+  id = "game.end_credits",
+  text = [[
+        CREDITS
+
+
+Project lead:
+
+    Alex Gleason
+
+
+
+Development:
+
+    Daniel Molina Garcia
+
+
+
+Original soundtrack
+composed by:
+
+    CosmicGem
+    Adam Kol
+    serviceshock
+
+
+
+Asset creation:
+
+    Siltocyn
+
+
+
+Consulting:
+
+    Mary Kate Fain
+
+
+
+Drive-by contributors:
+
+    Nathan Manske
+    William Starling
+    Jay Quigley
+
+
+
+Programming help:
+
+    llamazing
+    Solarus community
+
+
+
+Financial backers:
+
+    Natasha B
+    Cassandra Chu
+    Kira Davis
+    Andrew Engelbrecht
+    Mary Kate Fain
+    Lucas Freitas
+    Matt Gleason
+    Genna Logan
+    Sebastian Riedel
+    Jennifer Recchio
+    Tafseer Tayeb
+
+
+
+
+   3RD PARTY ASSETS
+
+
+"Zoria Tileset"
+    DragonDePlatino
+
+Solarus SFX
+    Diarandor
+
+Solarus scripts
+    Christopho
+
+Fonts
+    fontenddev.com
+
+OpenGameArt.org assets
+    Daniel Eddeland
+    Lanea Zimmerman
+
+
+  FRAMEWORKS / TOOLS
+
+
+Solarus Engine
+  solarus-games.org
+
+Krita
+  krita.org
+
+LMMS
+  lmms.io
+
+elementary OS
+  elementary.io
+]],
+}
+
+dialog{
+  id = "game.intro.letter",
+  text = [[
+Dear Rachel,
+Will you elope with me?
+Sincerely,
+Marvin
+]],
+}
+
+dialog{
+  id = "game.misc.didntwork",
+  text = [[
+It didn't seem to work.
+]],
+}
+
+dialog{
+  id = "game.misc.nothanks",
+  text = [[
+I don't need that, but
+thanks anyway.
+]],
+}
+
+dialog{
+  id = "game.misc.wip",
+  text = [[
+4th wall breaking notice:
+This area is incomplete.
+]],
+}
+
+dialog{
+  id = "game.outro.1",
+  next = "game.outro.5",
+  photo = "claudia",
+  text = [[
+##Claudia
+My experience on Andast
+was quite painful.
+]],
+}
+
+dialog{
+  id = "game.outro.2",
+  next = "game.outro.3",
+  photo = "rachel",
+  text = [[
+##Rachel
+I may have been betrayed,
+but at least I lived by
+my values.
+I made 101 friends and
+lost 100, but 1 good
+friend is still a net gain.
+]],
+}
+
+dialog{
+  id = "game.outro.3",
+  photo = "claudia",
+  text = [[
+##Claudia
+You're right. One good
+friend is more than I had
+before.
+]],
+}
+
+dialog{
+  id = "game.outro.4",
+  text = [[
+##Rachel
+That's the spirit! We
+have a whole life of new
+challenges ahead of us.
+]],
+}
+
+dialog{
+  id = "game.outro.5",
+  photo = "rachel",
+  text = [[
+##Rachel
+Mine too. Let's shove
+off and leave this place.
+]],
+}
+
+dialog{
+  id = "game.water_toofar",
+  text = [[
+##Rachel
+The tide is too strong
+there! Without a boat
+I'll surely drown.
+]],
+}
+
+dialog{
+  id = "greybeard.allyship",
+  text = [[
+##Greybeard
+Your performative allyship
+has gone on for long
+enough!
+]],
+}
+
+dialog{
+  id = "intro.greybeard.1",
+  text = [[
+##strange gorilla
+Hello? Are you awake?
+
+
+We found you injured.
+On the beach. You're in
+the hospital room of
+our headquarters.
+...
+I'm David Greybeard.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.2",
+  question = "1",
+  text = [[
+##Greybeard
+You were out for a week.
+We were concerned for
+you, hairless one.
+Still, we're similar.
+But...
+
+Where did your fur go?
+It burned off in the crash
+I'm homo sapien, actually
+]],
+}
+
+dialog{
+  id = "intro.greybeard.2.a",
+  text = [[
+##Greybeard
+Hmm... no, that can't
+be right. I saw it myself.
+There was no fire.
+You must be human.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.2.b",
+  text = [[
+##Greybeard
+Ah, what a marvel.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.3",
+  question = "1",
+  text = [[
+##Greybeard
+I know about humans, like
+Martin Luther King Jr,
+and Gandhi.
+I've read some history
+books too...
+I hope that you're the
+only human on the island?
+I'm alone
+Well, there is Marvin
+]],
+}
+
+dialog{
+  id = "intro.greybeard.3.a",
+  text = [[
+##Greybeard
+Good. Well, you should
+know - the other human
+didn't make it.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.3.b",
+  question = "1",
+  text = [[
+## Greybeard
+Oh yes, about him...
+
+
+...Marvin died.
+We weren't very close.
+What a tragedy!
+]],
+}
+
+dialog{
+  id = "intro.greybeard.3.b.1",
+  text = [[
+##Greybeard
+Okay. He won't be
+needed here anyway.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.3.b.2",
+  text = [[
+##Greybeard
+I'm sorry. We did everything
+in our power. He refused
+to eat the brocolli.
+]],
+}
+
+dialog{
+  id = "intro.greybeard.4",
+  text = [[
+##Greybeard
+At any rate, the team
+meeting is about to start.
+Will you please join us?
+We value new perspectives,
+and the others will be
+happy to see you awake.
+]],
+}
+
+dialog{
+  id = "intro.segway",
+  text = [[
+Rachel left the castle
+to explore the island,
+hoping to find a way home.
+]],
+}
+
+dialog{
+  id = "rachel.injustice",
+  text = [[
+##Rachel
+This injustice must
+be stopped!
+]],
+}
+
+dialog{
+  id = "theater.ferdinand.1",
+  photo = "sheep_wolf",
+  text = [[
+##Ferdinand
+Hold it!!
+I don't consent for you
+to move any further!
+]],
+}
+
+dialog{
+  id = "theater.ferdinand.2",
+  photo = "sheep_wolf",
+  text = [[
+##Ferdinand
+Okay, I consent for you
+to move further.
+]],
+}
+
+dialog{
+  id = "transcend.bach-bacchus.1",
+  photo = "chicken",
+  text = [[
+##Bach-Bacchus
+Yo, you're with EVOLV?
+
+
+Ew, that guy Greybeard
+guy just wants a bunch
+of groupies for his cult.
+]],
+}
+
+dialog{
+  id = "water_dungeon.puzzle_bird",
+  text = [[
+Rumor has it this sacred
+fountain was a shrine to
+the water god, built by
+the ancient inhabitants
+of this land...
+]],
+}
+
+dialog{
+  id = "water_dungeon.statue_story",
+  text = [[
+A long time ago...
+]],
+}
+
+dialog{
+  id = "woods.activist_house.chicken",
+  text = [[
+Unless there's a way for
+carnivores to survive
+without meat
+I don't see how this
+could possibly work.
+]],
+}
+
+dialog{
+  id = "woods.activist_house.squirrel",
+  text = [[
+I can't find my nuts.
+]],
+}
+
+dialog{
+  id = "woods.activist_house.therian",
+  text = [[
+I just feel that you're
+making unnecessary
+generalizations.
+Not all carnivores
+eat meat.
+]],
+}
+
+dialog{
+  id = "woods.activist_house.wolf",
+  text = [[
+Predators suffer under
+systems of carnism too.
+We didn't choose this.
+]],
+}
+
+dialog{
+  id = "woods.born",
+  text = [[
+Being a sheep was not a
+choice for me. I was
+born this way.
+]],
+}
+
+dialog{
+  id = "woods.brocialist",
+  text = [[
+Call me a brocialist,
+but I think this is all
+a distraction.
+The real problem is
+economic inequality and
+state capitalism.
+]],
+}
+
+dialog{
+  id = "woods.defense",
+  text = [[
+I for one SUPPORT
+therians. You all should
+be ashamed!
+It's this kind of rhetoric
+that gets therians KILLED.
+It's LITERAL VIOLENCE.
+]],
+}
+
+dialog{
+  id = "woods.dysphoria",
+  text = [[
+My species dysphoria is
+a medical condition.
+Unpopular opinion:
+in order to be a real
+therian, you have to have
+species dysphoria.
+]],
+}
+
+dialog{
+  id = "woods.earth_shape",
+  photo = "squirrel",
+  text = [[
+##Lucas
+Let's be honest,
+
+
+the earth is shaped as
+an intersex vulva-penis
+hybrid.
+The imperialistic
+cisnormative patriarchical
+government has been
+hiding this from
+everybody so that people
+think there are only
+two genders when in fact
+the earth ITSELF is
+NONBINARY.
+]],
+}
+
+dialog{
+  id = "woods.essentialism",
+  text = [[
+Species essentialism is
+the antiquated idea that
+beings have a biological
+role to fulfill based
+solely on their species
+assigned at birth.
+]],
+}
+
+dialog{
+  id = "woods.guilt",
+  text = [[
+I've been having a lot
+of carnivore guilt
+lately. Ugh, it sucks.
+Then I remember it's not
+about me and I feel guilty
+about feeling guilty.
+]],
+}
+
+dialog{
+  id = "woods.mental_picture",
+  text = [[
+If you think I am "less"
+of a sheep, or NOT a
+sheep, because I don't
+fit your mental picture
+of what a sheep "should"
+look like, or what body
+parts sheep "should" or
+"shouldn't" have,
+news flash:
+Your mental description
+of sheep is not only
+innacurately narrow, but
+speciesist and bigoted
+as well.
+]],
+}
+
+dialog{
+  id = "woods.mussolini",
+  text = [[
+I can totally see how
+a leftist like Mussolini
+could end up on the right.
+The world hits you hard,
+and all your idealism
+becomes contempt.
+]],
+}
+
+dialog{
+  id = "woods.nuanced",
+  photo = "squirrel",
+  text = [[
+##Gemma
+Species identity is a
+nuanced issue and I'm
+not going to take a side.
+]],
+}
+
+dialog{
+  id = "woods.peak",
+  text = [[
+I was really open and
+accepting at first,
+
+but I peaked when a
+wolf-to-sheep ate my
+sister.
+]],
+}
+
+dialog{
+  id = "woods.prey_space",
+  text = [[
+Prey-only spaces are not
+a social club that exist
+solely to exclude others.
+We need some degree of
+separation for our own
+safety.
+]],
+}
+
+dialog{
+  id = "woods.reality",
+  text = [[
+They can say they won't
+eat us, but that's not
+how it works.
+They are obligate
+carnivores. It's just
+the reality! Come on.
+]],
+}
+
+dialog{
+  id = "woods.socialism",
+  text = [[
+Identity politics and
+class analysis are
+inseperable.
+]],
+}
+
+dialog{
+  id = "woods.still_eating",
+  photo = "squirrel",
+  text = [[
+##Valentin
+They're still eating us.
+They say they aren't,
+but they are.
+]],
+}
+
+dialog{
+  id = "woods.teva",
+  text = [[
+TEVA = Therian-exclusive
+vegan activist.
+
+But even calling them
+"vegan activists" gives
+them too much credit.
+]],
+}
+
+dialog{
+  id = "woods.therianphobic",
+  text = [[
+Wolf-to-sheeps do not
+eat cis sheep. Are you
+therianphobic?
+]],
+}
+
+dialog{
+  id = "woods.without",
+  text = [[
+Look, you can eat grass
+and wear wool without
+being a sheep.
+]],
+}
+

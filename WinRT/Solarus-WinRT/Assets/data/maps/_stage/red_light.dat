@@ -1,0 +1,155 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 384,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi_theater",
+  music = "cosmicgem829/cave",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 384,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 16,
+  height = 368,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 16,
+  height = 368,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 48,
+  height = 384,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 64,
+  height = 384,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "57",
+}
+
+npc{
+  name = "ferdinand",
+  layer = 0,
+  x = 120,
+  y = 29,
+  direction = 3,
+  subtype = 1,
+  sprite = "animals/sheep_wolf",
+}
+
+sensor{
+  name = "sensor1",
+  layer = 0,
+  x = 72,
+  y = 349,
+  width = 112,
+  height = 32,
+}
+
+sensor{
+  name = "sensor2",
+  layer = 0,
+  x = 72,
+  y = 221,
+  width = 112,
+  height = 32,
+}
+
+sensor{
+  name = "sensor3",
+  layer = 0,
+  x = 72,
+  y = 93,
+  width = 112,
+  height = 32,
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 120,
+  y = 381,
+  direction = 1,
+}
+

@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "animals/flamingo.png",
+  frame_delay = 400,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2, num_columns = 1 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2, num_columns = 1 },
+  },
+}

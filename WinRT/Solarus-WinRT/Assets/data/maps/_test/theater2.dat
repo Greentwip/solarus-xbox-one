@@ -1,0 +1,405 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 160,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi_theater",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 160,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 192,
+  height = 96,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 16,
+  height = 112,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 112,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 144,
+  width = 64,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 144,
+  width = 64,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 16,
+  width = 192,
+  height = 16,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 192,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 144,
+  width = 32,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 192,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "58",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 136,
+  y = 157,
+  direction = 1,
+}
+

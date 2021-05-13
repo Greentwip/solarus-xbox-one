@@ -1,0 +1,47 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "voadi",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 256,
+  height = 144,
+  pattern = "grass.soil",
+  tileset = "zoria",
+}
+
+chest{
+  name = "big_chest",
+  layer = 0,
+  x = 176,
+  y = 61,
+  treasure_name = "seed",
+  sprite = "entities/big_chest",
+}
+
+chest{
+  name = "chest",
+  layer = 0,
+  x = 80,
+  y = 61,
+  treasure_name = "key",
+  treasure_savegame_variable = "key1",
+  sprite = "entities/chest",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 128,
+  y = 109,
+  direction = 1,
+}
+

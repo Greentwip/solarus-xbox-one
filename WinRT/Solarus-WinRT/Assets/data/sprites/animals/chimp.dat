@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "animals/primates.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 80, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}

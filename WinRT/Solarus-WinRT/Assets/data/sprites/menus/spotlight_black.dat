@@ -1,0 +1,27 @@
+animation{
+  name = "32",
+  src_image = "menus/spotlight_black.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+animation{
+  name = "128",
+  src_image = "menus/spotlight_black.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 96, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 67, num_frames = 2 },
+  },
+}
+animation{
+  name = "64",
+  src_image = "menus/spotlight_black.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 35, num_frames = 2 },
+  },
+}

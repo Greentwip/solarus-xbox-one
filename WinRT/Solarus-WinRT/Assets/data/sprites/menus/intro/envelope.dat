@@ -1,0 +1,14 @@
+animation{
+  name = "closed",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 0, y = 56, frame_width = 136, frame_height = 112, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "open",
+  src_image = "menus/intro.png",
+  directions = {
+    { x = 144, y = 0, frame_width = 136, frame_height = 168, origin_x = 0, origin_y = 56 },
+  },
+}

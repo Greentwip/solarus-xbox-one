@@ -1,0 +1,306 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 272,
+  height = 160,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "zoria",
+  music = "avgvst/09 - Z 339 - Here the Deities approve",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 272,
+  height = 160,
+  pattern = "cliff.1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 80,
+  height = 80,
+  pattern = "sand.soil",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "373",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "369",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "368",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "370",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 16,
+  height = 96,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "364",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "365",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "366",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 32,
+  width = 16,
+  height = 96,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "tree_tiny.palm",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "tree.palm",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "rock",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 32,
+  width = 80,
+  height = 32,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 0,
+  width = 32,
+  height = 16,
+  pattern = "waterfall.top",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "waterfall",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "waterfall.bottom",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "torch",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "281",
+}
+
+npc{
+  layer = 0,
+  x = 136,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/orange_peel",
+  behavior = "dialog#caves.orange_peel",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 128,
+  width = 16,
+  height = 16,
+  destination_map = "unused/woods",
+  destination = "outside_shrine",
+  sound = "door_open",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 136,
+  y = 133,
+  direction = 1,
+  default = true,
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 56,
+  width = 80,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
