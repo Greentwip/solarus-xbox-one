@@ -437,7 +437,7 @@ void render(const SurfacePtr& quest_surface) {
 	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
   }
   else {
-	  auto draw_infos = std::make_shared<Custom::HalfScaledDrawInfos>(
+	  auto draw_infos = std::make_shared<Custom::RegularDrawInfos>(
 		  Rectangle(surface_size),
 		  Point(),
 		  Point(),
@@ -985,6 +985,7 @@ Rectangle get_letter_box(const Size& basesize) {
 void on_window_resized(const Size& size) {
   Rectangle letter = get_letter_box(size);
 
+#if defined(WINRT)
   SDL_SetWindowSize(
 	  context.main_window,
 	  size.width,
@@ -992,9 +993,18 @@ void on_window_resized(const Size& size) {
   );
 
   context.renderer->on_window_size_changed(letter);
-  SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window,letter.get_width(),letter.get_height());
+  SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window, letter.get_width(), letter.get_height());
   context.screen_surface = Surface::create(surface_impl);
   context.geometry.logical_size = letter.get_size();
+
+#else
+  context.renderer->on_window_size_changed(letter);
+  SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window, letter.get_width(), letter.get_height());
+  context.screen_surface = Surface::create(surface_impl);
+  context.geometry.logical_size = letter.get_size();
+
+#endif
+
 }
 
 /**

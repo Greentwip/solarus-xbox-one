@@ -444,10 +444,11 @@ void Surface::bind_as_texture() const {
  * \brief Makes this texture the target for next OpenGL calls.
  */
 void Surface::bind_as_target() {
-
+#if defined(WINRT)
 	auto window = Video::get_window();
 	auto renderer = SDL_GetRenderer(window);
 	internal_surface->get_surface();
+#endif
 }
 
 /**
