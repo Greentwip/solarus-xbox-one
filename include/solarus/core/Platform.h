@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 
+#if defined(WINRT)
 // ----------------------------------------------------------------------
 // IsRunningOnXbox
 // Determines whether or not the game is running on an xbox console
@@ -32,5 +33,7 @@ static bool IsRunningOnXbox()
 	// Return whether or not the host platform is xbox
 	return bRunningOnXbox;
 }
+
+#endif
 
 #endif

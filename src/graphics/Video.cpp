@@ -417,13 +417,10 @@ void render(const SurfacePtr& quest_surface) {
 
   context.screen_surface->clear();
 
-  int w = 0;
-  int h = 0;
-  SDL_GetWindowSize(context.main_window, &w, &h);
-  Size screen_size = context.screen_surface->get_size();
   Size surface_size = surface_to_render->get_size();
   Size output_size = get_output_size_no_bars();
 
+#if defined(WINRT)
   if (IsRunningOnXbox()) {
 
 	  auto draw_infos = std::make_shared<Custom::HalfScaledDrawInfos>(
@@ -469,7 +466,22 @@ void render(const SurfacePtr& quest_surface) {
 		  *surface_to_render,
 		  draw_infos);
   }
-  
+#else
+  DrawInfos draw_infos = DrawInfos(
+	  Rectangle(surface_size),
+	  Point(),
+	  Point(),
+	  BlendMode::BLEND,
+	  255, 0,
+	  output_size / surface_size,
+	  null_proxy);
+
+  proxy.draw(
+	  *context.screen_surface,
+	  *surface_to_render,
+	  draw_infos);
+
+#endif
 }
 
 /**
