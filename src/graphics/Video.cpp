@@ -432,39 +432,23 @@ void render(const SurfacePtr& quest_surface) {
 		  output_size / surface_size,
 		  proxy);
 
-	  /*proxy.draw(
-		  *context.screen_surface,
-		  *surface_to_render,
-		  draw_infos);*/
-
 	  context.screen_surface->bind_as_target();
 
-	  //context.screen_surface->draw(surface_to_render);
 	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
-
-	  /*Rectangle dst_rect = draw_infos.dst_rectangle();
-
-	  auto context_renderer = context.renderer.get();
-	  ((SDLRenderer*)context_renderer)->set_render_target(sdst.get_texture());
-
-	  dst_rect.set_y(dst_rect.get_height());
-
-	  SDL_RenderCopy(renderer, ssrc.get_texture(), draw_infos.region, dst_rect);*/
   }
   else {
-	  DrawInfos draw_infos = DrawInfos(
+	  auto draw_infos = std::make_shared<Custom::HalfScaledDrawInfos>(
 		  Rectangle(surface_size),
 		  Point(),
 		  Point(),
 		  BlendMode::BLEND,
 		  255, 0,
 		  output_size / surface_size,
-		  null_proxy);
+		  proxy);
 
-	  proxy.draw(
-		  *context.screen_surface,
-		  *surface_to_render,
-		  draw_infos);
+	  context.screen_surface->bind_as_target();
+
+	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
   }
 #else
   DrawInfos draw_infos = DrawInfos(
