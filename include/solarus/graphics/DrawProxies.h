@@ -13,6 +13,8 @@
 
 namespace Solarus {
 
+
+
 struct DrawProxy;
 
 /**
@@ -22,7 +24,8 @@ struct DrawProxy;
  *
  * it also provide some helper methods to extract useful informations from the drawing data
  */
-struct DrawInfos {
+class DrawInfos {
+public:
   inline constexpr DrawInfos(const Rectangle& region,const Point& dst_position, const Point& transformation_origin,
             BlendMode blend_mode, uint8_t opacity, double rotation, const Scale& scale, const Color& color,
             const DrawProxy& proxy):
@@ -50,14 +53,16 @@ struct DrawInfos {
    * @brief compute scaled destination rectangle
    * @return
    */
-  inline Rectangle dst_rectangle() const {
+  virtual Rectangle dst_rectangle() const {
     const Point& ototl = -transformation_origin;
     Point otobr = Point(region.get_size()) - transformation_origin;
     Point tcenter = dst_position+transformation_origin;
-    return Rectangle(
-          tcenter + ototl*scale,
-          tcenter + otobr*scale
-          ).positive();
+
+	return Rectangle(
+		tcenter + ototl * scale,
+		tcenter + otobr * scale
+	).positive();
+
   }
 
   inline SDL_RendererFlip flips() const {

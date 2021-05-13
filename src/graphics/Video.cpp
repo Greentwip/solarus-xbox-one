@@ -20,6 +20,7 @@
 #include "solarus/core/Logger.h"
 #include "solarus/core/Profiler.h"
 #include "solarus/core/PerfCounter.h"
+#include "solarus/core/Platform.h"
 #include "solarus/core/QuestFiles.h"
 #include "solarus/core/Rectangle.h"
 #include "solarus/core/Size.h"
@@ -35,6 +36,8 @@
 #include "solarus/graphics/Renderer.h"
 #include "solarus/graphics/sdlrenderer/SDLRenderer.h"
 #include "solarus/graphics/glrenderer/GlRenderer.h"
+
+
 #include <memory>
 #include <sstream>
 #include <utility>
@@ -118,14 +121,26 @@ void create_window(const Arguments& args) {
   }
 
   std::string title = std::string("Solarus ") + SOLARUS_VERSION;
+#if defined(WINRT)
   context.main_window = SDL_CreateWindow(
-        title.c_str(),
-        SDL_WINDOWPOS_CENTERED,
-        SDL_WINDOWPOS_CENTERED,
-        context.geometry.wanted_quest_size.width,
-        context.geometry.wanted_quest_size.height,
-        SDL_WINDOW_HIDDEN | SDL_WINDOW_RESIZABLE | (force_software ? 0 : SDL_WINDOW_OPENGL)
-        );
+	  title.c_str(),
+	  SDL_WINDOWPOS_CENTERED,
+	  SDL_WINDOWPOS_CENTERED,
+	  context.geometry.wanted_quest_size.width,
+	  context.geometry.wanted_quest_size.height,
+	  SDL_WINDOW_HIDDEN | SDL_WINDOW_RESIZABLE | SDL_WINDOW_FULLSCREEN | (force_software ? 0 : SDL_WINDOW_OPENGL)
+  );
+
+#else
+  context.main_window = SDL_CreateWindow(
+	  title.c_str(),
+	  SDL_WINDOWPOS_CENTERED,
+	  SDL_WINDOWPOS_CENTERED,
+	  context.geometry.wanted_quest_size.width,
+	  context.geometry.wanted_quest_size.height,
+	  SDL_WINDOW_HIDDEN | SDL_WINDOW_RESIZABLE | (force_software ? 0 : SDL_WINDOW_OPENGL)
+  );
+#endif
 
   Debug::check_assertion(context.main_window != nullptr,
                          std::string("Cannot create the window: ") + SDL_GetError());
@@ -157,8 +172,8 @@ void initialize_software_video_modes() {
 
   context.all_video_modes.emplace_back(
         "normal",
-        context.geometry.quest_size * 2,
-        nullptr
+		context.geometry.quest_size * 2,
+		nullptr
         );
   context.all_video_modes.emplace_back(
         "scale2x",
@@ -345,6 +360,8 @@ void hide_window() {
   }
 }
 
+#include "solarus/graphics/CustomDrawInfos.h"
+
 /**
  * \brief Draws the quest surface on the screen with the current video mode.
  * \param quest_surface The quest surface to render on the screen.
@@ -399,17 +416,60 @@ void render(const SurfacePtr& quest_surface) {
         context.renderer->default_terminal();
 
   context.screen_surface->clear();
-  proxy.draw(
-        *context.screen_surface,
-        *surface_to_render,
-        DrawInfos(
-          Rectangle(surface_to_render->get_size()),
-          Point(),
-          Point(),
-          BlendMode::BLEND,
-          255,0,
-          get_output_size_no_bars()/surface_to_render->get_size(),
-          null_proxy));
+
+  int w = 0;
+  int h = 0;
+  SDL_GetWindowSize(context.main_window, &w, &h);
+  Size screen_size = context.screen_surface->get_size();
+  Size surface_size = surface_to_render->get_size();
+  Size output_size = get_output_size_no_bars();
+
+  if (IsRunningOnXbox()) {
+
+	  auto draw_infos = std::make_shared<Custom::HalfScaledDrawInfos>(
+		  Rectangle(surface_size),
+		  Point(),
+		  Point(),
+		  BlendMode::BLEND,
+		  255, 0,
+		  output_size / surface_size,
+		  proxy);
+
+	  /*proxy.draw(
+		  *context.screen_surface,
+		  *surface_to_render,
+		  draw_infos);*/
+
+	  context.screen_surface->bind_as_target();
+
+	  //context.screen_surface->draw(surface_to_render);
+	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
+
+	  /*Rectangle dst_rect = draw_infos.dst_rectangle();
+
+	  auto context_renderer = context.renderer.get();
+	  ((SDLRenderer*)context_renderer)->set_render_target(sdst.get_texture());
+
+	  dst_rect.set_y(dst_rect.get_height());
+
+	  SDL_RenderCopy(renderer, ssrc.get_texture(), draw_infos.region, dst_rect);*/
+  }
+  else {
+	  DrawInfos draw_infos = DrawInfos(
+		  Rectangle(surface_size),
+		  Point(),
+		  Point(),
+		  BlendMode::BLEND,
+		  255, 0,
+		  output_size / surface_size,
+		  null_proxy);
+
+	  proxy.draw(
+		  *context.screen_surface,
+		  *surface_to_render,
+		  draw_infos);
+  }
+  
 }
 
 /**
@@ -885,7 +945,7 @@ void reset_window_size() {
  * @return
  */
 Rectangle get_letter_box(const Size& basesize) {
-  float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
+  /*float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
   float wratio = basesize.width / static_cast<float>(basesize.height);
   if(qratio > wratio) {
     return {
@@ -899,7 +959,27 @@ Rectangle get_letter_box(const Size& basesize) {
           0,
           static_cast<int>(basesize.height*qratio),
           basesize.height};
+  }*/
+
+
+  Size screenSize = { basesize.width, basesize.height };
+
+  if (screenSize.width >= screenSize.height) {
+	  auto quest_size = context.geometry.quest_size;
+	  float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
+	  int width = int(context.geometry.quest_size.width / height_proportion);
+	  int height = screenSize.height;
+	  return { int((screenSize.width - width) / 2), 0, width, height };
   }
+  else {
+	  float width_proportion = context.geometry.quest_size.width / (float)screenSize.height;
+	  float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
+	  int width = screenSize.width;
+	  int height = int(context.geometry.quest_size.height / width_proportion);
+	  return { 0, int((screenSize.height - height) / 2), width, height };
+  }
+
+
 }
 
 /**
@@ -908,6 +988,13 @@ Rectangle get_letter_box(const Size& basesize) {
  */
 void on_window_resized(const Size& size) {
   Rectangle letter = get_letter_box(size);
+
+  SDL_SetWindowSize(
+	  context.main_window,
+	  size.width,
+	  size.height
+  );
+
   context.renderer->on_window_size_changed(letter);
   SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window,letter.get_width(),letter.get_height());
   context.screen_surface = Surface::create(surface_impl);

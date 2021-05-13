@@ -3511,6 +3511,12 @@
     <ClInclude Include="..\..\include\solarus\graphics\glrenderer\GlTexture.h">
       <Filter>include\graphics\glrenderer</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\solarus\core\Platform.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\solarus\graphics\CustomDrawInfos.h">
+      <Filter>include\graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\data\fonts\Comicoro.ttf">

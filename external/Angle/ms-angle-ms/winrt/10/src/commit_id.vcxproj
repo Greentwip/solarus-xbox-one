@@ -322,8 +322,9 @@
   <ItemGroup>
     <CustomBuild Include="$(OutDir)obj\global_intermediate\angle\commit_id.py">
       <FileType>Document</FileType>
-      <Command>call call python "$(OutDir)obj\global_intermediate\angle\commit_id.py" "..\..\..\src\gen" "..\..\.." "$(OutDir)obj\global_intermediate\angle\id\commit.h"
-if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Command>
+        if not exist  "$(OutDir)obj\global_intermediate\angle\commit_id.py" call call python "$(OutDir)obj\global_intermediate\angle\commit_id.py" "..\..\..\src\gen" "..\..\.." "$(OutDir)obj\global_intermediate\angle\id\commit.h"
+        if %errorlevel% neq 0 exit /b %errorlevel%</Command>
       <Message>Generating ANGLE Commit ID</Message>
       <Outputs>$(OutDir)obj\global_intermediate\angle\id\commit.h</Outputs>
       <AdditionalInputs>..\..\..\.git\index</AdditionalInputs>

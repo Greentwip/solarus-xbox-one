@@ -59,6 +59,8 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <EnableModules>false</EnableModules>
       <SDLCheck>false</SDLCheck>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)\$(Platform)\$(Configuration)\lua-uwp</AdditionalLibraryDirectories>
@@ -2254,6 +2256,7 @@
     <ClInclude Include="..\..\include\solarus\core\MapData.h" />
     <ClInclude Include="..\..\include\solarus\core\PerfCounter.h" />
     <ClInclude Include="..\..\include\solarus\core\PixelBits.h" />
+    <ClInclude Include="..\..\include\solarus\core\Platform.h" />
     <ClInclude Include="..\..\include\solarus\core\Point.h" />
     <ClInclude Include="..\..\include\solarus\core\Profiler.h" />
     <ClInclude Include="..\..\include\solarus\core\QuestDatabase.h" />
@@ -2340,6 +2343,7 @@
     <ClInclude Include="..\..\include\solarus\graphics\BlendMode.h" />
     <ClInclude Include="..\..\include\solarus\graphics\BlendModeInfo.h" />
     <ClInclude Include="..\..\include\solarus\graphics\Color.h" />
+    <ClInclude Include="..\..\include\solarus\graphics\CustomDrawInfos.h" />
     <ClInclude Include="..\..\include\solarus\graphics\DefaultShaders.h" />
     <ClInclude Include="..\..\include\solarus\graphics\Drawable.h" />
     <ClInclude Include="..\..\include\solarus\graphics\DrawablePtr.h" />

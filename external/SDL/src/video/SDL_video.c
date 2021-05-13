@@ -1262,7 +1262,7 @@ SDL_UpdateFullscreenMode(SDL_Window * window, SDL_bool fullscreen)
             return 0;
         }
     }
-#elif __WINRT__ && (NTDDI_VERSION < NTDDI_WIN10)
+#elif __WINRT__ && (NTDDI_VERSION <= NTDDI_WIN10_RS5)
     /* HACK: WinRT 8.x apps can't choose whether or not they are fullscreen
        or not.  The user can choose this, via OS-provided UI, but this can't
        be set programmatically.
@@ -1279,12 +1279,12 @@ SDL_UpdateFullscreenMode(SDL_Window * window, SDL_bool fullscreen)
             WinRT 8.x can't resolve either programmatically, so we're
             giving up.
         */
-        return -1;
+        //return -1;
     } else {
         /* Whatever was requested, fullscreen or windowed mode, is already
             in-place.
         */
-        return 0;
+        //return 0;
     }
 #endif
 
@@ -1354,6 +1354,7 @@ SDL_UpdateFullscreenMode(SDL_Window * window, SDL_bool fullscreen)
 
                     SDL_SendWindowEvent(other, SDL_WINDOWEVENT_RESIZED,
                                         fullscreen_mode.w, fullscreen_mode.h);
+
 #endif
                 } else {
                     SDL_OnWindowResized(other);
@@ -1605,7 +1606,7 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
     }
 #endif
 
-#if __WINRT__ && (NTDDI_VERSION < NTDDI_WIN10)
+#if __WINRT__ && (NTDDI_VERSION <= NTDDI_WIN10_RS5)
     /* HACK: WinRT 8.x apps can't choose whether or not they are fullscreen
        or not.  The user can choose this, via OS-provided UI, but this can't
        be set programmatically.
@@ -1614,7 +1615,7 @@ SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags)
        to fullscreen (being active, or not), and figure out a return/error code
        from that.
     */
-    flags = window->flags;
+    //flags = window->flags;
 #endif
 
     if (title) {
