@@ -79,6 +79,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(Platform)\$(Configuration)\lua-uwp</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
