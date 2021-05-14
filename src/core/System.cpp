@@ -101,6 +101,10 @@ void System::initialize(const Arguments& args) {
   Video::initialize(args);
   FontResource::initialize();
   Sprite::initialize();
+
+#if defined(WINRT)
+  SDL_SetHint(SDL_HINT_WINRT_HANDLE_BACK_BUTTON, "1");
+#endif
 }
 
 /**
