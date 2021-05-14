@@ -69,6 +69,8 @@ namespace Custom {
 				tcenter + otobr * scale / 2
 			).positive();
 
+			dst.set_y(dst.get_height());
+
 			return dst;
 		}
 

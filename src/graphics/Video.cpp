@@ -941,7 +941,7 @@ void reset_window_size() {
  * @return
  */
 Rectangle get_letter_box(const Size& basesize) {
-  /*float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
+  float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
   float wratio = basesize.width / static_cast<float>(basesize.height);
   if(qratio > wratio) {
     return {
@@ -955,72 +955,7 @@ Rectangle get_letter_box(const Size& basesize) {
           0,
           static_cast<int>(basesize.height*qratio),
           basesize.height};
-  }*/
-
-  Size screenSize = { basesize.width, basesize.height };
-
-  if (screenSize.width >= screenSize.height) {
-	  auto quest_size = context.geometry.quest_size;
-	  float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
-	  int width = int(context.geometry.quest_size.width / height_proportion);
-
-	  if (width > screenSize.width) {
-
-		  float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
-		  float wratio = basesize.width / static_cast<float>(basesize.height);
-		  if (qratio > wratio) {
-			  return {
-				0,
-				static_cast<int>(basesize.height - basesize.width / qratio) / 2,
-					basesize.width,
-					static_cast<int>(basesize.width / qratio) };
-		  }
-		  else {
-			  return {
-				static_cast<int>(basesize.width - basesize.height*qratio) / 2,
-					0,
-					static_cast<int>(basesize.height*qratio),
-					basesize.height };
-		  }
-	  }
-	  else {
-		  int height = screenSize.height;
-		  return { int((screenSize.width - width) / 2), 0, width, height };
-
-	  }
   }
-  else {
-	  float width_proportion = context.geometry.quest_size.width / (float)screenSize.height;
-	  float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
-	  int width = screenSize.width;
-	  int height = int(context.geometry.quest_size.height / width_proportion);
-
-	  if (!IsRunningOnXbox()) {
-		  float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
-		  float wratio = basesize.width / static_cast<float>(basesize.height);
-		  if (qratio > wratio) {
-			  return {
-				0,
-				static_cast<int>(basesize.height - basesize.width / qratio) / 2,
-					basesize.width,
-					static_cast<int>(basesize.width / qratio) };
-		  }
-		  else {
-			  return {
-				static_cast<int>(basesize.width - basesize.height*qratio) / 2,
-					0,
-					static_cast<int>(basesize.height*qratio),
-					basesize.height };
-		  }
-
-	  }
-	  else {
-		  return { 0, int((screenSize.height - height) / 2), width, height };
-	  }
-	  
-  }
-
-
 }
 
 /**
