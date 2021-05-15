@@ -965,26 +965,10 @@ Rectangle get_letter_box(const Size& basesize) {
 void on_window_resized(const Size& size) {
   Rectangle letter = get_letter_box(size);
 
-#if defined(WINRT)
-  SDL_SetWindowSize(
-	  context.main_window,
-	  size.width,
-	  size.height
-  );
-
   context.renderer->on_window_size_changed(letter);
   SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window, letter.get_width(), letter.get_height());
   context.screen_surface = Surface::create(surface_impl);
   context.geometry.logical_size = letter.get_size();
-
-#else
-  context.renderer->on_window_size_changed(letter);
-  SurfaceImplPtr surface_impl = context.renderer->create_window_surface(context.main_window, letter.get_width(), letter.get_height());
-  context.screen_surface = Surface::create(surface_impl);
-  context.geometry.logical_size = letter.get_size();
-
-#endif
-
 }
 
 /**
