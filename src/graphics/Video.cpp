@@ -36,6 +36,9 @@
 #include "solarus/graphics/Renderer.h"
 #include "solarus/graphics/sdlrenderer/SDLRenderer.h"
 #include "solarus/graphics/glrenderer/GlRenderer.h"
+#include "solarus/graphics/CustomDrawInfos.h"
+
+extern bool XAMLWasEnabled;
 
 
 #include <memory>
@@ -360,8 +363,6 @@ void hide_window() {
   }
 }
 
-#include "solarus/graphics/CustomDrawInfos.h"
-
 /**
  * \brief Draws the quest surface on the screen with the current video mode.
  * \param quest_surface The quest surface to render on the screen.
@@ -392,7 +393,7 @@ void render(const SurfacePtr& quest_surface) {
   bool final_draw_with_shader = false;
 
   if (context.current_shader != nullptr) {
-    float scale_factor = context.current_shader->get_data().get_scaling_factor();
+    float scale_factor = static_cast<float>(context.current_shader->get_data().get_scaling_factor());
     //See if the shader must be draw to a intermediate surface
     if(scale_factor > 0.f) {
       context.current_shader->draw(
@@ -423,7 +424,7 @@ void render(const SurfacePtr& quest_surface) {
 #if defined(WINRT)
   if (IsRunningOnXbox()) {
 
-	  auto draw_infos = std::make_shared<Custom::HalfScaledDrawInfos>(
+	  auto draw_infos = std::make_shared<Custom::HalfScaledInvertedDrawInfos>(
 		  Rectangle(surface_size),
 		  Point(),
 		  Point(),
@@ -437,18 +438,39 @@ void render(const SurfacePtr& quest_surface) {
 	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
   }
   else {
-	  auto draw_infos = std::make_shared<Custom::RegularDrawInfos>(
-		  Rectangle(surface_size),
-		  Point(),
-		  Point(),
-		  BlendMode::BLEND,
-		  255, 0,
-		  output_size / surface_size,
-		  proxy);
+ 
+	  if (XAMLWasEnabled) {
+		  //auto draw_infos = std::make_shared<Custom::InvertedDrawInfos>(
+		  auto draw_infos = std::make_shared<Custom::RegularDrawInfos>(
+			  Rectangle(surface_size),
+			  Point(),
+			  Point(),
+			  BlendMode::BLEND,
+			  255, 0,
+			  output_size / surface_size,
+			  proxy);
 
-	  context.screen_surface->bind_as_target();
+		  proxy.draw(
+			  *context.screen_surface,
+			  *surface_to_render,
+			  *draw_infos);
 
-	  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
+	  }
+	  else {
+		  auto draw_infos = std::make_shared<Custom::RegularDrawInfos>(
+			  Rectangle(surface_size),
+			  Point(),
+			  Point(),
+			  BlendMode::BLEND,
+			  255, 0,
+			  output_size / surface_size,
+			  proxy);
+
+		  context.screen_surface->bind_as_target();
+
+		  surface_to_render->raw_draw(*context.screen_surface, *draw_infos);
+
+	  }
   }
 #else
   DrawInfos draw_infos = DrawInfos(
@@ -664,7 +686,7 @@ void set_shader(const ShaderPtr& shader) {
   context.current_shader = shader;
 
   if (shader != nullptr) {
-    float s = shader->get_data().get_scaling_factor();
+    float s = static_cast<float>(shader->get_data().get_scaling_factor());
     if (s > 0.f) { // Create scaled surface if needed
       context.scaled_surface = Surface::create(Video::get_quest_size() * Scale(s));
     }
@@ -941,7 +963,7 @@ void reset_window_size() {
  * @return
  */
 Rectangle get_letter_box(const Size& basesize) {
-  float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
+  /*float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
   float wratio = basesize.width / static_cast<float>(basesize.height);
   if(qratio > wratio) {
     return {
@@ -955,7 +977,70 @@ Rectangle get_letter_box(const Size& basesize) {
           0,
           static_cast<int>(basesize.height*qratio),
           basesize.height};
-  }
+  }*/
+
+
+	Size screenSize = { basesize.width, basesize.height };
+
+	if (screenSize.width >= screenSize.height) {
+		auto quest_size = context.geometry.quest_size;
+		float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
+		int width = int(context.geometry.quest_size.width / height_proportion);
+
+		if (width > screenSize.width) {
+
+			float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
+			float wratio = basesize.width / static_cast<float>(basesize.height);
+			if (qratio > wratio) {
+				return {
+				  0,
+				  static_cast<int>(basesize.height - basesize.width / qratio) / 2,
+					  basesize.width,
+					  static_cast<int>(basesize.width / qratio) };
+			}
+			else {
+				return {
+				  static_cast<int>(basesize.width - basesize.height*qratio) / 2,
+					  0,
+					  static_cast<int>(basesize.height*qratio),
+					  basesize.height };
+			}
+		}
+		else {
+			int height = screenSize.height;
+			return { int((screenSize.width - width) / 2), 0, width, height };
+
+		}
+	}
+	else {
+		float width_proportion = context.geometry.quest_size.width / (float)screenSize.height;
+		float height_proportion = context.geometry.quest_size.height / (float)screenSize.height;
+		int width = screenSize.width;
+		int height = int(context.geometry.quest_size.height / width_proportion);
+
+		if (!IsRunningOnXbox()) {
+			float qratio = context.geometry.quest_size.width / static_cast<float>(context.geometry.quest_size.height);
+			float wratio = basesize.width / static_cast<float>(basesize.height);
+			if (qratio > wratio) {
+				return {
+				  0,
+				  static_cast<int>(basesize.height - basesize.width / qratio) / 2,
+					  basesize.width,
+					  static_cast<int>(basesize.width / qratio) };
+			}
+			else {
+				return {
+				  static_cast<int>(basesize.width - basesize.height*qratio) / 2,
+					  0,
+					  static_cast<int>(basesize.height*qratio),
+					  basesize.height };
+			}
+
+		}
+		else {
+			return { 0, int((screenSize.height - height) / 2), width, height };
+		}
+	}
 }
 
 /**

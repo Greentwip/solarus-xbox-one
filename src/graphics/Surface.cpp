@@ -225,7 +225,7 @@ SDL_Surface_UniquePtr Surface::create_sdl_surface_from_memory(
     size_t data_len
     ) {
   SOL_PFUN(profiler::colors::Green);
-  SDL_RWops* rw = SDL_RWFromMem(data, data_len);
+  SDL_RWops* rw = SDL_RWFromMem(data, static_cast<int>(data_len));
   SDL_Surface* surface = IMG_Load_RW(rw, true);
   return SDL_Surface_UniquePtr{surface};
 }

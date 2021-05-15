@@ -1422,7 +1422,7 @@ SpritePtr Entity::create_sprite(
     int order
 ) {
   if (order == -1) {
-    order = sprites.size();
+    order = static_cast<int>(sprites.size());
   }
   SpritePtr sprite = std::make_shared<Sprite>(animation_set_id);
 

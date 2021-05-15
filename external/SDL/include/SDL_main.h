@@ -117,8 +117,10 @@ extern "C" {
 /**
  *  The prototype for the application's main() function
  */
-typedef int (*SDL_main_func)(int argc, char *argv[]);
-extern SDLMAIN_DECLSPEC int SDL_main(int argc, char *argv[]);
+	typedef int(*SDL_main_func)(int argc, char *argv[]);
+	typedef int(*SDL_loop_func)();
+	typedef void(*SDL_window_size_func)(int w, int h);
+	extern SDLMAIN_DECLSPEC int SDL_main(int argc, char *argv[]);
 
 
 /**
@@ -151,7 +153,7 @@ extern DECLSPEC void SDLCALL SDL_UnregisterApp(void);
  *  \return 0 on success, -1 on failure.  On failure, use SDL_GetError to retrieve more
  *      information on the failure.
  */
-extern DECLSPEC int SDLCALL SDL_WinRTRunApp(SDL_main_func mainFunction, void * reserved);
+extern DECLSPEC int SDLCALL SDL_WinRTRunApp(SDL_main_func mainFunction, SDL_loop_func loopFunction, void * reserved);
 
 #endif /* __WINRT__ */
 

@@ -149,7 +149,7 @@ void OggDecoder::decode(ALuint destination_buffer, ALsizei nb_samples) {
     if (loop_end_pcm != -1 &&
         current_byte + max_bytes_to_read > loop_end_byte) {
       // Don't read after the loop point.
-      max_bytes_to_read = (long) loop_end_byte - current_byte;
+      max_bytes_to_read = static_cast<long>((long) loop_end_byte - current_byte);
     }
 
     bytes_read = ov_read(

@@ -576,8 +576,8 @@ bool InputEvent::get_global_finger_position(int finger_id, Point& finger_xy) {
 
     if (finger != NULL) {
       const Size output_size = Video::get_output_size();
-      const int x = finger->x * static_cast<float>(output_size.width);
-      const int y = finger->y * static_cast<float>(output_size.height);
+      const int x = static_cast<int>(finger->x * static_cast<float>(output_size.width));
+      const int y = static_cast<int>(finger->y * static_cast<float>(output_size.height));
 
       finger_xy = Video::output_to_quest_coordinates(Point(x, y));
       return true;
@@ -1352,8 +1352,8 @@ Point InputEvent::get_finger_position() const {
   Debug::check_assertion(is_finger_event(), "Event is not a touch finger event");
 
   const Size output_size = Video::get_output_size();
-  const int x = internal_event.tfinger.x * static_cast<float>(output_size.width);
-  const int y = internal_event.tfinger.y * static_cast<float>(output_size.height);
+  const int x = static_cast<int>(internal_event.tfinger.x * static_cast<float>(output_size.width));
+  const int y = static_cast<int>(internal_event.tfinger.y * static_cast<float>(output_size.height));
 
   return Video::output_to_quest_coordinates(Point(x, y));
 }
@@ -1368,8 +1368,8 @@ Point InputEvent::get_finger_distance() const {
   Debug::check_assertion(is_finger_event(), "Event is not a touch finger event");
 
   const Size output_size = Video::get_output_size();
-  const int x = internal_event.tfinger.x * static_cast<float>(output_size.width);
-  const int y = internal_event.tfinger.y * static_cast<float>(output_size.height);
+  const int x = static_cast<int>(internal_event.tfinger.x * static_cast<float>(output_size.width));
+  const int y = static_cast<int>(internal_event.tfinger.y * static_cast<float>(output_size.height));
 
   return Video::output_to_quest_coordinates(Point(x, y));
 }

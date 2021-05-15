@@ -52,7 +52,7 @@ Size SpriteAnimationDirection::get_size() const {
  * \return the number of frames
  */
 int SpriteAnimationDirection::get_nb_frames() const {
-  return frames.size();
+  return static_cast<int>(frames.size());
 }
 
 /**

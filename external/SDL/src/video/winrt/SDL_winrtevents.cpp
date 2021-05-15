@@ -54,11 +54,11 @@ static void WINRT_YieldXAMLThread();
 void
 WINRT_PumpEvents(_THIS)
 {
-    if (SDL_WinRTGlobalApp) {
-        SDL_WinRTGlobalApp->PumpEvents();
-    } else if (WINRT_XAMLWasEnabled) {
+    if(WINRT_XAMLWasEnabled) {
         WINRT_YieldXAMLThread();
-    }
+    } else if (SDL_WinRTGlobalApp) {
+		SDL_WinRTGlobalApp->PumpEvents();
+	} 
 }
 
 
@@ -98,9 +98,7 @@ WINRT_XAMLThreadMain(void * userdata)
 {
     // TODO, WinRT: pass the C-style main() a reasonably realistic
     // representation of command line arguments.
-    int argc = 0;
-    char **argv = NULL;
-    return WINRT_SDLAppEntryPoint(argc, argv);
+    return WINRT_SDLAppLoopEntryPoint();
 }
 
 void
@@ -113,6 +111,10 @@ WINRT_CycleXAMLThread(void)
 
             _mutex = SDL_CreateMutex();
             _threadState = ThreadState_Running;
+			int argc = 0;
+			char **argv = NULL;
+
+			WINRT_SDLAppEntryPoint(argc, argv);
             _XAMLThread = SDL_CreateThreadInternal(WINRT_XAMLThreadMain, "SDL/XAML App Thread", 0, nullptr);
 
             SDL_LockMutex(_mutex);

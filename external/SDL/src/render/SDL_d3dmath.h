@@ -18,6 +18,9 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 */
+#ifndef SDL_d3dmath_h
+#define SDL_d3dmath_h
+
 #include "../SDL_internal.h"
 
 #if (SDL_VIDEO_RENDER_D3D || SDL_VIDEO_RENDER_D3D11) && !SDL_RENDER_DISABLED
@@ -70,3 +73,5 @@ Float4X4 MatrixRotationZ(float r);
 #endif /* (SDL_VIDEO_RENDER_D3D || SDL_VIDEO_RENDER_D3D11) && !SDL_RENDER_DISABLED */
 
 /* vi: set ts=4 sw=4 expandtab: */
+
+#endif

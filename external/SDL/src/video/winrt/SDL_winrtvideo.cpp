@@ -574,7 +574,8 @@ WINRT_CreateWindow(_THIS, SDL_Window * window)
        'coreWindow' field will only be set (to a non-null value) if XAML isn't
        enabled.
     */
-    if (!WINRT_XAMLWasEnabled) {
+    //if (!WINRT_XAMLWasEnabled) 
+	{
         data->coreWindow = CoreWindow::GetForCurrentThread();
 #if SDL_WINRT_USE_APPLICATIONVIEW
         data->appView = ApplicationView::GetForCurrentView();

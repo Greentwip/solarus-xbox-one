@@ -50,6 +50,7 @@
     <ClInclude Include="..\..\include\SDL_quit.h" />
     <ClInclude Include="..\..\include\SDL_rect.h" />
     <ClInclude Include="..\..\include\SDL_render.h" />
+    <ClInclude Include="..\..\include\SDL_render_d3d11.h" />
     <ClInclude Include="..\..\include\SDL_revision.h" />
     <ClInclude Include="..\..\include\SDL_rwops.h" />
     <ClInclude Include="..\..\include\SDL_scancode.h" />

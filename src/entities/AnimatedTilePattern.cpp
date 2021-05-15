@@ -78,9 +78,9 @@ void AnimatedTilePattern::draw(
   const SurfacePtr& tileset_image = tileset.get_tiles_image();
 
   int final_frame_index = frame_index;
-  int num_frames = frames.size();
+  int num_frames = static_cast<int>(frames.size());
   if (mirror_loop && frame_index >= num_frames) {
-    final_frame_index = (2 * frames.size() - 2) - frame_index;
+    final_frame_index = static_cast<int>((2 * frames.size() - 2) - frame_index);
   }
   Debug::check_assertion(final_frame_index >= 0 && final_frame_index < num_frames, "Wrong frame index");
   const Rectangle& src = frames[final_frame_index];

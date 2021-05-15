@@ -154,7 +154,7 @@ int Music::get_volume() {
 void Music::set_volume(int volume) {
 
   volume = std::min(100, std::max(0, volume));
-  Music::volume = volume / 100.0;
+  Music::volume = volume / 100.0f;
 
   if (current_music != nullptr && current_music->source != AL_NONE) {
     alSourcef(current_music->source, AL_GAIN, Music::volume);

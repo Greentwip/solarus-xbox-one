@@ -50,5 +50,5 @@
 
 int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-    return SDL_WinRTRunApp(SDL_main, NULL);
+    return SDL_WinRTRunApp(SDL_main, NULL, NULL);
 }

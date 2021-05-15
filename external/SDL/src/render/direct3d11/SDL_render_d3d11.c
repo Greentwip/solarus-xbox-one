@@ -42,10 +42,12 @@
 
 #include "SDL_render_winrt.h"
 
+#include "SDL_render_d3d11.h"
+
 #if WINAPI_FAMILY == WINAPI_FAMILY_APP
 #include <windows.ui.xaml.media.dxinterop.h>
 /* TODO, WinRT, XAML: get the ISwapChainBackgroundPanelNative from something other than a global var */
-extern ISwapChainBackgroundPanelNative * WINRT_GlobalSwapChainBackgroundPanelNative;
+extern ISwapChainPanelNative * WINRT_GlobalSwapChainPanelNative;
 #endif  /* WINAPI_FAMILY == WINAPI_FAMILY_APP */
 
 #endif  /* __WINRT__ */
@@ -54,110 +56,6 @@ extern ISwapChainBackgroundPanelNative * WINRT_GlobalSwapChainBackgroundPanelNat
 #define SDL_COMPOSE_ERROR(str) SDL_STRINGIFY_ARG(__FUNCTION__) ", " str
 
 #define SAFE_RELEASE(X) if ((X)) { IUnknown_Release(SDL_static_cast(IUnknown*, X)); X = NULL; }
-
-
-/* !!! FIXME: vertex buffer bandwidth could be significantly lower; move color to a uniform, only use UV coords
-   !!! FIXME:  when textures are needed, and don't ever pass Z, since it's always zero. */
-
-/* Vertex shader, common values */
-typedef struct
-{
-    Float4X4 model;
-    Float4X4 projectionAndView;
-} VertexShaderConstants;
-
-/* Per-vertex data */
-typedef struct
-{
-    Float3 pos;
-    Float2 tex;
-    Float4 color;
-} VertexPositionColor;
-
-/* Per-texture data */
-typedef struct
-{
-    ID3D11Texture2D *mainTexture;
-    ID3D11ShaderResourceView *mainTextureResourceView;
-    ID3D11RenderTargetView *mainTextureRenderTargetView;
-    ID3D11Texture2D *stagingTexture;
-    int lockedTexturePositionX;
-    int lockedTexturePositionY;
-    D3D11_FILTER scaleMode;
-
-    /* YV12 texture support */
-    SDL_bool yuv;
-    ID3D11Texture2D *mainTextureU;
-    ID3D11ShaderResourceView *mainTextureResourceViewU;
-    ID3D11Texture2D *mainTextureV;
-    ID3D11ShaderResourceView *mainTextureResourceViewV;
-
-    /* NV12 texture support */
-    SDL_bool nv12;
-    ID3D11Texture2D *mainTextureNV;
-    ID3D11ShaderResourceView *mainTextureResourceViewNV;
-
-    Uint8 *pixels;
-    int pitch;
-    SDL_Rect locked_rect;
-} D3D11_TextureData;
-
-/* Blend mode data */
-typedef struct
-{
-    SDL_BlendMode blendMode;
-    ID3D11BlendState *blendState;
-} D3D11_BlendMode;
-
-/* Private renderer data */
-typedef struct
-{
-    void *hDXGIMod;
-    void *hD3D11Mod;
-    IDXGIFactory2 *dxgiFactory;
-    IDXGIAdapter *dxgiAdapter;
-    ID3D11Device1 *d3dDevice;
-    ID3D11DeviceContext1 *d3dContext;
-    IDXGISwapChain1 *swapChain;
-    DXGI_SWAP_EFFECT swapEffect;
-    ID3D11RenderTargetView *mainRenderTargetView;
-    ID3D11RenderTargetView *currentOffscreenRenderTargetView;
-    ID3D11InputLayout *inputLayout;
-    ID3D11Buffer *vertexBuffers[8];
-    size_t vertexBufferSizes[8];
-    ID3D11VertexShader *vertexShader;
-    ID3D11PixelShader *pixelShaders[NUM_SHADERS];
-    int blendModesCount;
-    D3D11_BlendMode *blendModes;
-    ID3D11SamplerState *nearestPixelSampler;
-    ID3D11SamplerState *linearSampler;
-    D3D_FEATURE_LEVEL featureLevel;
-
-    /* Rasterizers */
-    ID3D11RasterizerState *mainRasterizer;
-    ID3D11RasterizerState *clippedRasterizer;
-
-    /* Vertex buffer constants */
-    VertexShaderConstants vertexShaderConstantsData;
-    ID3D11Buffer *vertexShaderConstants;
-
-    /* Cached renderer properties */
-    DXGI_MODE_ROTATION rotation;
-    ID3D11RenderTargetView *currentRenderTargetView;
-    ID3D11RasterizerState *currentRasterizerState;
-    ID3D11BlendState *currentBlendState;
-    ID3D11PixelShader *currentShader;
-    ID3D11ShaderResourceView *currentShaderResource;
-    ID3D11SamplerState *currentSampler;
-    SDL_bool cliprectDirty;
-    SDL_bool currentCliprectEnabled;
-    SDL_Rect currentCliprect;
-    SDL_Rect currentViewport;
-    int currentViewportRotation;
-    SDL_bool viewportDirty;
-    Float4X4 identity;
-    int currentVertexBuffer;
-} D3D11_RenderData;
 
 
 /* Define D3D GUIDs here so we don't have to include uuid.lib.
@@ -735,7 +633,7 @@ D3D11_CreateSwapChain(SDL_Renderer * renderer, int w, int h)
     D3D11_RenderData *data = (D3D11_RenderData *)renderer->driverdata;
 #ifdef __WINRT__
     IUnknown *coreWindow = D3D11_GetCoreWindowFromSDLRenderer(renderer);
-    const BOOL usingXAML = (coreWindow == NULL);
+    const BOOL usingXAML = (WINRT_GlobalSwapChainPanelNative != NULL);
 #else
     IUnknown *coreWindow = NULL;
     const BOOL usingXAML = FALSE;
@@ -767,7 +665,7 @@ D3D11_CreateSwapChain(SDL_Renderer * renderer, int w, int h)
 #endif
     swapChainDesc.Flags = 0;
 
-    if (coreWindow) {
+    if (!usingXAML) {
         result = IDXGIFactory2_CreateSwapChainForCoreWindow(data->dxgiFactory,
             (IUnknown *)data->d3dDevice,
             coreWindow,
@@ -791,7 +689,7 @@ D3D11_CreateSwapChain(SDL_Renderer * renderer, int w, int h)
         }
 
 #if WINAPI_FAMILY == WINAPI_FAMILY_APP
-        result = ISwapChainBackgroundPanelNative_SetSwapChain(WINRT_GlobalSwapChainBackgroundPanelNative, (IDXGISwapChain *) data->swapChain);
+        result = ISwapChainPanelNative_SetSwapChain(WINRT_GlobalSwapChainPanelNative, (IDXGISwapChain *) data->swapChain);
         if (FAILED(result)) {
             WIN_SetErrorFromHRESULT(SDL_COMPOSE_ERROR("ISwapChainBackgroundPanelNative::SetSwapChain"), result);
             goto done;

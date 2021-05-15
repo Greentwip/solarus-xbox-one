@@ -36,7 +36,7 @@ SpcDecoder::SpcDecoder():
 void SpcDecoder::load(int16_t* sound_data, size_t sound_size) {
 
   // Load the SPC data into the SPC library.
-  spc_load_spc(snes_spc_manager.get(), (short int*) sound_data, sound_size);
+  spc_load_spc(snes_spc_manager.get(), (short int*) sound_data, static_cast<long>(sound_size));
   spc_clear_echo(snes_spc_manager.get());
   spc_filter_clear(snes_spc_filter.get());
 }

@@ -106,7 +106,7 @@ int cb_seek(void* datasource, ogg_int64_t offset, int whence) {
 long cb_tell(void* datasource) {
 
   SoundBuffer::SoundFromMemory* mem = static_cast<SoundBuffer::SoundFromMemory*>(datasource);
-  return mem->position;
+  return static_cast<long>(mem->position);
 }
 
 }  // Anonymous namespace.

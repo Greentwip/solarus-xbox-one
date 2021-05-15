@@ -35,7 +35,7 @@
 #include "../../video/winrt/SDL_winrtvideo_cpp.h"
 #include "SDL_winrtapp_common.h"
 #include "SDL_winrtapp_xaml.h"
-
+#include "SDL_winrtapp_direct3d.h"
 
 
 /* SDL-internal globals: */
@@ -43,9 +43,11 @@ SDL_bool WINRT_XAMLWasEnabled = SDL_FALSE;
 
 #if WINAPI_FAMILY == WINAPI_FAMILY_APP
 extern "C"
-ISwapChainBackgroundPanelNative * WINRT_GlobalSwapChainBackgroundPanelNative = NULL;
+ISwapChainBackgroundPanelNative * WINRT_GlobalSwapChainPanelNative = NULL;
 static Windows::Foundation::EventRegistrationToken  WINRT_XAMLAppEventToken;
 #endif
+
+void(*SetCoreWindowSize)(int w, int h);
 
 
 /*
@@ -99,7 +101,7 @@ WINRT_OnRenderViaXAML(_In_ Platform::Object^ sender, _In_ Platform::Object^ args
  */
 
 int
-SDL_WinRTInitXAMLApp(int (*mainFunction)(int, char **), void * backgroundPanelAsIInspectable)
+SDL_WinRTInitXAMLApp(int(*mainFunction)(int, char **), int (*loopFunction)(), void * backgroundPanelAsIInspectable)
 {
 #if WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP
     return SDL_SetError("XAML support is not yet available in Windows Phone.");
@@ -119,26 +121,27 @@ SDL_WinRTInitXAMLApp(int (*mainFunction)(int, char **), void * backgroundPanelAs
     }
 
     Platform::Object ^ backgroundPanel = reinterpret_cast<Object ^>((IInspectable *) backgroundPanelAsIInspectable);
-    SwapChainBackgroundPanel ^swapChainBackgroundPanel = dynamic_cast<SwapChainBackgroundPanel ^>(backgroundPanel);
-    if ( ! swapChainBackgroundPanel) {
+    SwapChainPanel ^swapChainPanel = dynamic_cast<SwapChainPanel ^>(backgroundPanel);
+    if ( !swapChainPanel) {
         return SDL_SetError("An unknown or unsupported type of XAML control was specified.");
     }
 
     // Setup event handlers:
-    swapChainBackgroundPanel->PointerPressed += ref new PointerEventHandler(WINRT_OnPointerPressedViaXAML);
-    swapChainBackgroundPanel->PointerReleased += ref new PointerEventHandler(WINRT_OnPointerReleasedViaXAML);
-    swapChainBackgroundPanel->PointerWheelChanged += ref new PointerEventHandler(WINRT_OnPointerWheelChangedViaXAML);
-    swapChainBackgroundPanel->PointerMoved += ref new PointerEventHandler(WINRT_OnPointerMovedViaXAML);
+	swapChainPanel->PointerPressed += ref new PointerEventHandler(WINRT_OnPointerPressedViaXAML);
+	swapChainPanel->PointerReleased += ref new PointerEventHandler(WINRT_OnPointerReleasedViaXAML);
+	swapChainPanel->PointerWheelChanged += ref new PointerEventHandler(WINRT_OnPointerWheelChangedViaXAML);
+	swapChainPanel->PointerMoved += ref new PointerEventHandler(WINRT_OnPointerMovedViaXAML);
 
     // Setup for rendering:
-    IInspectable *panelInspectable = (IInspectable*) reinterpret_cast<IInspectable*>(swapChainBackgroundPanel);
-    panelInspectable->QueryInterface(__uuidof(ISwapChainBackgroundPanelNative), (void **)&WINRT_GlobalSwapChainBackgroundPanelNative);
+    IInspectable *panelInspectable = (IInspectable*) reinterpret_cast<IInspectable*>(swapChainPanel);
+    panelInspectable->QueryInterface(__uuidof(ISwapChainPanelNative), (void **)&WINRT_GlobalSwapChainPanelNative);
 
     WINRT_XAMLAppEventToken = CompositionTarget::Rendering::add(ref new EventHandler<Object^>(WINRT_OnRenderViaXAML));
 
     // Make sure the app is ready to call the SDL-centric main() function:
-    WINRT_SDLAppEntryPoint = mainFunction;
-    SDL_SetMainReady();
+	WINRT_SDLAppEntryPoint = mainFunction;
+	WINRT_SDLAppLoopEntryPoint = loopFunction;
+	SDL_SetMainReady();
 
     // Make sure video-init knows that we're initializing XAML:
     SDL_bool oldXAMLWasEnabledValue = WINRT_XAMLWasEnabled;
@@ -147,12 +150,21 @@ SDL_WinRTInitXAMLApp(int (*mainFunction)(int, char **), void * backgroundPanelAs
     // Make sure video modes are detected now, while we still have access to the WinRT
     // CoreWindow.  WinRT will not allow the app's CoreWindow to be accessed via the
     // SDL/WinRT thread.
-    if (SDL_InitSubSystem(SDL_INIT_VIDEO) < 0) {
+    /*if (SDL_InitSubSystem(SDL_INIT_VIDEO) < 0) {
         // SDL_InitSubSystem will, on error, set the SDL error.  Let that propogate to
         // the caller to here:
         WINRT_XAMLWasEnabled = oldXAMLWasEnabledValue;
         return -1;
-    }
+    }*/
+
+	SDL_assert(!SDL_WinRTGlobalApp);
+	SDL_XAMLWinRTApp ^ app = ref new SDL_XAMLWinRTApp();
+	if (!SDL_WinRTGlobalApp)
+	{
+		SDL_WinRTGlobalApp = app;
+	}
+
+	app->Initialize();
 
     // All done, for now.
     return 0;

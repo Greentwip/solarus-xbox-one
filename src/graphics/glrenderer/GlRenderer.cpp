@@ -659,7 +659,7 @@ void GlRenderer::add_sprite(const DrawInfos& infos) {
   vec2 br = (otobr) * scale;
   vec2 tr = vec2(otobr.x,ototl.y) * scale;
   if(infos.should_use_ex()) {
-    float alpha = infos.rotation;
+    float alpha = static_cast<float>(infos.rotation);
     mat2 rot = mat2(cos(alpha),-sin(alpha),sin(alpha),cos(alpha));
     tl = rot * tl;
     bl = rot * bl;

@@ -181,12 +181,12 @@ std::pair<int, int> QuestProperties::get_solarus_version_major_minor() const {
 
   // TODO check the syntax of the version string
 
-  int dot_index_1 = quest_version.find('.');
+  int dot_index_1 = static_cast<int>(quest_version.find('.'));
   std::istringstream iss(quest_version.substr(0, dot_index_1));
   int quest_major_version = 0;
   iss >> quest_major_version;
 
-  int dot_index_2 = quest_version.find('.', dot_index_1 + 1);
+  int dot_index_2 = static_cast<int>(quest_version.find('.', dot_index_1 + 1));
   std::istringstream iss2(quest_version.substr(dot_index_1 + 1, dot_index_2));
   int quest_minor_version = 0;
   iss2 >> quest_minor_version;

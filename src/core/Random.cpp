@@ -61,7 +61,7 @@ int get_number(int x, int y) {
   // because not every main platform support non-deterministic
   // random numbers generation yet.
   //
-  static std::mt19937 engine(std::time(nullptr));
+  static std::mt19937 engine(static_cast<unsigned int>(std::time(nullptr)));
   static std::uniform_int_distribution<int> dist{};
 
   // Type of the parameters of the distribution

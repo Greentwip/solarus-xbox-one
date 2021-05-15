@@ -288,7 +288,7 @@ int MapData::get_num_entities() const {
  * \return The number of entities on that layer.
  */
 int MapData::get_num_entities(int layer) const {
-  return get_entities(layer).size();
+  return static_cast<int>(get_entities(layer).size());
 }
 
 /**

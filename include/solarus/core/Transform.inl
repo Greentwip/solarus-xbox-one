@@ -46,7 +46,7 @@ static inline bool feq(float a, float b) {
  * @return
  */
 inline bool Transform::aligned() const {
-  return feq(scale.x,1) && feq(scale.y,1) && feq(rotation,0);
+  return feq(scale.x,1) && feq(scale.y,1) && feq(static_cast<float>(rotation),0);
 }
 
 /**

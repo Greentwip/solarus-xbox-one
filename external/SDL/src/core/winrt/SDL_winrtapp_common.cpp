@@ -27,13 +27,18 @@
 
 #include <wrl.h>
 
-int (*WINRT_SDLAppEntryPoint)(int, char **) = NULL;
+int(*WINRT_SDLAppEntryPoint)(int, char **) = NULL;
+int(*WINRT_SDLAppLoopEntryPoint)() = NULL;
 
 extern "C" DECLSPEC int
-SDL_WinRTRunApp(SDL_main_func mainFunction, void * xamlBackgroundPanel)
+SDL_WinRTRunApp(SDL_main_func mainFunction, SDL_loop_func loopFunction, void * xamlBackgroundPanel)
 {
     if (xamlBackgroundPanel) {
-        return SDL_WinRTInitXAMLApp(mainFunction, xamlBackgroundPanel);
+		if (!loopFunction) {
+			return 1;
+		}
+
+        return SDL_WinRTInitXAMLApp(mainFunction, loopFunction, xamlBackgroundPanel);
     } else {
         if (FAILED(Windows::Foundation::Initialize(RO_INIT_MULTITHREADED))) {
             return 1;

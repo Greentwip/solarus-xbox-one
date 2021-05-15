@@ -441,6 +441,9 @@
     <ClInclude Include="..\..\include\SDL_misc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\SDL_render_d3d11.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\atomic\SDL_atomic.c">
@@ -564,9 +567,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\power\winrt\SDL_syspower.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\direct3d11\SDL_render_d3d11.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\render\direct3d11\SDL_render_winrt.cpp">
@@ -801,6 +801,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\misc\SDL_url.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\direct3d11\SDL_render_d3d11.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -274,7 +274,7 @@ int Sound::get_volume() {
 void Sound::set_volume(int volume) {
 
   volume = std::min(100, std::max(0, volume));
-  Sound::volume = volume / 100.0;
+  Sound::volume = volume / 100.0f;
 }
 
 /**

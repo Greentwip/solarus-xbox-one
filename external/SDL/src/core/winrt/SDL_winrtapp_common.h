@@ -26,6 +26,7 @@
 /* A pointer to the app's C-style main() function (which is a different
    function than the WinRT app's actual entry point).
  */
-extern int (*WINRT_SDLAppEntryPoint)(int, char **);
+extern int(*WINRT_SDLAppEntryPoint)(int, char **);
+extern int(*WINRT_SDLAppLoopEntryPoint)();
 
 #endif // SDL_winrtapp_common_h_

@@ -83,7 +83,7 @@ void SpriteAnimation::set_tileset(const Tileset& tileset) {
  * \return The number of directions.
  */
 int SpriteAnimation::get_nb_directions() const {
-  return directions.size();
+  return static_cast<int>(directions.size());
 }
 
 /**

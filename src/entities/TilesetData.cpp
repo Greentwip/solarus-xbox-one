@@ -265,7 +265,7 @@ void TilesetData::set_background_color(const Color& background_color) {
  * \return The number of patterns.
  */
 int TilesetData::get_num_patterns() const {
-  return patterns.size();
+  return static_cast<int>(patterns.size());
 }
 
 /**
@@ -376,7 +376,7 @@ bool TilesetData::set_pattern_id(
  * \return The number of border sets.
  */
 int TilesetData::get_num_border_sets() const {
-  return border_sets.size();
+  return static_cast<int>(border_sets.size());
 }
 
 /**

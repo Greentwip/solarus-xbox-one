@@ -274,7 +274,7 @@ VerticeView VertexArray::add_quad(const Rectangle& rect, const Rectangle& uvs, c
  * @return the created view
  */
 VerticeView VertexArray::make_view(size_t size) {
-  return VerticeView(*this,vertex_count()-size,size);
+  return VerticeView(*this,static_cast<off_t>(vertex_count()-size),size);
 }
 
 /**

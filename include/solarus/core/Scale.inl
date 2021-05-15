@@ -49,7 +49,7 @@ inline Scale::operator glm::vec2() const {
  * @return a new Size with component multiplied by the scale
  */
 inline constexpr Size operator*(const Size& size, const Scale& scale) {
-  return Size(size.width*scale.x,size.height*scale.y);
+  return Size(static_cast<int>(size.width*scale.x),static_cast<int>(size.height*scale.y));
 }
 
 /**
@@ -59,7 +59,7 @@ inline constexpr Size operator*(const Size& size, const Scale& scale) {
  * @return a new Point with compenents multiplied by the scale
  */
 inline constexpr Point operator*(const Point& point, const Scale& scale) {
-  return Point(point.x*scale.x,point.y*scale.y);
+  return Point(static_cast<int>(point.x*scale.x),static_cast<int>(point.y*scale.y));
 }
 
 inline constexpr Scale operator*(const Scale& a, const Scale& b) {

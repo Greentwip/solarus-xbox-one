@@ -55,12 +55,23 @@ RendererPtr SDLRenderer::create(SDL_Window* window, bool force_software) {
   // Set the default OpenGL built-in shader (nearest).
   SDL_SetHint(SDL_HINT_RENDER_OPENGL_SHADERS, "1");
 
+#if defined(WINRT)
   SDL_Renderer* renderer = force_software ?
-        nullptr :
-        SDL_CreateRenderer(
-          window,
-          -1,
-          SDL_RENDERER_ACCELERATED);
+	  nullptr :
+	  SDL_CreateRenderer(
+		  window,
+		  1,
+		  SDL_RENDERER_ACCELERATED);
+
+#else
+  SDL_Renderer* renderer = force_software ?
+	  nullptr :
+	  SDL_CreateRenderer(
+		  window,
+		  -1,
+		  SDL_RENDERER_ACCELERATED);
+
+#endif
   if(!renderer) {
     renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_SOFTWARE);
   }

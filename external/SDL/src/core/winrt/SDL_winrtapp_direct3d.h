@@ -22,10 +22,12 @@
 
 extern int SDL_WinRTInitNonXAMLApp(int (*mainFunction)(int, char **));
 
-ref class SDL_WinRTApp sealed : public Windows::ApplicationModel::Core::IFrameworkView
+ref class SDL_WinRTApp  : public Windows::ApplicationModel::Core::IFrameworkView
 {
-public:
+internal:
     SDL_WinRTApp();
+
+public:
     
     // IFrameworkView Methods.
     virtual void Initialize(Windows::ApplicationModel::Core::CoreApplicationView^ applicationView);
@@ -88,5 +90,16 @@ private:
     bool m_windowClosed;
     bool m_windowVisible;
 };
+
+ref class SDL_XAMLWinRTApp : public SDL_WinRTApp
+{
+public:
+	// IFrameworkView Methods.
+	virtual void Initialize();
+
+	void OnWindowSizeChanged(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::WindowSizeChangedEventArgs^ args);
+
+};
+
 
 extern SDL_WinRTApp ^ SDL_WinRTGlobalApp;

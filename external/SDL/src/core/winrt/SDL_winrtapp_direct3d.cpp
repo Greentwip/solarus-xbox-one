@@ -18,6 +18,7 @@
      misrepresented as being the original software.
   3. This notice may not be removed or altered from any source distribution.
 */
+
 #include "../../SDL_internal.h"
 
 /* Standard C++11 includes */
@@ -849,5 +850,189 @@ void SDL_WinRTApp::OnGamepadAdded(Platform::Object ^sender, Windows::Gaming::Inp
     */
 }
 #endif
+
+void SDL_XAMLWinRTApp::Initialize() {
+
+	auto window = CoreWindow::GetForCurrentThread();
+
+	CoreApplication::Suspending +=
+		ref new EventHandler<SuspendingEventArgs^>(this, &SDL_XAMLWinRTApp::OnSuspending);
+
+	CoreApplication::Resuming +=
+		ref new EventHandler<Platform::Object^>(this, &SDL_XAMLWinRTApp::OnResuming);
+
+	CoreApplication::Exiting +=
+		ref new EventHandler<Platform::Object^>(this, &SDL_XAMLWinRTApp::OnExiting);
+
+#if NTDDI_VERSION >= NTDDI_WIN10
+	/* HACK ALERT!  Xbox One doesn't seem to detect gamepads unless something
+	   gets registered to receive Win10's Windows.Gaming.Input.Gamepad.GamepadAdded
+	   events.  We'll register an event handler for these events here, to make
+	   sure that gamepad detection works later on, if requested.
+	*/
+	Windows::Gaming::Input::Gamepad::GamepadAdded +=
+		ref new Windows::Foundation::EventHandler<Windows::Gaming::Input::Gamepad^>(
+			this, &SDL_XAMLWinRTApp::OnGamepadAdded
+			);
+#endif
+
+#if LOG_WINDOW_EVENTS==1
+	SDL_Log("%s, current orientation=%d, native orientation=%d, auto rot. pref=%d, window bounds={%f, %f, %f,%f}\n",
+		__FUNCTION__,
+		WINRT_DISPLAY_PROPERTY(CurrentOrientation),
+		WINRT_DISPLAY_PROPERTY(NativeOrientation),
+		WINRT_DISPLAY_PROPERTY(AutoRotationPreferences),
+		window->Bounds.X,
+		window->Bounds.Y,
+		window->Bounds.Width,
+		window->Bounds.Height);
+#endif
+
+	window->SizeChanged +=
+		ref new TypedEventHandler<CoreWindow^, WindowSizeChangedEventArgs^>(this, &SDL_XAMLWinRTApp::OnWindowSizeChanged);
+
+	window->VisibilityChanged +=
+		ref new TypedEventHandler<CoreWindow^, VisibilityChangedEventArgs^>(this, &SDL_XAMLWinRTApp::OnVisibilityChanged);
+
+	window->Activated +=
+		ref new TypedEventHandler<CoreWindow^, WindowActivatedEventArgs^>(this, &SDL_XAMLWinRTApp::OnWindowActivated);
+
+	window->Closed +=
+		ref new TypedEventHandler<CoreWindow^, CoreWindowEventArgs^>(this, &SDL_XAMLWinRTApp::OnWindowClosed);
+
+#if WINAPI_FAMILY != WINAPI_FAMILY_PHONE_APP
+	window->PointerCursor = ref new CoreCursor(CoreCursorType::Arrow, 0);
+#endif
+
+	window->PointerPressed +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerPressed);
+
+	window->PointerMoved +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerMoved);
+
+	window->PointerReleased +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerReleased);
+
+	window->PointerEntered +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerEntered);
+
+	window->PointerExited +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerExited);
+
+	window->PointerWheelChanged +=
+		ref new TypedEventHandler<CoreWindow^, PointerEventArgs^>(this, &SDL_XAMLWinRTApp::OnPointerWheelChanged);
+
+#if WINAPI_FAMILY != WINAPI_FAMILY_PHONE_APP
+	// Retrieves relative-only mouse movements:
+	Windows::Devices::Input::MouseDevice::GetForCurrentView()->MouseMoved +=
+		ref new TypedEventHandler<MouseDevice^, MouseEventArgs^>(this, &SDL_XAMLWinRTApp::OnMouseMoved);
+#endif
+
+	window->KeyDown +=
+		ref new TypedEventHandler<CoreWindow^, KeyEventArgs^>(this, &SDL_XAMLWinRTApp::OnKeyDown);
+
+	window->KeyUp +=
+		ref new TypedEventHandler<CoreWindow^, KeyEventArgs^>(this, &SDL_XAMLWinRTApp::OnKeyUp);
+
+	window->CharacterReceived +=
+		ref new TypedEventHandler<CoreWindow^, CharacterReceivedEventArgs^>(this, &SDL_XAMLWinRTApp::OnCharacterReceived);
+
+#if NTDDI_VERSION >= NTDDI_WIN10
+	Windows::UI::Core::SystemNavigationManager::GetForCurrentView()->BackRequested +=
+		ref new EventHandler<BackRequestedEventArgs^>(this, &SDL_XAMLWinRTApp::OnBackButtonPressed);
+#elif WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP
+	HardwareButtons::BackPressed +=
+		ref new EventHandler<BackPressedEventArgs^>(this, &SDL_WinRTApp::OnBackButtonPressed);
+#endif
+
+#if NTDDI_VERSION > NTDDI_WIN8
+	DisplayInformation::GetForCurrentView()->OrientationChanged +=
+		ref new TypedEventHandler<Windows::Graphics::Display::DisplayInformation^, Object^>(this, &SDL_XAMLWinRTApp::OnOrientationChanged);
+#else
+	DisplayProperties::OrientationChanged +=
+		ref new DisplayPropertiesEventHandler(this, &SDL_WinRTApp::OnOrientationChanged);
+#endif
+
+	// Register the hint, SDL_HINT_ORIENTATIONS, with SDL.
+	// TODO, WinRT: see if an app's default orientation can be found out via WinRT API(s), then set the initial value of SDL_HINT_ORIENTATIONS accordingly.
+	SDL_AddHintCallback(SDL_HINT_ORIENTATIONS, WINRT_SetDisplayOrientationsPreference, NULL);
+
+#if (WINAPI_FAMILY == WINAPI_FAMILY_APP) && (NTDDI_VERSION < NTDDI_WIN10)  // for Windows 8/8.1/RT apps... (and not Phone apps)
+	// Make sure we know when a user has opened the app's settings pane.
+	// This is needed in order to display a privacy policy, which needs
+	// to be done for network-enabled apps, as per Windows Store requirements.
+	using namespace Windows::UI::ApplicationSettings;
+	SettingsPane::GetForCurrentView()->CommandsRequested +=
+		ref new TypedEventHandler<SettingsPane^, SettingsPaneCommandsRequestedEventArgs^>
+		(this, &SDL_WinRTApp::OnSettingsPaneCommandsRequested);
+#endif
+
+
+}
+
+void SDL_XAMLWinRTApp::OnWindowSizeChanged(CoreWindow^ sender, WindowSizeChangedEventArgs^ args)
+{
+#if LOG_WINDOW_EVENTS==1
+	SDL_Log("%s, size={%f,%f}, bounds={%f,%f,%f,%f}, current orientation=%d, native orientation=%d, auto rot. pref=%d, WINRT_GlobalSDLWindow?=%s\n",
+		__FUNCTION__,
+		args->Size.Width, args->Size.Height,
+		sender->Bounds.X, sender->Bounds.Y, sender->Bounds.Width, sender->Bounds.Height,
+		WINRT_DISPLAY_PROPERTY(CurrentOrientation),
+		WINRT_DISPLAY_PROPERTY(NativeOrientation),
+		WINRT_DISPLAY_PROPERTY(AutoRotationPreferences),
+		(WINRT_GlobalSDLWindow ? "yes" : "no"));
+#endif
+
+	CoreWindow ^ coreWindow = CoreWindow::GetForCurrentThread();
+	if (coreWindow) {
+		if (WINRT_GlobalSDLWindow) {
+			SDL_Window * window = WINRT_GlobalSDLWindow;
+			SDL_WindowData * data = (SDL_WindowData *)window->driverdata;
+
+			
+			int x = WINRT_DIPS_TO_PHYSICAL_PIXELS(data->coreWindow->Bounds.Left);
+			int y = WINRT_DIPS_TO_PHYSICAL_PIXELS(data->coreWindow->Bounds.Top);
+			int w = WINRT_DIPS_TO_PHYSICAL_PIXELS(data->coreWindow->Bounds.Width);
+			int h = WINRT_DIPS_TO_PHYSICAL_PIXELS(data->coreWindow->Bounds.Height);
+
+#if (WINAPI_FAMILY == WINAPI_FAMILY_PHONE_APP) && (NTDDI_VERSION == NTDDI_WIN8)
+			/* WinPhone 8.0 always keeps its native window size in portrait,
+			   regardless of orientation.  This changes in WinPhone 8.1,
+			   in which the native window's size changes along with
+			   orientation.
+
+			   Attempt to emulate WinPhone 8.1's behavior on WinPhone 8.0, with
+			   regards to window size.  This fixes a rendering bug that occurs
+			   when a WinPhone 8.0 app is rotated to either 90 or 270 degrees.
+			*/
+			const DisplayOrientations currentOrientation = WINRT_DISPLAY_PROPERTY(CurrentOrientation);
+			switch (currentOrientation) {
+			case DisplayOrientations::Landscape:
+			case DisplayOrientations::LandscapeFlipped: {
+				int tmp = w;
+				w = h;
+				h = tmp;
+			} break;
+			}
+#endif
+
+			const Uint32 latestFlags = WINRT_DetectWindowFlags(window);
+			if (latestFlags & SDL_WINDOW_MAXIMIZED) {
+				SDL_SendWindowEvent(window, SDL_WINDOWEVENT_MAXIMIZED, 0, 0);
+			}
+			else {
+				SDL_SendWindowEvent(window, SDL_WINDOWEVENT_RESTORED, 0, 0);
+			}
+
+			WINRT_UpdateWindowFlags(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
+
+			/* The window can move during a resize event, such as when maximizing
+			   or resizing from a corner */
+			SDL_SendWindowEvent(window, SDL_WINDOWEVENT_MOVED, x, y);
+			SDL_SendWindowEvent(window, SDL_WINDOWEVENT_RESIZED, w, h);
+		}
+	}
+}
+
 
 /* vi: set ts=4 sw=4 expandtab: */
