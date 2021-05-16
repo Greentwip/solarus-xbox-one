@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{cd99bc5c-482b-4d5c-909a-35f0c1f8d2dc}</ProjectGuid>
+    <Keyword>DirectXXamlApp</Keyword>
+    <RootNamespace>Solarus_WinRT_XAML</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.props" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>Solarus-WinRT-XAML_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\include\solarus\third_party;$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm; $(VCInstallDir)\lib\arm</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm64; $(VCInstallDir)\lib\arm64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\include\solarus\third_party;$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store\arm64; $(VCInstallDir)\lib\arm64</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\include\solarus\third_party;$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories); $(VCInstallDir)\lib\store; $(VCInstallDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(VCInstallDir)\lib\store\amd64;$(VCInstallDir)\lib\amd64;$(SolutionDir)\$(Platform)\$(Configuration)\lua-uwp</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\solarus\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\solarus\include\solarus\third_party;$(ProjectDir)\..\..\solarus\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\solarus\include;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;DEBUG;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalDependencies>d2d1.lib; d3d11.lib; dxgi.lib; windowscodecs.lib; dwrite.lib; lua-uwp.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(VCInstallDir)\lib\store\amd64;$(VCInstallDir)\lib\amd64;$(SolutionDir)\$(Platform)\$(Configuration)\lua-uwp</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\..\external\openal\include\AL;$(ProjectDir)\..\..\external\openal\include;$(ProjectDir)\..\..\solarus\include\solarus\third_party\snes_spc;$(ProjectDir)\..\..\solarus\include\solarus\third_party;$(ProjectDir)\..\..\solarus\src;$(ProjectDir)\..\..\external\SDL\include;$(ProjectDir)\..\..\external\SDL_image;$(ProjectDir)\..\..\external\SDL_image\external\libpng-1.6.2;$(ProjectDir)\..\..\external\lua\lua-uwp\src;$(ProjectDir)\..\..\external\SDL_mixer;$(ProjectDir)\..\..\external;$(ProjectDir)\..\..\external\glm;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src\libmodplug;$(ProjectDir)\..\..\external\libmodplug\libmodplug\src;$(ProjectDir)\..\..\external\SDL_mixer\external\libogg-1.3.1\include;$(ProjectDir)\..\..\external\SDL_ttf\external\freetype-2.9.1\include;$(ProjectDir)\..\..\external\SDL_ttf\;$(ProjectDir)\..\..\external\SDL_mixer\;$(ProjectDir)\..\..\external\SDL_mixer\external\libvorbis-1.3.3\include;$(ProjectDir)\..\..\external\physfs\src;$(ProjectDir)\..\..\solarus\include;$(ProjectDir)\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WINRT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;SOLARUS_OPENAL_EXTENSIONS_RECONNECT;HX_WINRT;HX_WINDOWS;_CRT_NONSTDC_NO_DEPRECATE;LUA_BUILD_AS_DLL;DLL_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\lua.hpp" />
+    <ClInclude Include="..\..\solarus\include\audio\ItDecoder.h" />
+    <ClInclude Include="..\..\solarus\include\audio\Music.h" />
+    <ClInclude Include="..\..\solarus\include\audio\OggDecoder.h" />
+    <ClInclude Include="..\..\solarus\include\audio\Sound.h" />
+    <ClInclude Include="..\..\solarus\include\audio\SoundBuffer.h" />
+    <ClInclude Include="..\..\solarus\include\audio\SoundPtr.h" />
+    <ClInclude Include="..\..\solarus\include\audio\SpcDecoder.h" />
+    <ClInclude Include="..\..\solarus\include\containers\FreeList.h" />
+    <ClInclude Include="..\..\solarus\include\containers\Grid.h" />
+    <ClInclude Include="..\..\solarus\include\containers\Quadtree.h" />
+    <ClInclude Include="..\..\solarus\include\core\Ability.h" />
+    <ClInclude Include="..\..\solarus\include\core\AbilityInfo.h" />
+    <ClInclude Include="..\..\solarus\include\core\AndroidConfig.h" />
+    <ClInclude Include="..\..\solarus\include\core\AppleInterface.h" />
+    <ClInclude Include="..\..\solarus\include\core\Arguments.h" />
+    <ClInclude Include="..\..\solarus\include\core\CommandsEffects.h" />
+    <ClInclude Include="..\..\solarus\include\core\Common.h" />
+    <ClInclude Include="..\..\solarus\include\core\config.h" />
+    <ClInclude Include="..\..\solarus\include\core\CurrentQuest.h" />
+    <ClInclude Include="..\..\solarus\include\core\Debug.h" />
+    <ClInclude Include="..\..\solarus\include\core\Dialog.h" />
+    <ClInclude Include="..\..\solarus\include\core\DialogBoxSystem.h" />
+    <ClInclude Include="..\..\solarus\include\core\DialogResources.h" />
+    <ClInclude Include="..\..\solarus\include\core\EnumInfo.h" />
+    <ClInclude Include="..\..\solarus\include\core\Equipment.h" />
+    <ClInclude Include="..\..\solarus\include\core\EquipmentItem.h" />
+    <ClInclude Include="..\..\solarus\include\core\EquipmentItemUsage.h" />
+    <ClInclude Include="..\..\solarus\include\core\FontResource.h" />
+    <ClInclude Include="..\..\solarus\include\core\Game.h" />
+    <ClInclude Include="..\..\solarus\include\core\GameCommand.h" />
+    <ClInclude Include="..\..\solarus\include\core\GameCommands.h" />
+    <ClInclude Include="..\..\solarus\include\core\Geometry.h" />
+    <ClInclude Include="..\..\solarus\include\core\InputEvent.h" />
+    <ClInclude Include="..\..\solarus\include\core\Logger.h" />
+    <ClInclude Include="..\..\solarus\include\core\MainLoop.h" />
+    <ClInclude Include="..\..\solarus\include\core\Map.h" />
+    <ClInclude Include="..\..\solarus\include\core\MapData.h" />
+    <ClInclude Include="..\..\solarus\include\core\PerfCounter.h" />
+    <ClInclude Include="..\..\solarus\include\core\PixelBits.h" />
+    <ClInclude Include="..\..\solarus\include\core\Platform.h" />
+    <ClInclude Include="..\..\solarus\include\core\Point.h" />
+    <ClInclude Include="..\..\solarus\include\core\Profiler.h" />
+    <ClInclude Include="..\..\solarus\include\core\QuestDatabase.h" />
+    <ClInclude Include="..\..\solarus\include\core\QuestFiles.h" />
+    <ClInclude Include="..\..\solarus\include\core\QuestProperties.h" />
+    <ClInclude Include="..\..\solarus\include\core\Random.h" />
+    <ClInclude Include="..\..\solarus\include\core\Rectangle.h" />
+    <ClInclude Include="..\..\solarus\include\core\ResourceProvider.h" />
+    <ClInclude Include="..\..\solarus\include\core\ResourceType.h" />
+    <ClInclude Include="..\..\solarus\include\core\Savegame.h" />
+    <ClInclude Include="..\..\solarus\include\core\SavegameConverterV1.h" />
+    <ClInclude Include="..\..\solarus\include\core\Scale.h" />
+    <ClInclude Include="..\..\solarus\include\core\Settings.h" />
+    <ClInclude Include="..\..\solarus\include\core\Size.h" />
+    <ClInclude Include="..\..\solarus\include\core\SolarusFatal.h" />
+    <ClInclude Include="..\..\solarus\include\core\String.h" />
+    <ClInclude Include="..\..\solarus\include\core\StringResources.h" />
+    <ClInclude Include="..\..\solarus\include\core\System.h" />
+    <ClInclude Include="..\..\solarus\include\core\Timer.h" />
+    <ClInclude Include="..\..\solarus\include\core\TimerPtr.h" />
+    <ClInclude Include="..\..\solarus\include\core\Transform.h" />
+    <ClInclude Include="..\..\solarus\include\core\Treasure.h" />
+    <ClInclude Include="..\..\solarus\include\entities\AnimatedTilePattern.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Arrow.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Block.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Bomb.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Boomerang.h" />
+    <ClInclude Include="..\..\solarus\include\entities\BorderKind.h" />
+    <ClInclude Include="..\..\solarus\include\entities\BorderSet.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Camera.h" />
+    <ClInclude Include="..\..\solarus\include\entities\CameraPtr.h" />
+    <ClInclude Include="..\..\solarus\include\entities\CarriedObject.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Chest.h" />
+    <ClInclude Include="..\..\solarus\include\entities\CollisionMode.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Crystal.h" />
+    <ClInclude Include="..\..\solarus\include\entities\CrystalBlock.h" />
+    <ClInclude Include="..\..\solarus\include\entities\CustomEntity.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Destination.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Destructible.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Door.h" />
+    <ClInclude Include="..\..\solarus\include\entities\DynamicTile.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Enemy.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EnemyAttack.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EnemyReaction.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Entities.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Entity.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EntityData.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EntityPtr.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EntityState.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EntityType.h" />
+    <ClInclude Include="..\..\solarus\include\entities\EntityTypeInfo.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Explosion.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Fire.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Ground.h" />
+    <ClInclude Include="..\..\solarus\include\entities\GroundInfo.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Hero.h" />
+    <ClInclude Include="..\..\solarus\include\entities\HeroPtr.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Hookshot.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Jumper.h" />
+    <ClInclude Include="..\..\solarus\include\entities\NonAnimatedRegions.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Npc.h" />
+    <ClInclude Include="..\..\solarus\include\entities\ParallaxScrollingTilePattern.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Pickable.h" />
+    <ClInclude Include="..\..\solarus\include\entities\SelfScrollingTilePattern.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Sensor.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Separator.h" />
+    <ClInclude Include="..\..\solarus\include\entities\SeparatorPtr.h" />
+    <ClInclude Include="..\..\solarus\include\entities\ShopTreasure.h" />
+    <ClInclude Include="..\..\solarus\include\entities\SimpleTilePattern.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Stairs.h" />
+    <ClInclude Include="..\..\solarus\include\entities\StartingLocationMode.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Stream.h" />
+    <ClInclude Include="..\..\solarus\include\entities\StreamAction.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Switch.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Teletransporter.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Tile.h" />
+    <ClInclude Include="..\..\solarus\include\entities\TileInfo.h" />
+    <ClInclude Include="..\..\solarus\include\entities\TilePattern.h" />
+    <ClInclude Include="..\..\solarus\include\entities\TilePtr.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Tileset.h" />
+    <ClInclude Include="..\..\solarus\include\entities\TilesetData.h" />
+    <ClInclude Include="..\..\solarus\include\entities\TraversableInfo.h" />
+    <ClInclude Include="..\..\solarus\include\entities\Wall.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\BlendMode.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\BlendModeInfo.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Color.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\CustomDrawInfos.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\DefaultShaders.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Drawable.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\DrawablePtr.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\DrawProxies.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\glrenderer\GlRenderer.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\glrenderer\GlShader.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\glrenderer\GlTexture.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Hq2xFilter.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Hq3xFilter.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Hq4xFilter.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\quest_icon.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Renderer.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Scale2xFilter.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SDLPtrs.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLRenderer.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLShader.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLSurfaceImpl.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Shader.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\ShaderData.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\ShaderPtr.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SoftwarePixelFilter.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SoftwareVideoMode.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SolarusGl.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Sprite.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimation.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationDirection.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationSet.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteData.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SpritePtr.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Surface.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SurfaceImpl.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\SurfacePtr.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\TextSurface.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Transition.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionFade.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionImmediate.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionScrolling.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\VertexArray.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\VertexArrayPtr.h" />
+    <ClInclude Include="..\..\solarus\include\graphics\Video.h" />
+    <ClInclude Include="..\..\solarus\include\hero\BackToSolidGroundState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\BoomerangState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\BowState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\CarryingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\CustomState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\FallingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\ForcedWalkingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\FreeState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\FrozenState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\GrabbingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\HeroSprites.h" />
+    <ClInclude Include="..\..\solarus\include\hero\HeroState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\HookshotState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\HurtState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\JumpingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\LiftingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\PlayerMovementState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\PlungingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\PullingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\PushingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\RunningState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\SpinAttackState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\StairsState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\SwimmingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\SwordLoadingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\SwordSwingingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\SwordTappingState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\TreasureState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\UsingItemState.h" />
+    <ClInclude Include="..\..\solarus\include\hero\VictoryState.h" />
+    <ClInclude Include="..\..\solarus\include\lua\ExportableToLua.h" />
+    <ClInclude Include="..\..\solarus\include\lua\ExportableToLuaPtr.h" />
+    <ClInclude Include="..\..\solarus\include\lua\LuaContext.h" />
+    <ClInclude Include="..\..\solarus\include\lua\LuaData.h" />
+    <ClInclude Include="..\..\solarus\include\lua\LuaException.h" />
+    <ClInclude Include="..\..\solarus\include\lua\LuaTools.h" />
+    <ClInclude Include="..\..\solarus\include\lua\ScopedLuaRef.h" />
+    <ClInclude Include="..\..\solarus\include\movements\CircleMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\FallingHeight.h" />
+    <ClInclude Include="..\..\solarus\include\movements\FallingOnFloorMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\JumpMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\Movement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\PathFinding.h" />
+    <ClInclude Include="..\..\solarus\include\movements\PathFindingMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\PathMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\PixelMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\PlayerMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\RandomMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\RandomPathMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\RelativeMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\StraightMovement.h" />
+    <ClInclude Include="..\..\solarus\include\movements\TargetMovement.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\glad\glad.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\hqx\common.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\hqx\hqx.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\KHR\khrplatform.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_common.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_config.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_endian.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_source.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\dsp.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SNES_SPC.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\spc.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_CPU.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_DSP.h" />
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_Filter.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h" />
+    <ClInclude Include="FunctionHelper.h" />
+    <ClInclude Include="Solarus_WinRT_XAMLMain.h" />
+    <ClInclude Include="DirectXPage.xaml.h">
+      <DependentUpon>DirectXPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\solarus\src\audio\ItDecoder.cpp" />
+    <ClCompile Include="..\..\solarus\src\audio\Music.cpp" />
+    <ClCompile Include="..\..\solarus\src\audio\OggDecoder.cpp" />
+    <ClCompile Include="..\..\solarus\src\audio\Sound.cpp" />
+    <ClCompile Include="..\..\solarus\src\audio\SoundBuffer.cpp" />
+    <ClCompile Include="..\..\solarus\src\audio\SpcDecoder.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\AbilityInfo.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Arguments.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\CommandsEffects.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\CurrentQuest.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Debug.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Dialog.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\DialogBoxSystem.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\DialogResources.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Equipment.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\EquipmentItem.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\EquipmentItemUsage.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\FontResource.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Game.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\GameCommands.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Geometry.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\InputEvent.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Logger.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\MainLoop.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Map.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\MapData.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\PerfCounter.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\PixelBits.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Point.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\QuestDatabase.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\QuestFiles.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\QuestProperties.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Random.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Rectangle.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\ResourceProvider.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Savegame.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\SavegameConverterV1.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Settings.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Size.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\SolarusFatal.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\String.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\StringResources.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\System.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Timer.cpp" />
+    <ClCompile Include="..\..\solarus\src\core\Treasure.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\AnimatedTilePattern.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Arrow.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Block.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Bomb.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Boomerang.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\BorderSet.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Camera.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\CarriedObject.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Chest.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\CollisionMode.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Crystal.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\CrystalBlock.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\CustomEntity.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Destination.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Destructible.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Door.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\DynamicTile.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Enemy.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\EnemyReaction.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Entities.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Entity.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\EntityData.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\EntityState.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\EntityTypeInfo.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Explosion.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Fire.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\GroundInfo.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Hero.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Hookshot.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Jumper.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\NonAnimatedRegions.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Npc.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\ParallaxScrollingTilePattern.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Pickable.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\SelfScrollingTilePattern.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Sensor.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Separator.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\ShopTreasure.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\SimpleTilePattern.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Stairs.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\StartingLocationMode.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Stream.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\StreamAction.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Switch.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Teletransporter.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Tile.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\TilePattern.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Tileset.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\TilesetData.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\TraversableInfo.cpp" />
+    <ClCompile Include="..\..\solarus\src\entities\Wall.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\BlendModeInfo.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Color.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Drawable.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlRenderer.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlShader.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlTexture.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Hq2xFilter.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Hq3xFilter.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Hq4xFilter.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Renderer.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Scale2xFilter.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLRenderer.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLShader.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLSurfaceImpl.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Shader.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\ShaderData.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SoftwarePixelFilter.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SoftwareVideoMode.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Sprite.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SpriteAnimation.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SpriteAnimationDirection.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SpriteAnimationSet.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SpriteData.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Surface.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\SurfaceImpl.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\TextSurface.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Transition.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\TransitionFade.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\TransitionImmediate.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\TransitionScrolling.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\VertexArray.cpp" />
+    <ClCompile Include="..\..\solarus\src\graphics\Video.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\BackToSolidGroundState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\BoomerangState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\BowState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\CarryingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\CustomState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\FallingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\ForcedWalkingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\FreeState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\FrozenState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\GrabbingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\HeroSprites.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\HeroState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\HookshotState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\HurtState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\JumpingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\LiftingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\PlayerMovementState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\PlungingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\PullingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\PushingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\RunningState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\SpinAttackState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\StairsState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\SwimmingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\SwordLoadingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\SwordSwingingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\SwordTappingState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\TreasureState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\UsingItemState.cpp" />
+    <ClCompile Include="..\..\solarus\src\hero\VictoryState.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\AudioApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\DrawableApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\EntityApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\ExportableToLua.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\FileApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\GameApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\InputApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\ItemApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\LanguageApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\LuaContext.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\LuaData.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\LuaException.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\LuaTools.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\MainApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\MapApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\MenuApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\MovementApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\ScopedLuaRef.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\ShaderApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\SoundApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\SpriteApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\StateApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\SurfaceApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\TextSurfaceApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\TimerApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\lua\VideoApi.cpp" />
+    <ClCompile Include="..\..\solarus\src\main\Main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\movements\CircleMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\FallingOnFloorMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\JumpMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\Movement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\PathFinding.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\PathFindingMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\PathMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\PixelMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\PlayerMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\RandomMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\RandomPathMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\RelativeMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\StraightMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\movements\TargetMovement.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\glad\glad.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\third_party\hqx\hq2x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\third_party\hqx\hq3x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\third_party\hqx\hq4x.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\third_party\hqx\init.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\dsp.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SNES_SPC.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SNES_SPC_misc.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SNES_SPC_state.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\spc.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SPC_DSP.cpp" />
+    <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SPC_Filter.cpp" />
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Common\DeviceResources.cpp" />
+    <ClCompile Include="Solarus_WinRT_XAMLMain.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp">
+      <DependentUpon>DirectXPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="..\..\solarus\include\containers\Quadtree.inl" />
+    <None Include="..\..\solarus\include\core\EnumInfo.inl" />
+    <None Include="..\..\solarus\include\core\PerfCounter.inl" />
+    <None Include="..\..\solarus\include\core\Point.inl" />
+    <None Include="..\..\solarus\include\core\Rectangle.inl" />
+    <None Include="..\..\solarus\include\core\Scale.inl" />
+    <None Include="..\..\solarus\include\core\Size.inl" />
+    <None Include="..\..\solarus\include\core\Transform.inl" />
+    <None Include="..\..\solarus\include\graphics\Color.inl" />
+    <None Include="..\..\solarus\include\lua\LuaTools.inl" />
+    <None Include="Solarus-WinRT-XAML_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="DirectXPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\Angle\ms-angle-ms\winrt\10\src\libEGL.vcxproj">
+      <Project>{229c8ccc-d35c-ecdb-2b0c-27ee2cac295b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\Angle\ms-angle-ms\winrt\10\src\libGLESv2.vcxproj">
+      <Project>{5cf061c0-ea5a-323e-2ffb-145a0c3d60a5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\libmodplug\libmodplug-uwp\libmodplug-uwp.vcxproj">
+      <Project>{bf5a37bd-a60b-431a-96fa-3b54eb093d96}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\lua\lua-uwp\lua-uwp\lua-uwp.vcxproj">
+      <Project>{93b8da2c-888e-40c4-8e9e-5f31b53949e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\openal\winrt.vs2015\OpenAL\OpenAL.vcxproj">
+      <Project>{a4ec741a-2f08-4dab-a9b1-472540cbce2e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\physfs\physfs\physfs.vcxproj">
+      <Project>{eb338fa7-d55c-415f-aaf0-509b85c7a5ec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL\VisualC-WinRT\UWP_VS2015\SDL-UWP.vcxproj">
+      <Project>{89e9b32e-a86a-47c3-a948-d2b1622925ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\jpeg-WinRT81.vcxproj">
+      <Project>{2e908ad5-95e9-4b2d-bd6e-ba3ea4c1a2ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libpng-WinRT81.vcxproj">
+      <Project>{5fbdc49a-7939-40f9-b78e-975f190adbd3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\libwebp-WinRT81.vcxproj">
+      <Project>{1eb035a3-815a-4382-90d3-4510ab605ad9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\SDL_image-WinRT81.vcxproj">
+      <Project>{29b4d11f-59f3-4ebc-a769-3babd140db9a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_image\VisualC-WinRT\WinRT81_VS2013\zlib-WinRT81.vcxproj">
+      <Project>{acea4101-6f4a-44ed-9ec1-289821dac711}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libogg_dynamic-WinRT81.vcxproj">
+      <Project>{6bc6349c-e355-4f1c-9290-ff755114a84b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbisfile_dynamic-WinRT81.vcxproj">
+      <Project>{936b2819-2364-45d9-901d-52878914fafa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\libvorbis_dynamic-WinRT81.vcxproj">
+      <Project>{e3ab27f1-eb89-4c65-85df-cb6a4f805753}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_mixer\VisualC-WinRT\WinRT81_VS2013\SDL_mixer-WinRT81.vcxproj">
+      <Project>{3a833c7a-c776-4202-9dbd-bc879b23c605}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_ttf\VisualC-WinRT\UWP_VS2015\freetype-WinRT81.vcxproj">
+      <Project>{1264471f-847f-427d-8db6-b733f188ffb9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\SDL_ttf\VisualC-WinRT\UWP_VS2015\SDL_ttf-WinRT81.vcxproj">
+      <Project>{90ca40dc-84b4-4d06-91d1-dc82a7a1e4d0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ImageContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\MeshContentTask.targets" />
+    <Import Project="$(VSINSTALLDIR)\Common7\IDE\Extensions\Microsoft\VsGraphics\ShaderGraphContentTask.targets" />
+  </ImportGroup>
+</Project>

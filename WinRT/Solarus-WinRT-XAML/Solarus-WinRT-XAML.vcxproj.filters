@@ -1,106 +1,139 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>cd99bc5c-482b-4d5c-909a-35f0c1f8d2dc</UniqueIdentifier>
+    </Filter>
     <Filter Include="Assets">
-      <UniqueIdentifier>2ebb192c-37ce-4da7-b3b1-a32e4f41b185</UniqueIdentifier>
+      <UniqueIdentifier>eac2676f-5df5-4d2a-8f89-5e71e6cc3ce8</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
     <Filter Include="Source">
-      <UniqueIdentifier>{18c444de-1779-4b7b-a6b0-3ddff8892887}</UniqueIdentifier>
+      <UniqueIdentifier>{e8baf8ea-b500-40a6-be81-21637b14e125}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\audio">
-      <UniqueIdentifier>{d6574ad8-ba43-40b6-a7a5-6a1d5f168c59}</UniqueIdentifier>
+      <UniqueIdentifier>{d63510ae-a777-4f9b-901e-def140f812a6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\core">
-      <UniqueIdentifier>{bc02d2c6-a482-4c0d-ba82-95fb61077092}</UniqueIdentifier>
+      <UniqueIdentifier>{74736017-a0bc-421a-aa69-c04498787585}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\entities">
-      <UniqueIdentifier>{26187b71-ee18-493c-a72f-59b0a51c86d6}</UniqueIdentifier>
+      <UniqueIdentifier>{3aaa6ba3-2113-4d03-8e8a-b62365b3ac9f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\graphics">
-      <UniqueIdentifier>{37ff95b7-8a74-4a83-837b-dbde37c0c7c8}</UniqueIdentifier>
+      <UniqueIdentifier>{354ed41e-f5e3-4fb3-9780-a8215d8f3a87}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\graphics\sdlrenderer">
-      <UniqueIdentifier>{274b46e9-bf51-4785-af23-ca6308f286ab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\hero">
-      <UniqueIdentifier>{3d453a8f-f0c9-4597-a270-27a15865c068}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\lua">
-      <UniqueIdentifier>{36c5921d-be1c-4632-8eb7-5ffc16beda2b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\main">
-      <UniqueIdentifier>{a525c03f-488b-4496-b8fe-c1abecf8e7ac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\movements">
-      <UniqueIdentifier>{5e5ce89b-5e7b-4dfc-a0b9-5b71fd52439f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\third_party">
-      <UniqueIdentifier>{f23a8a34-82f5-4ef8-a1b8-2b9f50e19391}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\third_party\glad">
-      <UniqueIdentifier>{560a0b7d-e9ad-4efd-b3a9-4aaf78492c15}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\third_party\hqx">
-      <UniqueIdentifier>{4fcce329-5205-4893-ac0f-8896a494402d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\third_party\snes_spc">
-      <UniqueIdentifier>{9d0f22b5-82c6-4570-b7aa-90a86acb482f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include">
-      <UniqueIdentifier>{5f1704a2-a0dd-4ae4-9810-5fa17124b1e3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\audio">
-      <UniqueIdentifier>{dc78936c-8c90-4489-a52d-2dcf2fdfde72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\core">
-      <UniqueIdentifier>{87e74023-fef5-49c1-b8dd-e1815f01ac17}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\entities">
-      <UniqueIdentifier>{e03d8572-675d-447a-806c-bf54adf0bcfb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\graphics">
-      <UniqueIdentifier>{4057481f-bfa6-48d4-a674-fbd4ae273e8b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\hero">
-      <UniqueIdentifier>{5637b54f-41ae-46d2-9e32-31690ae0dedd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\lua">
-      <UniqueIdentifier>{a454c418-39d3-4f4b-9e82-f62f3bd30ce8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\movements">
-      <UniqueIdentifier>{051b0bf3-7b99-4b3b-a9a8-dde7e05ae466}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\third_party">
-      <UniqueIdentifier>{dac705c5-134b-4c07-baf0-6cf10afa29d9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\third_party\KHR">
-      <UniqueIdentifier>{ae3f3162-43eb-4642-a790-713d5a4455f2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\third_party\hqx">
-      <UniqueIdentifier>{6bde85eb-a37f-4346-af17-1e93a2ea04ad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\third_party\snes_spc">
-      <UniqueIdentifier>{37edce0c-147e-4b20-8ad2-6925b788a83c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\third_party\glad">
-      <UniqueIdentifier>{6e79c47a-5890-4617-8ab1-584118df984d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\graphics\sdlrenderer">
-      <UniqueIdentifier>{2ba69bb9-c852-46fb-9e9d-ea480dba08ac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\containers">
-      <UniqueIdentifier>{6e285e3b-db2b-4ad2-927f-c791478a4442}</UniqueIdentifier>
+      <UniqueIdentifier>{c950530c-6ee6-4e2e-9945-a041f2657f9c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\graphics\glrenderer">
-      <UniqueIdentifier>{04680ae0-983a-493c-8dd4-42e74b150067}</UniqueIdentifier>
+      <UniqueIdentifier>{b821dba7-42e6-404f-81fc-6c6e8971eb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\hero">
+      <UniqueIdentifier>{b5be7ea7-a382-4255-9281-3cc148dce902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\lua">
+      <UniqueIdentifier>{99f01784-e543-4510-bad9-7f990180ab82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\main">
+      <UniqueIdentifier>{08e2554d-1e9f-4f1c-a152-1ff20a3e0503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\movements">
+      <UniqueIdentifier>{6b3f2f64-bfef-46c9-b28d-2c28a3e6efe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party">
+      <UniqueIdentifier>{9bb52a4d-f09c-421f-9009-bed8950be58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\glad">
+      <UniqueIdentifier>{b7ba1036-61ec-474c-864f-1f1473a5166a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\hqx">
+      <UniqueIdentifier>{46c3cac6-540c-4e64-a015-a5876d78f157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\third_party\snes_spc">
+      <UniqueIdentifier>{ebbd6b4b-051e-40aa-bd4d-d9a8ad7ec3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{dc9b5181-c555-48c1-9a92-9c8979aaa72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\audio">
+      <UniqueIdentifier>{066d7997-1797-4b81-8d05-c804e5e6eef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{43ba91e1-b90d-4d27-9768-cce3ee5fb9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\entities">
+      <UniqueIdentifier>{251621d7-8159-4e95-9c54-68bc9dbad9ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graphics">
+      <UniqueIdentifier>{93ba4ab7-2103-43f8-b1f4-9312e4ce9a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graphics\sdlrenderer">
+      <UniqueIdentifier>{cbdb0aef-e88d-4561-972f-452b0e11bced}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\graphics\glrenderer">
-      <UniqueIdentifier>{be4bf05b-77ba-4ba8-9b4b-078cc79588b5}</UniqueIdentifier>
+      <UniqueIdentifier>{2076978f-388d-4ada-86ea-e639629c0000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hero">
+      <UniqueIdentifier>{f0dbe77a-b8fb-46d6-9518-e6f42b3131b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lua">
+      <UniqueIdentifier>{7e644be4-4222-4feb-abfc-00f9363e4035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\movements">
+      <UniqueIdentifier>{42393503-2668-4e3b-b80a-fbc48cc20509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party">
+      <UniqueIdentifier>{46624e2a-f1b1-46e2-9571-9fb4e3a05ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\KHR">
+      <UniqueIdentifier>{369a8721-68bd-452d-862e-ce27e8ba3bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\hqx">
+      <UniqueIdentifier>{2fa6c8b8-e61c-439e-92c2-4f224a54e2df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\snes_spc">
+      <UniqueIdentifier>{9a70928f-b6d2-4294-87a8-ac0c83f2e8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\third_party\glad">
+      <UniqueIdentifier>{0a4fb1ff-10cc-439b-8871-65b229498311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\containers">
+      <UniqueIdentifier>{b04aeb15-b408-40b1-ab1b-acdf95e854ca}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\external\SDL\src\main\winrt\SDL_winrt_main_NonXAML.cpp" />
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="Solarus_WinRT_XAMLMain.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
     <ClCompile Include="..\..\solarus\src\audio\ItDecoder.cpp">
       <Filter>Source\audio</Filter>
     </ClCompile>
@@ -389,14 +422,23 @@
     <ClCompile Include="..\..\solarus\src\entities\Wall.cpp">
       <Filter>Source\entities</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLRenderer.cpp">
-      <Filter>Source\graphics\sdlrenderer</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\BlendModeInfo.cpp">
+      <Filter>Source\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLShader.cpp">
-      <Filter>Source\graphics\sdlrenderer</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\Color.cpp">
+      <Filter>Source\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLSurfaceImpl.cpp">
-      <Filter>Source\graphics\sdlrenderer</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\Drawable.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\graphics\Hq2xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\graphics\Hq3xFilter.cpp">
+      <Filter>Source\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\solarus\src\graphics\Hq4xFilter.cpp">
+      <Filter>Source\graphics</Filter>
     </ClCompile>
     <ClCompile Include="..\..\solarus\src\graphics\Renderer.cpp">
       <Filter>Source\graphics</Filter>
@@ -458,23 +500,23 @@
     <ClCompile Include="..\..\solarus\src\graphics\Video.cpp">
       <Filter>Source\graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\BlendModeInfo.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLRenderer.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\Color.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLShader.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\Drawable.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\sdlrenderer\SDLSurfaceImpl.cpp">
+      <Filter>Source\graphics\sdlrenderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\Hq2xFilter.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlRenderer.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\Hq3xFilter.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlShader.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\Hq4xFilter.cpp">
-      <Filter>Source\graphics</Filter>
+    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlTexture.cpp">
+      <Filter>Source\graphics\glrenderer</Filter>
     </ClCompile>
     <ClCompile Include="..\..\solarus\src\hero\BackToSolidGroundState.cpp">
       <Filter>Source\hero</Filter>
@@ -725,398 +767,191 @@
     <ClCompile Include="..\..\solarus\src\third_party\snes_spc\SPC_Filter.cpp">
       <Filter>Source\third_party\snes_spc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlRenderer.cpp">
-      <Filter>Source\graphics\glrenderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlShader.cpp">
-      <Filter>Source\graphics\glrenderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\solarus\src\graphics\glrenderer\GlTexture.cpp">
-      <Filter>Source\graphics\glrenderer</Filter>
-    </ClCompile>
-    <ClCompile Include="SolarusMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Assets\LockScreenLogo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\SplashScreen.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square150x150Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\StoreLogo.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\Wide310x150Logo.scale-200.png">
-      <Filter>Assets</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <AppxManifest Include="Package.appxmanifest" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Solarus-WinRT_TemporaryKey.pfx" />
-    <None Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResource_BlankCursor.cur" />
-    <None Include="..\..\solarus\include\lua\LuaTools.inl">
-      <Filter>include\lua</Filter>
-    </None>
-    <None Include="..\..\solarus\include\graphics\Color.inl">
-      <Filter>include\graphics</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\EnumInfo.inl">
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="Solarus_WinRT_XAMLMain.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="..\..\include\lua.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\ItDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\Music.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\OggDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\Sound.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\SoundBuffer.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\SoundPtr.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\audio\SpcDecoder.h">
+      <Filter>include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\Ability.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\PerfCounter.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\AbilityInfo.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\Point.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\AndroidConfig.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\Rectangle.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\AppleInterface.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\Scale.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\Arguments.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\Size.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\CommandsEffects.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\core\Transform.inl">
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\core\Common.h">
       <Filter>include\core</Filter>
-    </None>
-    <None Include="..\..\solarus\include\containers\Quadtree.inl">
-      <Filter>include\containers</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\..\external\SDL\src\main\winrt\SDL2-WinRTResources.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\solarus\include\third_party\hqx\common.h">
-      <Filter>include\third_party\hqx</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\hqx\hqx.h">
-      <Filter>include\third_party\hqx</Filter>
+    <ClInclude Include="..\..\solarus\include\core\config.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\KHR\khrplatform.h">
-      <Filter>include\third_party\KHR</Filter>
+    <ClInclude Include="..\..\solarus\include\core\CurrentQuest.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_common.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Debug.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_config.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Dialog.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_endian.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\DialogBoxSystem.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_source.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\DialogResources.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\dsp.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\EnumInfo.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SNES_SPC.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Equipment.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\spc.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\EquipmentItem.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_CPU.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\EquipmentItemUsage.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_DSP.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\FontResource.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_Filter.h">
-      <Filter>include\third_party\snes_spc</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Game.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\third_party\glad\glad.h">
-      <Filter>include\third_party\glad</Filter>
+    <ClInclude Include="..\..\solarus\include\core\GameCommand.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\CircleMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\GameCommands.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\FallingHeight.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Geometry.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\FallingOnFloorMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\InputEvent.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\JumpMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Logger.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\Movement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\MainLoop.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\PathFinding.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Map.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\PathFindingMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\MapData.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\PathMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\PerfCounter.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\PixelMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\PixelBits.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\PlayerMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Platform.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\RandomMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Point.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\RandomPathMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Profiler.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\RelativeMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\QuestDatabase.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\StraightMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\QuestFiles.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\movements\TargetMovement.h">
-      <Filter>include\movements</Filter>
+    <ClInclude Include="..\..\solarus\include\core\QuestProperties.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\ExportableToLua.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Random.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\ExportableToLuaPtr.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Rectangle.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\LuaContext.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\ResourceProvider.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\LuaData.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\ResourceType.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\LuaException.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Savegame.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\LuaTools.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\SavegameConverterV1.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\lua\ScopedLuaRef.h">
-      <Filter>include\lua</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Scale.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\BackToSolidGroundState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Settings.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\BoomerangState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Size.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\BowState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\SolarusFatal.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\CarryingState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\String.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\CustomState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\StringResources.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\FallingState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\System.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\ForcedWalkingState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Timer.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\FreeState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\TimerPtr.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\FrozenState.h">
-      <Filter>include\hero</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Transform.h">
+      <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\GrabbingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\HeroSprites.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\HeroState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\HookshotState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\HurtState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\JumpingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\LiftingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\PlayerMovementState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\PlungingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\PullingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\PushingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\RunningState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\SpinAttackState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\StairsState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\SwimmingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\SwordLoadingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\SwordSwingingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\SwordTappingState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\TreasureState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\UsingItemState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\hero\VictoryState.h">
-      <Filter>include\hero</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLRenderer.h">
-      <Filter>include\graphics\sdlrenderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLShader.h">
-      <Filter>include\graphics\sdlrenderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLSurfaceImpl.h">
-      <Filter>include\graphics\sdlrenderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Scale2xFilter.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SDLPtrs.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Shader.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\ShaderData.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\ShaderPtr.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SoftwarePixelFilter.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SoftwareVideoMode.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SolarusGl.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Sprite.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimation.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationDirection.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationSet.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SpriteData.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SpritePtr.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Surface.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SurfaceImpl.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\SurfacePtr.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\TextSurface.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Transition.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\TransitionFade.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\TransitionImmediate.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\TransitionScrolling.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\VertexArray.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\VertexArrayPtr.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Video.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\BlendMode.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\BlendModeInfo.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Color.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\DefaultShaders.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Drawable.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\DrawablePtr.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\DrawProxies.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Hq2xFilter.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Hq3xFilter.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Hq4xFilter.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\quest_icon.h">
-      <Filter>include\graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\Renderer.h">
-      <Filter>include\graphics</Filter>
+    <ClInclude Include="..\..\solarus\include\core\Treasure.h">
+      <Filter>include\core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\solarus\include\entities\AnimatedTilePattern.h">
       <Filter>include\entities</Filter>
@@ -1301,191 +1136,128 @@
     <ClInclude Include="..\..\solarus\include\entities\Wall.h">
       <Filter>include\entities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Ability.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\BlendMode.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\AbilityInfo.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\BlendModeInfo.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\AndroidConfig.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Color.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\AppleInterface.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\CustomDrawInfos.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Arguments.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\DefaultShaders.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\CommandsEffects.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Drawable.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Common.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\DrawablePtr.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\config.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\DrawProxies.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\CurrentQuest.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Hq2xFilter.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Debug.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Hq3xFilter.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Dialog.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Hq4xFilter.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\DialogBoxSystem.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\quest_icon.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\DialogResources.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Renderer.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\EnumInfo.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Scale2xFilter.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Equipment.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SDLPtrs.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\EquipmentItem.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Shader.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\EquipmentItemUsage.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\ShaderData.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\FontResource.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\ShaderPtr.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Game.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SoftwarePixelFilter.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\GameCommand.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SoftwareVideoMode.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\GameCommands.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SolarusGl.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Geometry.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Sprite.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\InputEvent.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimation.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Logger.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationDirection.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\MainLoop.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteAnimationSet.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Map.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SpriteData.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\MapData.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SpritePtr.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\PerfCounter.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Surface.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\PixelBits.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SurfaceImpl.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Point.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\SurfacePtr.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Profiler.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\TextSurface.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\QuestDatabase.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Transition.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\QuestFiles.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionFade.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\QuestProperties.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionImmediate.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Random.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\TransitionScrolling.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Rectangle.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\VertexArray.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\ResourceProvider.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\VertexArrayPtr.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\ResourceType.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\Video.h">
+      <Filter>include\graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Savegame.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLRenderer.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\SavegameConverterV1.h">
-      <Filter>include\core</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLShader.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Scale.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Settings.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Size.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\SolarusFatal.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\String.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\StringResources.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\System.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Timer.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\TimerPtr.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Transform.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Treasure.h">
-      <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\containers\FreeList.h">
-      <Filter>include\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\containers\Grid.h">
-      <Filter>include\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\containers\Quadtree.h">
-      <Filter>include\containers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\ItDecoder.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\Music.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\OggDecoder.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\Sound.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\SoundBuffer.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\SoundPtr.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\audio\SpcDecoder.h">
-      <Filter>include\audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\lua.hpp">
-      <Filter>include</Filter>
+    <ClInclude Include="..\..\solarus\include\graphics\sdlrenderer\SDLSurfaceImpl.h">
+      <Filter>include\graphics\sdlrenderer</Filter>
     </ClInclude>
     <ClInclude Include="..\..\solarus\include\graphics\glrenderer\GlRenderer.h">
       <Filter>include\graphics\glrenderer</Filter>
@@ -1496,11 +1268,257 @@
     <ClInclude Include="..\..\solarus\include\graphics\glrenderer\GlTexture.h">
       <Filter>include\graphics\glrenderer</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\solarus\include\core\Platform.h">
+    <ClInclude Include="..\..\solarus\include\hero\BackToSolidGroundState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\BoomerangState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\BowState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\CarryingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\CustomState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\FallingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\ForcedWalkingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\FreeState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\FrozenState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\GrabbingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\HeroSprites.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\HeroState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\HookshotState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\HurtState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\JumpingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\LiftingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\PlayerMovementState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\PlungingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\PullingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\PushingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\RunningState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\SpinAttackState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\StairsState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\SwimmingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\SwordLoadingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\SwordSwingingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\SwordTappingState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\TreasureState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\UsingItemState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\hero\VictoryState.h">
+      <Filter>include\hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\ExportableToLua.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\ExportableToLuaPtr.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\LuaContext.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\LuaData.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\LuaException.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\LuaTools.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\lua\ScopedLuaRef.h">
+      <Filter>include\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\CircleMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\FallingHeight.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\FallingOnFloorMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\JumpMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\Movement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\PathFinding.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\PathFindingMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\PathMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\PixelMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\PlayerMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\RandomMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\RandomPathMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\RelativeMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\StraightMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\movements\TargetMovement.h">
+      <Filter>include\movements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\KHR\khrplatform.h">
+      <Filter>include\third_party\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\hqx\common.h">
+      <Filter>include\third_party\hqx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\hqx\hqx.h">
+      <Filter>include\third_party\hqx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_common.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_config.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_endian.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\blargg_source.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\dsp.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SNES_SPC.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\spc.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_CPU.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_DSP.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\snes_spc\SPC_Filter.h">
+      <Filter>include\third_party\snes_spc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\third_party\glad\glad.h">
+      <Filter>include\third_party\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\containers\FreeList.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\containers\Grid.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\solarus\include\containers\Quadtree.h">
+      <Filter>include\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Solarus-WinRT-XAML_TemporaryKey.pfx" />
+    <None Include="..\..\solarus\include\core\EnumInfo.inl">
       <Filter>include\core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\solarus\include\graphics\CustomDrawInfos.h">
+    </None>
+    <None Include="..\..\solarus\include\core\PerfCounter.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\core\Point.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\core\Rectangle.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\core\Scale.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\core\Size.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\core\Transform.inl">
+      <Filter>include\core</Filter>
+    </None>
+    <None Include="..\..\solarus\include\graphics\Color.inl">
       <Filter>include\graphics</Filter>
-    </ClInclude>
+    </None>
+    <None Include="..\..\solarus\include\lua\LuaTools.inl">
+      <Filter>include\lua</Filter>
+    </None>
+    <None Include="..\..\solarus\include\containers\Quadtree.inl">
+      <Filter>include\containers</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DirectXPage.xaml" />
   </ItemGroup>
 </Project>

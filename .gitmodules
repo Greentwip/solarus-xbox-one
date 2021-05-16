@@ -1,0 +1,3 @@
+[submodule "solarus"]
+	path = solarus
+	url = https://gitlab.com/VictorJL/solarus

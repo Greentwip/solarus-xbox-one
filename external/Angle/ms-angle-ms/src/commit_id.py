@@ -33,6 +33,9 @@ except:
     commit_id = 'invalid-hash'
     commit_date = 'invalid-date'
 
+if os.path.exists(output_file):
+    sys.exit(0)
+
 hfile = open(output_file, 'w')
 
 hfile.write('#define ANGLE_COMMIT_HASH "%s"\n'    % commit_id)

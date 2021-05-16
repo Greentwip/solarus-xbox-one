@@ -157,7 +157,7 @@ SDL_WinRTInitXAMLApp(int(*mainFunction)(int, char **), int (*loopFunction)(), vo
         return -1;
     }*/
 
-	SDL_assert(!SDL_WinRTGlobalApp);
+	//SDL_assert(!SDL_WinRTGlobalApp);
 	SDL_XAMLWinRTApp ^ app = ref new SDL_XAMLWinRTApp();
 	if (!SDL_WinRTGlobalApp)
 	{

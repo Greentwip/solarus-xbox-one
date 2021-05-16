@@ -1279,12 +1279,12 @@ SDL_UpdateFullscreenMode(SDL_Window * window, SDL_bool fullscreen)
             WinRT 8.x can't resolve either programmatically, so we're
             giving up.
         */
-        //return -1;
+        return -1;
     } else {
         /* Whatever was requested, fullscreen or windowed mode, is already
             in-place.
         */
-        //return 0;
+        return 0;
     }
 #endif
 
